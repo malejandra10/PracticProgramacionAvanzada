@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.JScrollBar" name="jScrollBar2">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="133" max="-2" attributes="0"/>
+              <Component id="TituloEntradaIzq" min="-2" pref="93" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="TituloEntradaDer" min="-2" pref="140" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="133" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="156" max="-2" attributes="0"/>
+              <Component id="TituloSoga" min="-2" pref="55" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="TituloTirolina" min="-2" pref="53" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="201" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jLabel1" min="-2" pref="90" max="-2" attributes="0"/>
+                  <Component id="TituloCamp" min="-2" pref="80" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="425" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="391" max="-2" attributes="0"/>
+                      <Component id="Titulo" min="-2" pref="156" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="434" max="-2" attributes="0"/>
+                      <Component id="TituloMerendero" min="-2" pref="84" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="ColaEntradaMonitores" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="HilosEntran" alignment="0" max="32767" attributes="0"/>
+                          <Component id="ColaEsperaIzq" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="MonitorTir" alignment="1" min="-2" pref="56" max="-2" attributes="0"/>
+                                  <Component id="TituloMonitosTir" alignment="1" min="-2" pref="56" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="ChildPreparacion" min="-2" pref="61" max="-2" attributes="0"/>
+                                  <Component id="TituloPreparacion" min="-2" pref="70" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="TituloEnTir" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ChildEnTirolina" min="-2" pref="66" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="TituloFinalizado" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ChildEnFinal" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="ColaEsperaTirolina" alignment="1" max="32767" attributes="0"/>
+                          <Component id="ColaEsperaDer" alignment="1" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="TituloMonitorZC" pref="85" max="32767" attributes="0"/>
+                          <Component id="MonitoresZC" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="TituloMonitorSoga" min="-2" pref="47" max="-2" attributes="0"/>
+                          <Component id="MonitorSoga" min="-2" pref="56" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="TituloequipoA" alignment="0" min="-2" pref="57" max="-2" attributes="0"/>
+                          <Component id="EquipoA" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="EquipoB" min="-2" pref="100" max="-2" attributes="0"/>
+                          <Component id="TituloEquipoB" min="-2" pref="76" max="-2" attributes="0"/>
+                          <Component id="TituloChildZC" alignment="0" min="-2" pref="34" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="ChildZC" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="MonitoresMerendero" alignment="0" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="TituloBandejSucias" alignment="0" min="-2" pref="98" max="-2" attributes="0"/>
+                                  <Component id="BandejasSucias" alignment="0" min="-2" pref="90" max="-2" attributes="0"/>
+                                  <Component id="TituloMonitorMeren" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="TituloBandejLimp" pref="99" max="32767" attributes="0"/>
+                                  <Component id="BandejasLimpias" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="109" max="-2" attributes="0"/>
+                              <Component id="ChildMerendando" min="-2" pref="540" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="BotonPausar" min="-2" pref="93" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                              <Component id="BotonReanudar" min="-2" pref="96" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="0" pref="20" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="Titulo" min="-2" pref="32" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="TituloEntradaIzq" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
+                  <Component id="TituloEntradaDer" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="ColaEsperaIzq" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ColaEsperaDer" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+              <Component id="TituloCamp" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="TituloTirolina" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="TituloSoga" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="HilosEntran" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ColaEsperaTirolina" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="TituloPreparacion" alignment="1" min="-2" pref="15" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="TituloMonitorSoga" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="TituloequipoA" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="TituloEquipoB" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="TituloFinalizado" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="TituloEnTir" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="TituloMonitosTir" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="EquipoA" min="-2" pref="100" max="-2" attributes="0"/>
+                          <Component id="EquipoB" min="-2" pref="100" max="-2" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                              <Component id="MonitorTir" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                              <Component id="ChildPreparacion" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="ChildEnTirolina" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="ChildEnFinal" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                      <Component id="MonitorSoga" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="TituloMonitorZC" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="TituloChildZC" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="MonitoresZC" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ChildZC" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+              <Component id="TituloMerendero" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="ColaEntradaMonitores" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="TituloBandejSucias" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="TituloBandejLimp" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="BandejasSucias" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="BandejasLimpias" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="TituloMonitorMeren" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="ChildMerendando" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="MonitoresMerendero" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="BotonPausar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="BotonReanudar" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="Titulo">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Entrada al campamento"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="TituloEntradaIzq">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Puerta Izquierda"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="TituloEntradaDer">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Puerta derecha"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="ColaEsperaIzq">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ColaEsperaIzqActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="ColaEsperaDer">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ColaEsperaDerActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="TituloCamp">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Campamento"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="TituloSoga">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Soga"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="TituloTirolina">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Tirolina"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="HilosEntran">
+    </Component>
+    <Component class="javax.swing.JTextField" name="ColaEsperaTirolina">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ColaEsperaTirolinaActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="TituloMonitorSoga">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Monitor"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="TituloequipoA">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Equipo A"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="TituloEquipoB">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Equipo B"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="EquipoA">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="EquipoB">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+    </Container>
+    <Component class="javax.swing.JTextField" name="MonitorTir">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MonitorTirActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="TituloMonitosTir">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Monitor"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="TituloPreparacion">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Preparacion"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="ChildPreparacion">
+    </Component>
+    <Component class="javax.swing.JLabel" name="TituloEnTir">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Tirolina"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="ChildEnTirolina">
+    </Component>
+    <Component class="javax.swing.JLabel" name="TituloFinalizado">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Finalizacion"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="ChildEnFinal">
+    </Component>
+    <Component class="javax.swing.JTextField" name="MonitorSoga">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Zona Comun"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="TituloMonitorZC">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Monitores"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="TituloChildZC">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Child"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="MonitoresZC">
+    </Component>
+    <Component class="javax.swing.JTextField" name="ChildZC">
+    </Component>
+    <Component class="javax.swing.JLabel" name="TituloMerendero">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Merendero"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="ColaEntradaMonitores">
+    </Component>
+    <Component class="javax.swing.JLabel" name="TituloBandejSucias">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Bandejas Sucias"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="TituloBandejLimp">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Bandejas Limpias"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="TituloMonitorMeren">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Monitores"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="BandejasSucias">
+    </Component>
+    <Component class="javax.swing.JTextField" name="BandejasLimpias">
+    </Component>
+    <Component class="javax.swing.JTextField" name="ChildMerendando">
+    </Component>
+    <Component class="javax.swing.JTextField" name="MonitoresMerendero">
+    </Component>
+    <Component class="javax.swing.JButton" name="BotonPausar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Pausar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotonPausarActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="BotonReanudar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Reanudar"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
