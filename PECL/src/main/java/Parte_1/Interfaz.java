@@ -10,12 +10,24 @@ package Parte_1;
  * @author blanf
  */
 public class Interfaz extends javax.swing.JFrame {
-
+    /*Inicializo variables*/
+    Campamento camp;
+    Monitor mon;
+    Detener deten;
     /**
      * Creates new form Interfaz
      */
     public Interfaz() {
         initComponents();
+        camp=new Campamento(50,colaEsperaIzq,colaEsperaDer,colaEsperaTirolina,colaEntradaMerendero,dentro,monitorTir,monitoresMerendero,monitoresZC,monitorSoga,colaEntradaMerendero,colaEsperaTirolina);
+        //deten = new Detener();
+        for(int i=1; i<=4; i++)
+        {
+            String n = String.valueOf(i);
+            mon=new Monitor('M' + n, camp);
+            System.out.println(mon.getMId());
+            mon.start();
+        }
     }
 
     /**
