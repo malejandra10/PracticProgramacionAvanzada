@@ -5,6 +5,8 @@
  */
 package Parte_1;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 /**
  *
  * @author blanf
@@ -12,12 +14,14 @@ package Parte_1;
 public class Monitor extends Thread{
     private String id;
     private Campamento camp;
+    AtomicInteger contActividades = new AtomicInteger(0);
     
     /*Constructor*/
-    public Monitor(String i, Campamento c)
+    public Monitor(String i, Campamento c, AtomicInteger cont)
     {
         this.id = i;
         this.camp = c;
+        this.contActividades = cont;
     }
 
     //Método devuelve identificador del monitor
@@ -30,6 +34,14 @@ public class Monitor extends Thread{
         this.id = id;
     }
     
+    public  AtomicInteger getContActividades() {
+        return contActividades;
+    }
+
+    public void setContActividades( AtomicInteger contActividades) {
+        this.contActividades = contActividades;
+    }
+    
     //Ejecuta hilo
     public void run()
     {
@@ -38,7 +50,6 @@ public class Monitor extends Thread{
             sleep((int)(3000*Math.random()));
         } catch (InterruptedException e){ }
         camp.entrar(this); //Entra en el campamento si hay hueco; y sino espera en la cola
-        //camp.accederActividad(this); //Entra  actividad correspondiente
     }
     
 }
