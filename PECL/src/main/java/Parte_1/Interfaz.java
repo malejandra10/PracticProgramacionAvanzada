@@ -14,19 +14,30 @@ public class Interfaz extends javax.swing.JFrame {
     Campamento camp;
     Monitor mon;
     Detener deten;
+    Child c;
     /**
      * Creates new form Interfaz
      */
     public Interfaz() {
         initComponents();
-        camp=new Campamento(50,colaEsperaIzq,colaEsperaDer,colaEsperaTirolina,colaEntradaMerendero,dentro,monitorTir,monitoresMerendero,monitoresZC,monitorSoga,colaEntradaMerendero,colaEsperaTirolina);
-        //deten = new Detener();
-        for(int i=1; i<=4; i++)
+        AtomicInteger contActChild = new AtomicInteger(0);
+        AtomicInteger contActMon = new AtomicInteger(0);
+        camp=new Campamento(50,colaEsperaIzq,colaEsperaDer,colaEsperaTirolina,colaEntradaMerendero,dentro,monitorTir,monitoresMerendero,monitoresZC,monitorSoga,colaEntradaMerendero,colaEsperaTirolina,hilosEntran,childMerendando,bandejasLimpias,bandejasSucias,childZC,childPreparacion,childEnTirolina,childEnFinal,equipoA,equipoB);
+        deten = new Detener();
+        
+        //Bucle para crear los monitores
+        for(int i = 1; i<=4; i++)
         {
-            String n = String.valueOf(i);
-            mon=new Monitor('M' + n, camp);
-            System.out.println(mon.getMId());
+            String n1 = String.valueOf(i);      //Convierte entero en string
+            mon = new Monitor('M' + n1, camp, contActMon);
             mon.start();
+        }
+        //Bucle para crear los hilos niños
+        for(int i = 1; i <= 15; i++)
+        {
+            String n2 = String.valueOf(i);
+            c = new Child('N' + n2, camp, contActChild);
+            c.start();
         }
     }
 
