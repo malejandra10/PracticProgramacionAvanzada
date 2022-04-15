@@ -9,6 +9,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.CyclicBarrier;
 import javax.swing.JTextField;
 
 /**
@@ -31,6 +32,9 @@ public class Campamento {
     private Condition bandSucias = cerrojoSucias.newCondition();
     private Condition bandLimpias = cerrojoLimpias.newCondition();
     private Condition jugadores = cerrojoSoga.newCondition();
+    private int maxJugadores = 10;  //Numero de jugadores necesarios para jugar a actividad soga
+    private CyclicBarrier barreraIni = new CyclicBarrier(maxJugadores); //Paara esperar a que haya 10 jugadores en actividad soga
+
 
     /*Constructor de la clase*/
     public Campamento(int aforo,JTextField espEn1,JTextField espEn2,JTextField espTir,JTextField espMer, JTextField den, JTextField monEnTir,JTextField monEnMer,JTextField monEnZC, JTextField monEnSo,JTextField colaMer,JTextField colaTir, JTextField enSoga, JTextField enMer, JTextField limp, JTextField suc, JTextField zc, JTextField tirPrep,JTextField enTir, JTextField finTir, JTextField a,JTextField b)
@@ -374,10 +378,8 @@ public class Campamento {
         }
         else
         {   
-            
-            cerrojoSoga.lock();
-           while (numJugadores != 10)  //Mientras falten jugadores se espera introduciendo los nuevos que lleguen en quipos segun sus id
-            {    
+            //Espera a que hay 10 jugadores
+            try {
                 if(paridadId(numId(c)) && numA < 5)
                 {
                     equipoA.meter(c.getCId());  //Introducimos niño en equipo A
@@ -390,38 +392,29 @@ public class Campamento {
                     equiB.add(c);
                     numB++;             //Aumentamos número de jugadores en equipo B
                 }
-                numJugadores++;     //Aumentamos número de jugadores en actividad
-                jugadores.await();
-            }
-            
-            try 
-            { 
-                System.out.println("hola");
-                jugadores.signal(); //Se despierta a los jugadores
+                numJugadores++;
+                barreraIni.await();
                 sleep(7000);    //Tardan 7 segundos en realizar actividad
-                //Juego esta amañado por lo que equipo A siempre gana recibiendo 2 puntos
-                //Recorremos equipos para sacar jugadores
-                for(int i = 0; i < equiA.size(); i++)
+                numJugadores--;     //Disminuye numero de jugadores en actividad
+                contSoga++;
+                //Vacia los equipos y da puntos correspondientes
+                if(paridadId(numId(c)))
                 {
-                    System.out.println("hola2");
-                    equiA.get(i).contActividades.addAndGet(2);   //Aumenta en dos el contador de actividades del niño
-                    equiB.get(i).contActividades.incrementAndGet();  //Aumenta en uno contadores de los niños del equipo B
-                    equipoA.sacar(equiA.get(i).getCId());    
-                    Child ch = equiA.remove(i);      //Sacamos jugador del equipo A
-                    equipoB.sacar(equiB.get(i).getCId());
-                    Child ch2 = equiB.remove(i);     //Scamos jugador del quipo B
-                    numJugadores--;      //Disminuye numero de jugadores en actividad y en quipo
-                    numA--;
-                    numB--;
-                    //Tras terminar actividad niños van a zona comun
-                    zonaComun(ch , n);
-                    zonaComun(ch2 , n);
+                    equipoA.sacar(c.getCId());  //sacamos  niño de equipo A
+                    equiA.remove(c);
+                    numA--;         //Disminuimos número de jugadores en equipo
+                    c.contActividades.addAndGet(2); //Equipo a siempre gana porque juego esta amañado
+                    zonaComun(c,n); //Tras terminar actividad niños van a zona comun
                 }
-            }
-            finally 
-            { 
-                cerrojoSoga.unlock();
-            }
+                else
+                {
+                    equipoB.sacar(c.getCId());  //sacamos niño de equipo B
+                    equiB.remove(c);
+                    numB--;             //Disminuimos número de jugadores en equipo B
+                    c.contActividades.incrementAndGet();
+                    zonaComun(c,n); //Tras terminar actividad niños van a zona comun
+                }
+            } catch (Exception e) { }  
         }
     }
     
