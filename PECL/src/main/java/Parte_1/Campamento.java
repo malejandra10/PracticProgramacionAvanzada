@@ -4,12 +4,13 @@ package Parte_1;
 import static java.lang.Thread.sleep;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
-import java.util.concurrent.CyclicBarrier;
 import javax.swing.JTextField;
 
 /**
@@ -18,7 +19,7 @@ import javax.swing.JTextField;
  */
 public class Campamento {
     private boolean entradaIzq = false, entradaDer= false; //Variables almacenan si entradas estan abiertas
-    private int aforo,num, capTir = 1, capMer = 20, capSoga = 10, numLimpias = 0, numSucias = 25, numJugadores = 0, numA = 0, numB = 0;     //Aforo maximo del campamento y parte numérica del identificador
+    private int aforo,num, capTir = 1, capMer = 20, capSoga = 10, numLimpias = 0, numSucias = 25, numJugadores = 0, numA = 0, numB = 0,contSoga = 0, contTir = 0,contMer1 = 0, contMer2 = 0;     //Aforo maximo del campamento y parte numérica del identificador
     private ArrayList<Child> equiA, equiB; 
     private ListaThreads colaEntradaIzq, colaEntradaDer, colaTirolina, colaMerienda, dentro, monEnTirolina,monEnMerienda,monEnZonaComun, monEnSoga, childEnSoga, childEnMer,limpias,sucias,childEnZc,childEnTirPrep,childEnTir,childEnFinTir,equipoA,equipoB; //Colas de espera y niños dentro de cada actividad y de entrada
     private Semaphore semaforoAforo, semaforoCapTir, semaforoCapMer, semaforoCapSoga; //Variable semaforo para proteger variable aforo
@@ -29,18 +30,20 @@ public class Campamento {
     private Lock cerrojoSoga = new ReentrantLock();     //Cerrojo para numero de jugadores en soga
     private Condition cerradaIzq = cerrojoIzq.newCondition();   //Varuable condition asociada al cerrojo de la puerta izq
     private Condition cerradaDer = cerrojoDer.newCondition();   //Varuable condition asociada al cerrojo de la puerta derecha
-    private Condition bandSucias = cerrojoSucias.newCondition();
-    private Condition bandLimpias = cerrojoLimpias.newCondition();
+    /*private Condition bandSucias = cerrojoSucias.newCondition();
+    private Condition bandLimpias = cerrojoLimpias.newCondition();*/
     private Condition jugadores = cerrojoSoga.newCondition();
     private int maxJugadores = 10;  //Numero de jugadores necesarios para jugar a actividad soga
-    private CyclicBarrier barreraIni = new CyclicBarrier(maxJugadores); //Paara esperar a que haya 10 jugadores en actividad soga
-
-
+    private CyclicBarrier barreraIni = new CyclicBarrier(maxJugadores); //Para esperar a que haya 10 jugadores en actividad soga
+    private CountDownLatch contadorSoga = new CountDownLatch (10);  //Para bloquear monitor mientras se realiza actividad soga
+    private CountDownLatch contadorTirolina = new CountDownLatch (10);  //Para bloquear monitor mientras se realiza actividad tirolina
+    private CountDownLatch contadorMerienda = new CountDownLatch (10);  //Para bloquear monitor mientras se realiza actividad merienda
+    private Semaphore espera = new Semaphore (1, true);
     /*Constructor de la clase*/
     public Campamento(int aforo,JTextField espEn1,JTextField espEn2,JTextField espTir,JTextField espMer, JTextField den, JTextField monEnTir,JTextField monEnMer,JTextField monEnZC, JTextField monEnSo,JTextField colaMer,JTextField colaTir, JTextField enSoga, JTextField enMer, JTextField limp, JTextField suc, JTextField zc, JTextField tirPrep,JTextField enTir, JTextField finTir, JTextField a,JTextField b)
     {
         this.aforo = aforo;
-        semaforoAforo = new Semaphore (aforo,true);
+        semaforoAforo = new Semaphore (aforo,true); //aforo es el número de èrmisos y true para indicar salida FIFO de la cola
         semaforoCapTir = new Semaphore (capTir, true);
         semaforoCapMer = new Semaphore (capMer, true);
         semaforoCapSoga = new Semaphore (capSoga, true);
@@ -65,6 +68,8 @@ public class Campamento {
         equipoB = new ListaThreads (b);
         equiA = new ArrayList<Child>();
         equiB = new ArrayList<Child>();
+        limpias.meter(" " + 0);
+        sucias.meter(" " + 25);
     }
     
     /*Método override que permite entrar en campamento a monitores*/
@@ -76,51 +81,62 @@ public class Campamento {
         {
             if(!entradaIzq)    /*Si puerta de la entrada izquierda esta cerrada*/
             {
+                cerrojoIzq.lock();     //Cierra cerrojo puertaIzq
                 try
                 {
-                    cerrojoIzq.lock();     //Cierra cerrojo puertaIzq
-                    sleep(500 + (int) (1000* Math.random()));      //Monitor tarda entre 0.5 y 1 segundo en abrir la puerta
-                    entradaIzq = true;          //Monitor abre entrada
-                    cerradaIzq.signalAll();     //Libera hilos que estuviesen esperando en la cola de la puerta izquierda
+                    //if(!entradaIzq)
+                    //{
+                        sleep(500 + (int) (1000* Math.random()));      //Monitor tarda entre 0.5 y 1 segundo en abrir la puerta
+                        entradaIzq = true;          //Monitor abre entrada
+                        cerradaIzq.signalAll();     //Libera hilos que estuviesen esperando en la cola de la puerta izquierda
+                        colaEntradaIzq.sacar(m.getMId());            //Sacamos a monitor de la cola de espera          
+                        dentro.meter(m.getMId());                  //Llamamos a meter para indicar que ha entrado monitor en el campamento 
+                    //}
+                    /*else
+                    {
+                       colaEntradaIzq.sacar(m.getMId());            //Sacamos a monitor de la cola de espera          
+                       dentro.meter(m.getMId());                  //Llamamos a meter para indicar que ha entrado monitor en el campamento 
+                    }*/
                 } catch (InterruptedException e){ }
                 
                 finally
-                {
+                {        
                     cerrojoIzq.unlock();   //Abre cerrojo
                 }    
             }
-            colaEntradaIzq.meter(m.getMId());  //Introduce monitor en la cola (a efectos practicos no espera se hace para observar)
-            /*try
-            {
-               semaforoAforo.acquire();
-            } catch(InterruptedException e){ }*/
-            colaEntradaIzq.sacar(m.getMId());            //Sacamos a monitor de la cola de espera          
-            dentro.meter(m.getMId());                  //Llamamos a meter para indicar que ha entrado monitor en el campamento
+            
             }   
         else        //Si id del monitor es impar entra por la puerta derecha
         {
             colaEntradaDer.meter(m.getMId());  //Introduce monitor en la cola (a efectos practicos no espera se hace para observar)
             if(!entradaDer)    /*Si puerta de la entrada derecha esta abierta*/
             {
+                cerrojoDer.lock();     //Cierra cerrojo puertaDer
                 try
                 {
-                    cerrojoDer.lock();     //Cierra cerrojo puertaDer
-                    sleep(500 + (int) (1000* Math.random()));      //Monitor tarda entre 0.5 y 1 segundo en abrir la puerta
-                    entradaDer = true;          //Monitor abre entrada
-                    cerradaDer.signalAll();     //Libera hilos que estuviesen esperando en la cola de la puerta derecha
-                } catch (InterruptedException e){ }
+                   //if(!entradaDer)
+                   //{
+                        sleep(500 + (int) (1000* Math.random()));      //Monitor tarda entre 0.5 y 1 segundo en abrir la puerta
+                        entradaDer = true;          //Monitor abre entrada
+                        cerradaDer.signalAll();     //Libera hilos que estuviesen esperando en la cola de la puerta derecha
+                        colaEntradaDer.sacar(m.getMId());            //Sacamos a monitor de la cola de espera          
+                        dentro.meter(m.getMId());                  //Llamamos a meter para indicar que ha entrado monitor en el campamento 
+                  /* }
+                   else
+                   {
+                       colaEntradaDer.sacar(m.getMId());            //Sacamos a monitor de la cola de espera          
+                       dentro.meter(m.getMId());                  //Llamamos a meter para indicar que ha entrado monitor en el campamento      
+                   }*/
+                } 
+                catch (InterruptedException e){ }
                 
                 finally
                 {
-                    cerrojoDer.unlock();   //Abre cerrojo
+                    cerrojoDer.unlock();   //Abre cerrojo    
                 }    
             }
             else
             {
-                /*try
-                {
-                    semaforoAforo.acquire();
-                } catch(InterruptedException e){ }*/
                 colaEntradaDer.sacar(m.getMId());            //Sacamos a monitor de la cola de espera          
                 dentro.meter(m.getMId());                  //Llamamos a meter para indicar que ha entrado monitor en el campamento         
             }
@@ -151,27 +167,85 @@ public class Campamento {
       {
         case 1:   //Monitor a actividad soga
             monEnSoga.meter(m.getMId());
+            soga(m,num);
             break;
         case 2:     //Monitor entra en actividad tirolina
             monEnTirolina.meter(m.getMId());
+            tirolina(m,num);
             break;
         case 3:     //Monitor entra en actividad merienda
             monEnMerienda.meter(m.getMId());
+            try
+            {
+                merienda(m,num);
+            }
+            catch(Exception e){}
             break;
         case 4:     //Monitor entra en actividad merienda
             monEnMerienda.meter(m.getMId());
+            try
+            {
+                merienda(m,num);
+            }
+            catch(Exception e){}
             break;    
       }     
     }
     
-      //Método simula actividad soga para los monitores
+    //Método para simular el funcionamiento de la merienda por parte de los monitores
+    public synchronized void merienda (Monitor m, int n) throws InterruptedException
+    {
+        while(true)
+        {
+            while(numSucias == 0)
+            {
+                wait();
+            }
+            sleep(3000 + (int) (2000 * Math.random()));
+            limpias.sacar(" " + numLimpias);
+            numLimpias++;
+            limpias.meter(" " + numLimpias);
+            sucias.sacar(" " + numSucias);
+            numSucias--;
+            sucias.meter(" " + numSucias);
+            notifyAll();
+        }
+        //contadorMerienda.await();
+        //contadorMerienda = new CountDownLatch (10);  //Para bloquear monitor mientras se realiza actividad merienda
+        //zonaComun(m, n);
+    }
+    
+    //Método simula actividad soga para los monitores
     public void soga(Monitor m, int n)
     {
-        m.contActividades.incrementAndGet();
-        if(m.contActividades.intValue() == 10)  //Si monitor ha realizado 10 actividades
+        while(true)
         {
-            zonaComun(m,n);
-            monEnSoga.sacar(m.getMId());
+        //bucle con countDownLunch await con numero de veces que debe realizar actividad wait
+            try
+            {
+                contadorSoga.await();
+                contadorSoga = new CountDownLatch(10);
+                monEnSoga.sacar(m.getMId());    //Se saca monitor de la actividad
+                m.contActividades.addAndGet(10); //Se resetea contador para la actividad soga
+                zonaComun(m,n); //Se envia monitor a la zona comun para que descanse 
+            }catch(Exception e){}
+        }
+    }
+    
+    //Método simula actividad tirolina para los monitores
+    public void tirolina(Monitor m, int n)
+    {
+        while(true)
+        {
+            try
+            {
+                contadorTirolina.await();
+                m.contActividades.addAndGet(10);
+                contadorTirolina = new CountDownLatch(10);
+                monEnTirolina.sacar(m.getMId());    //Se saca monitor de la actividad
+                zonaComun(m,n); //Se envia monitor a la zona comun para que descanse 
+            }
+            catch(Exception e){}
         }
     }
     
@@ -180,9 +254,9 @@ public class Campamento {
     {
         try 
         {
-            monEnZonaComun.meter(m.getMId());
+            monEnZonaComun.meter(m.getMId());   //Monitor entra en zona comun
             sleep(1000 + (int) (1000* Math.random()));  //Monitor descansa entre 1 y 2 segundos enona comun
-            monEnZonaComun.sacar(m.getMId());
+            monEnZonaComun.sacar(m.getMId());   //Monitor sale de la zona comun
             accederActividad(m,n);   //Llama a función para volver a su actividad
         }catch (InterruptedException e){ } 
     }
@@ -198,16 +272,19 @@ public class Campamento {
             colaEntradaIzq.meter(c.getCId());  //Introduce niño en la cola hasta que se abra puerta 
             if(!entradaIzq) //si la puerta izquierda esta cerrada
             {
+                cerrojoIzq.lock();
                 try
                 {
-                    cerrojoIzq.lock();
                     while(!entradaIzq)
                     {
                         try
                         {
                             cerradaIzq.await();     //hilo se bloquea hasta que se abra puerta
+                            colaEntradaIzq.sacar(c.getCId());            //Sacamos a monitor de la cola de espera          
+                            dentro.meter(c.getCId());                  //Llamamos a meter para indicar que ha entrado monitor en el campamento        
                         } catch(InterruptedException ie){ }
                     }
+                     
                 }
                 finally
                 {
@@ -220,9 +297,9 @@ public class Campamento {
                 try
                 {
                    semaforoAforo.acquire();          //adquiere semáforo (-1 permiso disponible)
-                } catch(InterruptedException e){ }
-                colaEntradaIzq.sacar(c.getCId());            //Sacamos a niño de la cola de espera          
-                dentro.meter(c.getCId());                  //Llamamos a meter para indicar que ha entrado niño en el campamento
+                   colaEntradaIzq.sacar(c.getCId());            //Sacamos a niño de la cola de espera          
+                    dentro.meter(c.getCId());                  //Llamamos a meter para indicar que ha entrado niño en el campamento
+                } catch(InterruptedException e){ }  
             }
         }    
         else        //Si id del monitor es impar entra por la puerta derecha
@@ -230,14 +307,16 @@ public class Campamento {
            colaEntradaDer.meter(c.getCId());  //Introduce niño en la cola (a efectos practicos no espera se hace para observar)
            if(!entradaDer)    /*Si puerta de la entrada derecha esta abierta*/
             {
+                cerrojoDer.lock();
                 try
                 {
-                    cerrojoDer.lock();
                     while(!entradaDer)
                     {
                         try
                         {
                             cerradaDer.await();     //hilo se bloquea hasta que se abra puerta
+                            colaEntradaDer.sacar(c.getCId());            //Sacamos a monitor de la cola de espera          
+                            dentro.meter(c.getCId());                  //Llamamos a meter para indicar que ha entrado monitor en el campamento         
                         } catch(InterruptedException ie){ }
                     }
                 }
@@ -283,7 +362,7 @@ public class Campamento {
           case 2:     //Niño entra en actividad tirolina
               colaTirolina.meter(c.getCId());  //Niño accede a la cola de espera de la tirolina
               try
-              {
+              {  
                   semaforoCapTir.acquire();   //Adquiere permiso
                   childEnTirPrep.meter(c.getCId());  //Accede a parte de preparción de la actividad
                   colaTirolina.sacar(c.getCId());    //Niño deja cola de espera
@@ -299,6 +378,7 @@ public class Campamento {
                   {
                       semaforoCapMer.acquire();       //Disminuye en uno permisos del semaforo asociado a la merienda
                       childEnMer.meter(c.getCId());         //Mete a niño en lista de niños que estan merendando
+                      System.out.println("caca");
                       merienda(c, n);                 //Llama a función merienda para simular actividad
                   } catch(InterruptedException e){ }   
               }
@@ -312,28 +392,33 @@ public class Campamento {
     }
      
     //Método simula actividad merienda para los niños
-    public void merienda(Child c, int n) throws InterruptedException
+    public synchronized void merienda(Child c, int n) throws InterruptedException
     {
-        cerrojoLimpias.lock();
+        System.out.println("hollaaaaaaa");
         while (numLimpias == 0)     //No hay bandejas limpias disponibles
         { 
-            bandLimpias.await();    //Espera hasta que haya bandejas limpias
+            wait();    //Bloquea hilo hasta que haya bandejas limpias
         }
         try 
         { 
             sleep(7000);        //Tarda 7 segundos en merendar
+            limpias.sacar(" " + numLimpias);
             numLimpias--;       //Disminuye numero de bandejas limpias y aumenta de sucias
+            limpias.meter(" " + numLimpias);
+            sucias.sacar(" " + numSucias);
             numSucias++;
-            bandSucias.signal(); //Hay bandejas sucias
+            sucias.meter(" " + numSucias);
+            System.out.println("patata");
+            notifyAll(); //Despierta a monitor que estuviese bloqueado esperando que hibiese bandejas sucias
+            System.out.println("patata2");
+            childEnMer.sacar(c.getCId());    //Saca a niño del merendero
+            semaforoCapMer.release();
+            c.contActividades.incrementAndGet();   //Aumenta en uno el contador de actividades del niño
+            contadorMerienda.countDown();
+            zonaComun(c , n);   //Tras terminar actividad niño va a zona comun
         } 
-        finally 
-        { 
-            cerrojoLimpias.unlock(); 
-        }
-        childEnMer.sacar(c.getCId());    //Saca a niño del merendero
-        semaforoCapMer.release();
-        c.contActividades.incrementAndGet();   //Aumenta en uno el contador de actividades del niño
-        zonaComun(c , n);   //Tras terminar actividad niño va a zona comun
+        catch(Exception e){}
+        
     }
     
     //Método simula funcionamiento de la zona común para los niños
@@ -356,7 +441,7 @@ public class Campamento {
             sleep(1000);    //Monitor prepara al niño para tirarse
             childEnTirPrep.sacar(c.getCId()); //Niño termina de prepararse
             childEnTir.meter(c.getCId());    //Pasa a estado de tirarse
-                                            //Espera señal del monitor para tirarse
+                                        //Espera señal del monitor para tirarse
             sleep(3000);    //Tarda 3 segundos en llegar al final
             childEnTir.sacar(c.getCId());
             childEnFinTir.meter(c.getCId()); //Cabia a estado final
@@ -365,6 +450,8 @@ public class Campamento {
             semaforoCapTir.release();       //Libera permiso del semaforo
         }catch (InterruptedException e){ }
         c.contActividades.incrementAndGet();   //Aumenta en uno el contador de actividades del niño
+        contTir++;      //Se incremente el numero de veces que se ha realizado esta actividad
+        contadorTirolina.countDown();   //Resta uno al contador 
         zonaComun(c, n);    //Accede a zona comun para descansar tras actividad
     }
     
@@ -372,7 +459,7 @@ public class Campamento {
     public void soga(Child c, int n) throws InterruptedException
     {
         childEnSoga.sacar(c.getCId());
-        if(numJugadores == 10)  //Si hilo llega y ya hay 10 jugadores
+        if(numJugadores == 10 || contadorSoga.getCount() == 0)  //Si hilo llega y ya hay 10 jugadores
         {
             accederActividad(c , n++ % 3);  //No espera y se va a otra actividad
         }
@@ -380,7 +467,7 @@ public class Campamento {
         {   
             //Espera a que hay 10 jugadores
             try {
-                if(paridadId(numId(c)) && numA < 5)
+                if(paridadId(numId(c)) && numA < 5 || numB == 5)
                 {
                     equipoA.meter(c.getCId());  //Introducimos niño en equipo A
                     equiA.add(c);
@@ -398,8 +485,10 @@ public class Campamento {
                 numJugadores--;     //Disminuye numero de jugadores en actividad
                 contSoga++;
                 //Vacia los equipos y da puntos correspondientes
-                if(paridadId(numId(c)))
+                if(paridadId(numId(c)) || numB == 0)
                 {
+                    System.out.println(numA);
+                    System.out.println("hola");
                     equipoA.sacar(c.getCId());  //sacamos  niño de equipo A
                     equiA.remove(c);
                     numA--;         //Disminuimos número de jugadores en equipo
@@ -408,13 +497,16 @@ public class Campamento {
                 }
                 else
                 {
+                    System.out.println(numB);
+                    System.out.println("hola2");
                     equipoB.sacar(c.getCId());  //sacamos niño de equipo B
                     equiB.remove(c);
                     numB--;             //Disminuimos número de jugadores en equipo B
                     c.contActividades.incrementAndGet();
                     zonaComun(c,n); //Tras terminar actividad niños van a zona comun
                 }
-            } catch (Exception e) { }  
+                contadorSoga.countDown();   //Decrementa cada vez que acaba actividad
+                } catch (Exception e) { }
         }
     }
     
@@ -479,4 +571,3 @@ public class Campamento {
         return n % 3;       //Módulo 3 de parte numérica
     }
 }
-
