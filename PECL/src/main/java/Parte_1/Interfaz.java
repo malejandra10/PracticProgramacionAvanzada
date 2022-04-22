@@ -22,6 +22,7 @@ public class Interfaz extends javax.swing.JFrame {
         initComponents();
         AtomicInteger contActChild = new AtomicInteger(0);
         AtomicInteger contActMon = new AtomicInteger(0);
+
         camp=new Campamento(50,colaEsperaIzq,colaEsperaDer,colaEsperaTirolina,colaEntradaMerendero,dentro,monitorTir,monitoresMerendero,monitoresZC,monitorSoga,colaEntradaMerendero,colaEsperaTirolina,hilosEntran,childMerendando,bandejasLimpias,bandejasSucias,childZC,childPreparacion,childEnTirolina,childEnFinal,equipoA,equipoB);
         deten = new Detener();
         
@@ -32,13 +33,26 @@ public class Interfaz extends javax.swing.JFrame {
             mon = new Monitor('M' + n1, camp, contActMon);
             mon.start();
         }
-        //Bucle para crear los hilos niños
-        for(int i = 1; i <= 15; i++)
+        for(int i = 1; i <= 200; i++)
+                {
+                    String n2 = String.valueOf(i);
+                    c = new Child('N' + n2, camp, contActChild);
+                    c.start();
+                }
+        //Crea hilo anónimo en el que crearé todos los hilos que componen el sistema
+        new Thread (new Runnable()
         {
-            String n2 = String.valueOf(i);
-            c = new Child('N' + n2, camp, contActChild);
-            c.start();
-        }
+            public void run()
+            {
+                //Bucle para crear los hilos niños
+                for(int i = 1; i <= 200; i++)
+                {
+                    String n2 = String.valueOf(i);
+                    c = new Child('N' + n2, camp, contActChild);
+                    c.start();
+                }
+            }   
+        }).start();   
     }
 
     /**
