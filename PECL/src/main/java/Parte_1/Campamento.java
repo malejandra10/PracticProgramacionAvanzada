@@ -4,6 +4,8 @@ package Parte_1;
 import static java.lang.Thread.sleep;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Queue;
+import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.Semaphore;
@@ -30,8 +32,6 @@ public class Campamento {
     private Lock cerrojoSoga = new ReentrantLock();     //Cerrojo para numero de jugadores en soga
     private Condition cerradaIzq = cerrojoIzq.newCondition();   //Varuable condition asociada al cerrojo de la puerta izq
     private Condition cerradaDer = cerrojoDer.newCondition();   //Varuable condition asociada al cerrojo de la puerta derecha
-    /*private Condition bandSucias = cerrojoSucias.newCondition();
-    private Condition bandLimpias = cerrojoLimpias.newCondition();*/
     private Condition jugadores = cerrojoSoga.newCondition();
     private int maxJugadores = 10;  //Numero de jugadores necesarios para jugar a actividad soga
     private CyclicBarrier barreraIni = new CyclicBarrier(maxJugadores); //Para esperar a que haya 10 jugadores en actividad soga
@@ -39,6 +39,9 @@ public class Campamento {
     private CountDownLatch contadorTirolina = new CountDownLatch (10);  //Para bloquear monitor mientras se realiza actividad tirolina
     private CountDownLatch contadorMerienda = new CountDownLatch (10);  //Para bloquear monitor mientras se realiza actividad merienda
     private Semaphore espera = new Semaphore (1, true);
+    private Queue<Child> eA = new ConcurrentLinkedQueue<Child>();
+    private Queue<Child> eB = new ConcurrentLinkedQueue<Child>();
+    private Queue<Child> todos = new ConcurrentLinkedQueue<Child>();
     /*Constructor de la clase*/
     public Campamento(int aforo,JTextField espEn1,JTextField espEn2,JTextField espTir,JTextField espMer, JTextField den, JTextField monEnTir,JTextField monEnMer,JTextField monEnZC, JTextField monEnSo,JTextField colaMer,JTextField colaTir, JTextField enSoga, JTextField enMer, JTextField limp, JTextField suc, JTextField zc, JTextField tirPrep,JTextField enTir, JTextField finTir, JTextField a,JTextField b)
     {
@@ -471,20 +474,46 @@ public class Campamento {
                 {
                     equipoA.meter(c.getCId());  //Introducimos niño en equipo A
                     equiA.add(c);
+                    eA.add(c);
                     numA++;         //Aumentamos número de jugadores en equipo
+                    //c.contActividades.addAndGet(2);
+                    todos.add(c);
                 }
                 else
                 {
                     equipoB.meter(c.getCId());  //Introducimos niño en equipo B
                     equiB.add(c);
+                    eB.add(c);
                     numB++;             //Aumentamos número de jugadores en equipo B
+                    //c.contActividades.incrementAndGet();
+                    todos.add(c);
                 }
                 numJugadores++;
                 barreraIni.await();
                 sleep(7000);    //Tardan 7 segundos en realizar actividad
-                numJugadores--;     //Disminuye numero de jugadores en actividad
+                numJugadores = 0;     //Disminuye numero de jugadores en actividad
+                numA = 0;
+                numB = 0;
                 contSoga++;
+                
+                Child ch = todos.poll();
+                Child c1 = eA.poll();
+                c1.contActividades.addAndGet(2);
+                equipoA.sacar(c1.getCId());
+                System.out.println(eB.peek().getCId());
+                Child c2 = eB.poll();
+                c2.contActividades.incrementAndGet();
+                equipoB.sacar(c2.getCId());
+                zonaComun(ch, n);
+                
+               /* numA = 0;
+                numB = 0;
+                equiA.clear();
+                equiB.clear();
+                equipoA.sacarTodos();
+                equipoB.sacarTodos();*/
                 //Vacia los equipos y da puntos correspondientes
+                /*
                 if(paridadId(numId(c)) || numB == 0)
                 {
                     System.out.println(numA);
@@ -504,7 +533,7 @@ public class Campamento {
                     numB--;             //Disminuimos número de jugadores en equipo B
                     c.contActividades.incrementAndGet();
                     zonaComun(c,n); //Tras terminar actividad niños van a zona comun
-                }
+                }*/
                 contadorSoga.countDown();   //Decrementa cada vez que acaba actividad
                 } catch (Exception e) { }
         }

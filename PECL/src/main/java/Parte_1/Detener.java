@@ -42,7 +42,7 @@ public class Detener {
         {
             cerrojo.lock();     //Cierra cerrojo
             cerrado=false;
-            parar.signalAll();  //Lobera hilos que estuviesen esperando
+            parar.signalAll();  //Libera hilos que estuviesen esperando
         }
         finally
         {

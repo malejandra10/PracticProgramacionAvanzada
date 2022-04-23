@@ -35,6 +35,12 @@ public class ListaThreads {
         imprimir();
     }
     
+    public synchronized void sacarTodos ( )
+    {
+        lista.clear();
+        imprimir();
+    }
+    
     public void imprimir()
     {
         String contenido="";

@@ -5,15 +5,19 @@
  */
 package Parte_1;
 
+import java.util.concurrent.CyclicBarrier;
+import java.util.concurrent.atomic.AtomicInteger;
+
 /**
  *
  * @author blanf
  */
-public class Interfaz extends javax.swing.JFrame {
+public class Interfaz extends javax.swing.JFrame 
+{
     /*Inicializo variables*/
     Campamento camp;
-    Monitor mon;
     Detener deten;
+    Monitor mon;
     Child c;
     /**
      * Creates new form Interfaz
@@ -52,7 +56,7 @@ public class Interfaz extends javax.swing.JFrame {
                     c.start();
                 }
             }   
-        }).start();   
+        }).start();    
     }
 
     /**
@@ -65,332 +69,367 @@ public class Interfaz extends javax.swing.JFrame {
     private void initComponents() {
 
         jScrollBar2 = new javax.swing.JScrollBar();
-        Titulo = new javax.swing.JLabel();
-        TituloEntradaIzq = new javax.swing.JLabel();
-        TituloEntradaDer = new javax.swing.JLabel();
-        ColaEsperaIzq = new javax.swing.JTextField();
-        ColaEsperaDer = new javax.swing.JTextField();
-        TituloCamp = new javax.swing.JLabel();
-        TituloSoga = new javax.swing.JLabel();
-        TituloTirolina = new javax.swing.JLabel();
-        HilosEntran = new javax.swing.JTextField();
-        ColaEsperaTirolina = new javax.swing.JTextField();
-        TituloMonitorSoga = new javax.swing.JLabel();
-        TituloequipoA = new javax.swing.JLabel();
-        TituloEquipoB = new javax.swing.JLabel();
-        EquipoA = new javax.swing.JScrollPane();
-        EquipoB = new javax.swing.JScrollPane();
-        MonitorTir = new javax.swing.JTextField();
-        TituloMonitosTir = new javax.swing.JLabel();
-        TituloPreparacion = new javax.swing.JLabel();
-        ChildPreparacion = new javax.swing.JTextField();
-        TituloEnTir = new javax.swing.JLabel();
-        ChildEnTirolina = new javax.swing.JTextField();
-        TituloFinalizado = new javax.swing.JLabel();
-        ChildEnFinal = new javax.swing.JTextField();
-        MonitorSoga = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        TituloMonitorZC = new javax.swing.JLabel();
-        TituloChildZC = new javax.swing.JLabel();
-        MonitoresZC = new javax.swing.JTextField();
-        ChildZC = new javax.swing.JTextField();
-        TituloMerendero = new javax.swing.JLabel();
-        ColaEntradaMonitores = new javax.swing.JTextField();
-        TituloBandejSucias = new javax.swing.JLabel();
-        TituloBandejLimp = new javax.swing.JLabel();
-        TituloMonitorMeren = new javax.swing.JLabel();
-        BandejasSucias = new javax.swing.JTextField();
-        BandejasLimpias = new javax.swing.JTextField();
-        ChildMerendando = new javax.swing.JTextField();
-        MonitoresMerendero = new javax.swing.JTextField();
-        BotonPausar = new javax.swing.JButton();
-        BotonReanudar = new javax.swing.JButton();
+        titulo = new javax.swing.JLabel();
+        tituloEntradaIzq = new javax.swing.JLabel();
+        tituloEntradaDer = new javax.swing.JLabel();
+        colaEsperaIzq = new javax.swing.JTextField();
+        colaEsperaDer = new javax.swing.JTextField();
+        tituloCamp = new javax.swing.JLabel();
+        tituloSoga = new javax.swing.JLabel();
+        tituloTirolina = new javax.swing.JLabel();
+        hilosEntran = new javax.swing.JTextField();
+        colaEsperaTirolina = new javax.swing.JTextField();
+        tituloMonitorSoga = new javax.swing.JLabel();
+        tituloequipoA = new javax.swing.JLabel();
+        tituloEquipoB = new javax.swing.JLabel();
+        monitorTir = new javax.swing.JTextField();
+        tituloMonitorTir = new javax.swing.JLabel();
+        tituloPreparacion = new javax.swing.JLabel();
+        childPreparacion = new javax.swing.JTextField();
+        tituloEnTir = new javax.swing.JLabel();
+        childEnTirolina = new javax.swing.JTextField();
+        tituloFinalizado = new javax.swing.JLabel();
+        childEnFinal = new javax.swing.JTextField();
+        monitorSoga = new javax.swing.JTextField();
+        tituloZC = new javax.swing.JLabel();
+        tituloMonitorZC = new javax.swing.JLabel();
+        tituloChildZC = new javax.swing.JLabel();
+        monitoresZC = new javax.swing.JTextField();
+        childZC = new javax.swing.JTextField();
+        tituloMerendero = new javax.swing.JLabel();
+        colaEntradaMerendero = new javax.swing.JTextField();
+        tituloBandejSucias = new javax.swing.JLabel();
+        tituloBandejLimp = new javax.swing.JLabel();
+        tituloMonitorMeren = new javax.swing.JLabel();
+        bandejasSucias = new javax.swing.JTextField();
+        bandejasLimpias = new javax.swing.JTextField();
+        childMerendando = new javax.swing.JTextField();
+        monitoresMerendero = new javax.swing.JTextField();
+        botonPausar = new javax.swing.JButton();
+        botonReanudar = new javax.swing.JButton();
+        tituloDentro = new javax.swing.JLabel();
+        dentro = new javax.swing.JTextField();
+        equipoA = new javax.swing.JTextField();
+        equipoB = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
-        Titulo.setText("Entrada al campamento");
+        titulo.setText("Entrada al campamento");
 
-        TituloEntradaIzq.setText("Puerta Izquierda");
+        tituloEntradaIzq.setText("Puerta Izquierda");
 
-        TituloEntradaDer.setText("Puerta derecha");
+        tituloEntradaDer.setText("Puerta derecha");
 
-        ColaEsperaIzq.addActionListener(new java.awt.event.ActionListener() {
+        colaEsperaIzq.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ColaEsperaIzqActionPerformed(evt);
+                colaEsperaIzqActionPerformed(evt);
             }
         });
 
-        ColaEsperaDer.addActionListener(new java.awt.event.ActionListener() {
+        colaEsperaDer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ColaEsperaDerActionPerformed(evt);
+                colaEsperaDerActionPerformed(evt);
             }
         });
 
-        TituloCamp.setText("Campamento");
+        tituloCamp.setText("Campamento");
 
-        TituloSoga.setText("Soga");
+        tituloSoga.setText("Soga");
 
-        TituloTirolina.setText("Tirolina");
+        tituloTirolina.setText("Tirolina");
 
-        ColaEsperaTirolina.addActionListener(new java.awt.event.ActionListener() {
+        colaEsperaTirolina.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ColaEsperaTirolinaActionPerformed(evt);
+                colaEsperaTirolinaActionPerformed(evt);
             }
         });
 
-        TituloMonitorSoga.setText("Monitor");
+        tituloMonitorSoga.setText("Monitor");
 
-        TituloequipoA.setText("Equipo A");
+        tituloequipoA.setText("Equipo A");
 
-        TituloEquipoB.setText("Equipo B");
+        tituloEquipoB.setText("Equipo B");
 
-        MonitorTir.addActionListener(new java.awt.event.ActionListener() {
+        monitorTir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MonitorTirActionPerformed(evt);
+                monitorTirActionPerformed(evt);
             }
         });
 
-        TituloMonitosTir.setText("Monitor");
+        tituloMonitorTir.setText("Monitor");
 
-        TituloPreparacion.setText("Preparacion");
+        tituloPreparacion.setText("Preparacion");
 
-        TituloEnTir.setText("Tirolina");
+        tituloEnTir.setText("Tirolina");
 
-        TituloFinalizado.setText("Finalizacion");
+        tituloFinalizado.setText("Finalizacion");
 
-        jLabel1.setText("Zona Comun");
+        tituloZC.setText("Zona Comun");
 
-        TituloMonitorZC.setText("Monitores");
+        tituloMonitorZC.setText("Monitores");
 
-        TituloChildZC.setText("Child");
+        tituloChildZC.setText("Child");
 
-        TituloMerendero.setText("Merendero");
+        tituloMerendero.setText("Merendero");
 
-        TituloBandejSucias.setText("Bandejas Sucias");
+        tituloBandejSucias.setText("Bandejas Sucias");
 
-        TituloBandejLimp.setText("Bandejas Limpias");
+        tituloBandejLimp.setText("Bandejas Limpias");
 
-        TituloMonitorMeren.setText("Monitores");
+        tituloMonitorMeren.setText("Monitores");
 
-        BotonPausar.setText("Pausar");
-        BotonPausar.addActionListener(new java.awt.event.ActionListener() {
+        botonPausar.setText("Pausar");
+        botonPausar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonPausarActionPerformed(evt);
+                botonPausarActionPerformed(evt);
             }
         });
 
-        BotonReanudar.setText("Reanudar");
+        botonReanudar.setText("Reanudar");
+        botonReanudar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonReanudarActionPerformed(evt);
+            }
+        });
+
+        tituloDentro.setText("Dentro de campamento");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(133, 133, 133)
-                .addComponent(TituloEntradaIzq, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(TituloEntradaDer, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(133, 133, 133))
-            .addGroup(layout.createSequentialGroup()
                 .addGap(156, 156, 156)
-                .addComponent(TituloSoga, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tituloSoga, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(TituloTirolina, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tituloTirolina, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(201, 201, 201))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TituloCamp, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(425, 425, 425))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(391, 391, 391)
-                        .addComponent(Titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(133, 133, 133)
+                        .addComponent(tituloEntradaIzq, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(165, 165, 165)
+                        .addComponent(titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(120, 120, 120)
+                        .addComponent(tituloEntradaDer, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(434, 434, 434)
-                        .addComponent(TituloMerendero, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(tituloMerendero, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(146, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(36, 36, 36)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(ColaEntradaMonitores)
+                        .addComponent(colaEntradaMerendero)
                         .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(HilosEntran)
-                            .addComponent(ColaEsperaIzq))
+                        .addComponent(hilosEntran, javax.swing.GroupLayout.PREFERRED_SIZE, 420, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(MonitorTir, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(TituloMonitosTir, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(monitorTir, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(tituloMonitorTir, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(36, 36, 36)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(ChildPreparacion, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(TituloPreparacion, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(childPreparacion, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(tituloPreparacion, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(47, 47, 47)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(TituloEnTir)
-                                    .addComponent(ChildEnTirolina, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(tituloEnTir)
+                                    .addComponent(childEnTirolina, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(35, 35, 35)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(TituloFinalizado, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(ChildEnFinal, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(ColaEsperaTirolina, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(ColaEsperaDer, javax.swing.GroupLayout.Alignment.TRAILING))
+                                    .addComponent(tituloFinalizado, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(childEnFinal, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(colaEsperaTirolina, javax.swing.GroupLayout.Alignment.TRAILING))
                         .addGap(42, 42, 42))
                     .addGroup(layout.createSequentialGroup()
+                        .addComponent(colaEsperaIzq, javax.swing.GroupLayout.PREFERRED_SIZE, 414, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(colaEsperaDer, javax.swing.GroupLayout.PREFERRED_SIZE, 381, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(42, 42, 42))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(monitoresMerendero, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(tituloBandejSucias, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(bandejasSucias, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(tituloMonitorMeren, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(51, 51, 51)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(tituloBandejLimp, javax.swing.GroupLayout.DEFAULT_SIZE, 99, Short.MAX_VALUE)
+                                            .addComponent(bandejasLimpias))))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(109, 109, 109)
+                                        .addComponent(childMerendando, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(botonPausar, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(35, 35, 35)
+                                        .addComponent(botonReanudar, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(tituloDentro, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(209, 209, 209)
+                                .addComponent(tituloCamp, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(TituloMonitorZC, javax.swing.GroupLayout.DEFAULT_SIZE, 85, Short.MAX_VALUE)
-                            .addComponent(MonitoresZC))
+                            .addComponent(tituloMonitorZC, javax.swing.GroupLayout.DEFAULT_SIZE, 85, Short.MAX_VALUE)
+                            .addComponent(monitoresZC))
+                        .addContainerGap())
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(dentro)
                         .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(TituloMonitorSoga, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(MonitorSoga, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(tituloMonitorSoga, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(monitorSoga, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(31, 31, 31)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(TituloequipoA, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(EquipoA, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(61, 61, 61)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(EquipoB, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(TituloEquipoB, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(TituloChildZC, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(ChildZC)
-                                .addContainerGap())))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(MonitoresMerendero, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(tituloequipoA, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(104, 104, 104)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(TituloBandejSucias, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(BandejasSucias, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(TituloMonitorMeren, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(51, 51, 51)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(childZC)
+                                        .addContainerGap())
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(tituloChildZC, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(0, 0, Short.MAX_VALUE))))
+                            .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(TituloBandejLimp, javax.swing.GroupLayout.DEFAULT_SIZE, 99, Short.MAX_VALUE)
-                                    .addComponent(BandejasLimpias))))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(109, 109, 109)
-                                .addComponent(ChildMerendando, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(BotonPausar, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(35, 35, 35)
-                                .addComponent(BotonReanudar, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 20, Short.MAX_VALUE))))
+                                    .addComponent(tituloEquipoB, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(equipoA, javax.swing.GroupLayout.DEFAULT_SIZE, 333, Short.MAX_VALUE)
+                                    .addComponent(equipoB))
+                                .addGap(0, 0, Short.MAX_VALUE))))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(tituloZC, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(426, 426, 426))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(Titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TituloEntradaIzq, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TituloEntradaDer))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ColaEsperaIzq, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ColaEsperaDer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(26, 26, 26)
-                .addComponent(TituloCamp)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(TituloTirolina, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(TituloSoga))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(HilosEntran, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ColaEsperaTirolina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(TituloPreparacion, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(TituloMonitorSoga)
-                        .addComponent(TituloequipoA)
-                        .addComponent(TituloEquipoB)
-                        .addComponent(TituloFinalizado)
-                        .addComponent(TituloEnTir)
-                        .addComponent(TituloMonitosTir)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(tituloEntradaIzq, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(51, 51, 51)
+                        .addComponent(tituloDentro)
+                        .addGap(39, 39, 39))
+                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(EquipoA, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(EquipoB, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(MonitorTir, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(ChildPreparacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(ChildEnTirolina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(ChildEnFinal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(16, 16, 16)
-                        .addComponent(MonitorSoga, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(tituloEntradaDer)
+                                .addGap(7, 7, 7)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(colaEsperaIzq, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(colaEsperaDer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(tituloCamp)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(dentro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(tituloTirolina, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(tituloSoga))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(hilosEntran, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(colaEsperaTirolina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(tituloPreparacion, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(tituloMonitorSoga)
+                        .addComponent(tituloequipoA)
+                        .addComponent(tituloFinalizado)
+                        .addComponent(tituloEnTir)
+                        .addComponent(tituloMonitorTir)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(monitorTir, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(childPreparacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(childEnTirolina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(childEnFinal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(monitorSoga, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(equipoA, javax.swing.GroupLayout.Alignment.LEADING))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(tituloEquipoB)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(equipoB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel1)
+                .addComponent(tituloZC)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tituloMonitorZC)
+                    .addComponent(tituloChildZC))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TituloMonitorZC)
-                    .addComponent(TituloChildZC))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(MonitoresZC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ChildZC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(monitoresZC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(childZC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(29, 29, 29)
-                .addComponent(TituloMerendero)
+                .addComponent(tituloMerendero)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ColaEntradaMonitores, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(colaEntradaMerendero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TituloBandejSucias)
-                    .addComponent(TituloBandejLimp))
+                    .addComponent(tituloBandejSucias)
+                    .addComponent(tituloBandejLimp))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(BandejasSucias, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(BandejasLimpias, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(bandejasSucias, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(bandejasLimpias, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TituloMonitorMeren))
-                    .addComponent(ChildMerendando))
+                        .addComponent(tituloMonitorMeren))
+                    .addComponent(childMerendando))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(MonitoresMerendero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BotonPausar)
-                    .addComponent(BotonReanudar))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(monitoresMerendero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botonPausar)
+                    .addComponent(botonReanudar))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void ColaEsperaIzqActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ColaEsperaIzqActionPerformed
+    private void colaEsperaIzqActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_colaEsperaIzqActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ColaEsperaIzqActionPerformed
+    }//GEN-LAST:event_colaEsperaIzqActionPerformed
 
-    private void ColaEsperaDerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ColaEsperaDerActionPerformed
+    private void colaEsperaDerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_colaEsperaDerActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ColaEsperaDerActionPerformed
+    }//GEN-LAST:event_colaEsperaDerActionPerformed
 
-    private void ColaEsperaTirolinaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ColaEsperaTirolinaActionPerformed
+    private void colaEsperaTirolinaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_colaEsperaTirolinaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ColaEsperaTirolinaActionPerformed
+    }//GEN-LAST:event_colaEsperaTirolinaActionPerformed
 
-    private void MonitorTirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MonitorTirActionPerformed
+    private void monitorTirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_monitorTirActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_MonitorTirActionPerformed
+    }//GEN-LAST:event_monitorTirActionPerformed
 
-    private void BotonPausarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPausarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_BotonPausarActionPerformed
+    private void botonPausarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonPausarActionPerformed
+        deten.cerrar();  
+    }//GEN-LAST:event_botonPausarActionPerformed
+
+    private void botonReanudarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonReanudarActionPerformed
+        deten.abrir();
+    }//GEN-LAST:event_botonReanudarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -425,49 +464,61 @@ public class Interfaz extends javax.swing.JFrame {
                 new Interfaz().setVisible(true);
             }
         });
+        
+        //Crea hilo anónimo en el que crearé todos los hilos que componen el sistema
+        new Thread (new Runnable()
+        {
+            
+            public void run()
+            {
+                   
+            }
+        }).start();
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField BandejasLimpias;
-    private javax.swing.JTextField BandejasSucias;
-    private javax.swing.JButton BotonPausar;
-    private javax.swing.JButton BotonReanudar;
-    private javax.swing.JTextField ChildEnFinal;
-    private javax.swing.JTextField ChildEnTirolina;
-    private javax.swing.JTextField ChildMerendando;
-    private javax.swing.JTextField ChildPreparacion;
-    private javax.swing.JTextField ChildZC;
-    private javax.swing.JTextField ColaEntradaMonitores;
-    private javax.swing.JTextField ColaEsperaDer;
-    private javax.swing.JTextField ColaEsperaIzq;
-    private javax.swing.JTextField ColaEsperaTirolina;
-    private javax.swing.JScrollPane EquipoA;
-    private javax.swing.JScrollPane EquipoB;
-    private javax.swing.JTextField HilosEntran;
-    private javax.swing.JTextField MonitorSoga;
-    private javax.swing.JTextField MonitorTir;
-    private javax.swing.JTextField MonitoresMerendero;
-    private javax.swing.JTextField MonitoresZC;
-    private javax.swing.JLabel Titulo;
-    private javax.swing.JLabel TituloBandejLimp;
-    private javax.swing.JLabel TituloBandejSucias;
-    private javax.swing.JLabel TituloCamp;
-    private javax.swing.JLabel TituloChildZC;
-    private javax.swing.JLabel TituloEnTir;
-    private javax.swing.JLabel TituloEntradaDer;
-    private javax.swing.JLabel TituloEntradaIzq;
-    private javax.swing.JLabel TituloEquipoB;
-    private javax.swing.JLabel TituloFinalizado;
-    private javax.swing.JLabel TituloMerendero;
-    private javax.swing.JLabel TituloMonitorMeren;
-    private javax.swing.JLabel TituloMonitorSoga;
-    private javax.swing.JLabel TituloMonitorZC;
-    private javax.swing.JLabel TituloMonitosTir;
-    private javax.swing.JLabel TituloPreparacion;
-    private javax.swing.JLabel TituloSoga;
-    private javax.swing.JLabel TituloTirolina;
-    private javax.swing.JLabel TituloequipoA;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JTextField bandejasLimpias;
+    private javax.swing.JTextField bandejasSucias;
+    private javax.swing.JButton botonPausar;
+    private javax.swing.JButton botonReanudar;
+    private javax.swing.JTextField childEnFinal;
+    private javax.swing.JTextField childEnTirolina;
+    private javax.swing.JTextField childMerendando;
+    private javax.swing.JTextField childPreparacion;
+    private javax.swing.JTextField childZC;
+    private javax.swing.JTextField colaEntradaMerendero;
+    private javax.swing.JTextField colaEsperaDer;
+    private javax.swing.JTextField colaEsperaIzq;
+    private javax.swing.JTextField colaEsperaTirolina;
+    private javax.swing.JTextField dentro;
+    private javax.swing.JTextField equipoA;
+    private javax.swing.JTextField equipoB;
+    private javax.swing.JTextField hilosEntran;
     private javax.swing.JScrollBar jScrollBar2;
+    private javax.swing.JTextField monitorSoga;
+    private javax.swing.JTextField monitorTir;
+    private javax.swing.JTextField monitoresMerendero;
+    private javax.swing.JTextField monitoresZC;
+    private javax.swing.JLabel titulo;
+    private javax.swing.JLabel tituloBandejLimp;
+    private javax.swing.JLabel tituloBandejSucias;
+    private javax.swing.JLabel tituloCamp;
+    private javax.swing.JLabel tituloChildZC;
+    private javax.swing.JLabel tituloDentro;
+    private javax.swing.JLabel tituloEnTir;
+    private javax.swing.JLabel tituloEntradaDer;
+    private javax.swing.JLabel tituloEntradaIzq;
+    private javax.swing.JLabel tituloEquipoB;
+    private javax.swing.JLabel tituloFinalizado;
+    private javax.swing.JLabel tituloMerendero;
+    private javax.swing.JLabel tituloMonitorMeren;
+    private javax.swing.JLabel tituloMonitorSoga;
+    private javax.swing.JLabel tituloMonitorTir;
+    private javax.swing.JLabel tituloMonitorZC;
+    private javax.swing.JLabel tituloPreparacion;
+    private javax.swing.JLabel tituloSoga;
+    private javax.swing.JLabel tituloTirolina;
+    private javax.swing.JLabel tituloZC;
+    private javax.swing.JLabel tituloequipoA;
     // End of variables declaration//GEN-END:variables
 }

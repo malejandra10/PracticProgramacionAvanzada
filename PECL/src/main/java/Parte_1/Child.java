@@ -2,6 +2,7 @@
  */
 package Parte_1;
 
+import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -12,12 +13,15 @@ public class Child extends Thread{
     private String id;
     private Campamento camp;
     AtomicInteger contActividades = new AtomicInteger(0);
+    private CyclicBarrier barreraIni;
+    private CyclicBarrier barreraFin;
 
 
     public Child(String id, Campamento c, AtomicInteger cont) {
         this.id = id;
-        camp = c;
-        contActividades = cont;
+        this.camp = c;
+        this.contActividades = cont;
+        
     }
 
     public String getCId() {
@@ -38,10 +42,10 @@ public class Child extends Thread{
     
     public void run()
     {
-        try
-        {
-            sleep((int)(3000*Math.random()));
-        } catch (InterruptedException e){ }
+        /*try {
+            barreraIni.await();
+            barreraFin.await();
+            } catch (Exception e) { }*/
         camp.entrar(this); //Entra en el campamento si hay hueco; y sino espera en la cola
     }
 }
