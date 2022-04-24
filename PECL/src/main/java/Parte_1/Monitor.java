@@ -3,9 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Parte_1;
-
-import java.util.concurrent.atomic.AtomicInteger;
+package Parte_1;;
 
 /**
  *
@@ -15,13 +13,15 @@ public class Monitor extends Thread{
     private String id;
     private Campamento camp;
     private int contActividades;
+    private Detener detener;
     
     /*Constructor*/
-    public Monitor(String i, Campamento c,int cont)
+    public Monitor(String i, Campamento c,int cont, Detener deten)
     {
         this.id = i;
         this.camp = c;
         this.contActividades = cont;
+        this.detener = deten;
     }
 
     //Método devuelve identificador del monitor
@@ -49,6 +49,7 @@ public class Monitor extends Thread{
     //Ejecuta hilo
     public void run()
     {
+        detener.entrar();
         camp.entrar(this); //Entra en el campamento si hay hueco; y sino espera en la cola
     }
     

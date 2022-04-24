@@ -15,8 +15,8 @@ public class Detener {
     private Lock cerrojo = new ReentrantLock(); //variable cerrojo 
     private Condition parar = cerrojo.newCondition();   //Varuable condition asociada al cerrojo
 
-    /*
-    public void mirar()
+    
+    public void entrar()
     {
         try
         {
@@ -34,7 +34,7 @@ public class Detener {
             cerrojo.unlock();
         }
     }
-*/
+
     //Método para reanudar ejecución del programa
     public void abrir()
     {

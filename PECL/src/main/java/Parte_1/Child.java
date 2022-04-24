@@ -13,13 +13,15 @@ public class Child extends Thread{
     private String id;
     private Campamento camp;
     private int contActividades;
+    private Detener detener;
     
 
 
-    public Child(String id, Campamento co,int c) {
+    public Child(String id, Campamento co,int c, Detener deten) {
         this.id = id;
         this.camp = co;
         this.contActividades = c;
+        this.detener = deten;
         
     }
 
@@ -47,6 +49,7 @@ public class Child extends Thread{
     
     public void run()
     {
+        detener.entrar();
         camp.entrar(this); //Entra en el campamento si hay hueco; y sino espera en la cola
     }
 }

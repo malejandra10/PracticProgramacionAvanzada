@@ -27,14 +27,15 @@ public class Interfaz extends javax.swing.JFrame
         initComponents();
         int contActChild = 0, contActMon = 0;
 
-        camp=new Campamento(50,colaEsperaIzq,colaEsperaDer,colaEsperaTirolina,colaEntradaMerendero,dentro,monitorTir,monitoresMerendero,monitoresZC,monitorSoga,colaEntradaMerendero,colaEsperaTirolina,hilosEntran,childMerendando,bandejasLimpias,bandejasSucias,childZC,childPreparacion,childEnTirolina,childEnFinal,equipoA,equipoB);
         deten = new Detener();
+        camp=new Campamento(50,colaEsperaIzq,colaEsperaDer,colaEsperaTirolina,colaEntradaMerendero,dentro,monitorTir,monitoresMerendero,monitoresZC,monitorSoga,colaEntradaMerendero,colaEsperaTirolina,hilosEntran,childMerendando,bandejasLimpias,bandejasSucias,childZC,childPreparacion,childEnTirolina,childEnFinal,equipoA,equipoB,deten);
+        
         
         //Bucle para crear los monitores
         for(int i = 1; i<=4; i++)
         {
             String n1 = String.valueOf(i);      //Convierte entero en string
-            mon = new Monitor('M' + n1, camp, contActMon);
+            mon = new Monitor('M' + n1, camp, contActMon,deten);
             mon.start();
         }
         //Crea hilo anónimo en el que crearé todos los hilos que componen el sistema
@@ -46,7 +47,7 @@ public class Interfaz extends javax.swing.JFrame
                 for(int i = 1; i <= 200; i++)
                 {
                     String n2 = String.valueOf(i);
-                    c = new Child('N' + n2, camp, contActChild);
+                    c = new Child('N' + n2, camp, contActChild,deten);
                     c.start();
                     try
                     {

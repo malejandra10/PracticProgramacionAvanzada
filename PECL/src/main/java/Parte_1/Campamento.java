@@ -50,13 +50,14 @@ public class Campamento {
     
     private CountDownLatch señal = new CountDownLatch (1);  //Para niño se tire cuando monitor de señal en actividad tirolina
     private CountDownLatch empezarTir = new CountDownLatch (1); //Niño espere hasta que monitor este en actividad (la primera vez que llega) 
-    
+    private Detener detener;
     
     
     /*Constructor de la clase*/
-    public Campamento(int aforo,JTextField espEn1,JTextField espEn2,JTextField espTir,JTextField espMer, JTextField den, JTextField monEnTir,JTextField monEnMer,JTextField monEnZC, JTextField monEnSo,JTextField colaMer,JTextField colaTir, JTextField enSoga, JTextField enMer, JTextField limp, JTextField suc, JTextField zc, JTextField tirPrep,JTextField enTir, JTextField finTir, JTextField a,JTextField b)
+    public Campamento(int aforo,JTextField espEn1,JTextField espEn2,JTextField espTir,JTextField espMer, JTextField den, JTextField monEnTir,JTextField monEnMer,JTextField monEnZC, JTextField monEnSo,JTextField colaMer,JTextField colaTir, JTextField enSoga, JTextField enMer, JTextField limp, JTextField suc, JTextField zc, JTextField tirPrep,JTextField enTir, JTextField finTir, JTextField a,JTextField b,Detener deten)
     {
         this.aforo = aforo;
+        this.detener = deten;
         semaforoAforo = new Semaphore (aforo,true); //aforo es el número de èrmisos y true para indicar salida FIFO de la cola
         semaforoCapTir = new Semaphore (capTir, true);
         semaforoCapMer = new Semaphore (capMer, true);
@@ -168,6 +169,7 @@ public class Campamento {
     //Método para que cada monitor accede a actividad correspondiente segun su id
     public void accederActividad(Monitor m, int num)
     {
+      detener.entrar();
       switch(num)
       {
         case 1:   //Monitor a actividad soga
@@ -200,11 +202,13 @@ public class Campamento {
     //Método para simular el funcionamiento de la merienda por parte de los monitores
     public void merienda (Monitor m, int n) throws InterruptedException
     {
+        
         contMer = 0;    //Contador guarda numero de platos limpios servidos reseteandose csda vez que monitores vuelven del descanso
         esperaMer.release(5);  //libera a los niños que estuviesen bloqueados esperando a que el monitor volviese
         
         while(true)
         {
+            detener.entrar();
             if(contMer == 10 || contMer == 11)   //Si sirven 10 comidas monitores se van a descanso
             {
                 esperaMer.drainPermits();   //Bloquea a los niños que esten en la actividad
@@ -233,10 +237,11 @@ public class Campamento {
     //Método simula actividad soga para los monitores
     public void soga(Monitor m, int n)
     {
+        
         esperaSoga.release(100);    //libera permisos para que puedan entrar niños cuando monitor vuelve del descanso
         while(true)
         {
-        //bucle con countDownLunch await con numero de veces que debe realizar actividad wait
+         detener.entrar();
             try
             {
                 contadorSoga.await();   //espera hasta que actividad se ha realizado 10 veces (es decir han pasado 100 niños)
@@ -251,9 +256,10 @@ public class Campamento {
     
     //Método simula actividad tirolina para los monitores
     public void tirolina(Monitor m, int n)
-    {
+    {;
         while(true)
         {
+            detener.entrar();
             try
             {
                 esperaTir.release(10); //Libera permisos para que niños puede entrar en actividad
@@ -274,6 +280,7 @@ public class Campamento {
     //Método simula funcionamiento de la zona comun para los monitores
     public void zonaComun(Monitor m, int n)
     {
+        detener.entrar();
         try 
         {
             if(n == 3 || n == 4)
@@ -369,6 +376,7 @@ public class Campamento {
     //Método niños accedan a actividad correspondiente
      public void accederActividad(Child c, int n)
     {
+      detener.entrar();
       n++; //Sumamos uno para conseguin numeros del 1 al
       if(c.getContActividades() == 15)    //Si niños realiza 15 actividades sale del campamento
       {
@@ -416,6 +424,7 @@ public class Campamento {
     //Método simula actividad merienda para los niños
     public void merienda(Child c, int n) throws InterruptedException
     {
+        detener.entrar();
         esperaMer.acquire();    //Adquiere permiso si monitor en actividad
         servir.acquire();   //Si no hay platos limpios se bloquea
         sleep(7000);        //Tarda 7 segundos en merendar
@@ -435,6 +444,7 @@ public class Campamento {
     //Método simula funcionamiento de la zona común para los niños
     public void zonaComun(Child c, int n)
     {
+        detener.entrar();
         try 
         {
             if(n == 1) s.release(); //libera hilo estaba esperando a que niño saliese de actividad soga para salir el siguiente
@@ -448,6 +458,7 @@ public class Campamento {
     //Método simula funcionamiento de la actividad tirolina para los niños
     public void tirolina(Child c, int n)
     {
+        detener.entrar();
         try
         {
             esperaTir.acquire();
@@ -471,6 +482,7 @@ public class Campamento {
     //Método simula funcionamiento de la actividad soga para los niños
     public void soga(Child c, int n) 
     {
+        detener.entrar();
         try
         {
             esperaSoga.acquire();   //Si monitor no esta se queda bloqueado
