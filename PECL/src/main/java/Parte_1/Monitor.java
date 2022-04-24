@@ -14,10 +14,10 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class Monitor extends Thread{
     private String id;
     private Campamento camp;
-    AtomicInteger contActividades = new AtomicInteger(0);
+    private int contActividades;
     
     /*Constructor*/
-    public Monitor(String i, Campamento c, AtomicInteger cont)
+    public Monitor(String i, Campamento c,int cont)
     {
         this.id = i;
         this.camp = c;
@@ -34,21 +34,21 @@ public class Monitor extends Thread{
         this.id = id;
     }
     
-    public  AtomicInteger getContActividades() {
+    public  int getContActividades() {
         return contActividades;
     }
 
-    public void setContActividades( AtomicInteger contActividades) {
+    public void setContActividades(int contActividades) {
         this.contActividades = contActividades;
     }
-    
+     public int sumar(int n)
+    {
+        this.contActividades = contActividades + n;
+        return contActividades;
+    }
     //Ejecuta hilo
     public void run()
     {
-        try
-        {
-            sleep((int)(3000*Math.random()));
-        } catch (InterruptedException e){ }
         camp.entrar(this); //Entra en el campamento si hay hueco; y sino espera en la cola
     }
     

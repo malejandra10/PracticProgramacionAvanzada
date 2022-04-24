@@ -12,15 +12,14 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class Child extends Thread{
     private String id;
     private Campamento camp;
-    AtomicInteger contActividades = new AtomicInteger(0);
-    private CyclicBarrier barreraIni;
-    private CyclicBarrier barreraFin;
+    private int contActividades;
+    
 
 
-    public Child(String id, Campamento c, AtomicInteger cont) {
+    public Child(String id, Campamento co,int c) {
         this.id = id;
-        this.camp = c;
-        this.contActividades = cont;
+        this.camp = co;
+        this.contActividades = c;
         
     }
 
@@ -32,20 +31,22 @@ public class Child extends Thread{
         this.id = id;
     }
 
-    public  AtomicInteger getContActividades() {
+    public  int getContActividades() {
         return contActividades;
     }
 
-    public void setContActividades( AtomicInteger contActividades) {
+    public void setContActividades( int contActividades) {
         this.contActividades = contActividades;
+    }
+    
+    public int sumar(int n)
+    {
+        this.contActividades = contActividades + n;
+        return contActividades;
     }
     
     public void run()
     {
-        /*try {
-            barreraIni.await();
-            barreraFin.await();
-            } catch (Exception e) { }*/
         camp.entrar(this); //Entra en el campamento si hay hueco; y sino espera en la cola
     }
 }

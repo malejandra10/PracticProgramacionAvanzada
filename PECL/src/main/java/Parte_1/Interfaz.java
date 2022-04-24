@@ -5,6 +5,7 @@
  */
 package Parte_1;
 
+import static java.lang.Thread.sleep;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -24,8 +25,7 @@ public class Interfaz extends javax.swing.JFrame
      */
     public Interfaz() {
         initComponents();
-        AtomicInteger contActChild = new AtomicInteger(0);
-        AtomicInteger contActMon = new AtomicInteger(0);
+        int contActChild = 0, contActMon = 0;
 
         camp=new Campamento(50,colaEsperaIzq,colaEsperaDer,colaEsperaTirolina,colaEntradaMerendero,dentro,monitorTir,monitoresMerendero,monitoresZC,monitorSoga,colaEntradaMerendero,colaEsperaTirolina,hilosEntran,childMerendando,bandejasLimpias,bandejasSucias,childZC,childPreparacion,childEnTirolina,childEnFinal,equipoA,equipoB);
         deten = new Detener();
@@ -37,12 +37,6 @@ public class Interfaz extends javax.swing.JFrame
             mon = new Monitor('M' + n1, camp, contActMon);
             mon.start();
         }
-        for(int i = 1; i <= 200; i++)
-                {
-                    String n2 = String.valueOf(i);
-                    c = new Child('N' + n2, camp, contActChild);
-                    c.start();
-                }
         //Crea hilo anónimo en el que crearé todos los hilos que componen el sistema
         new Thread (new Runnable()
         {
@@ -54,6 +48,10 @@ public class Interfaz extends javax.swing.JFrame
                     String n2 = String.valueOf(i);
                     c = new Child('N' + n2, camp, contActChild);
                     c.start();
+                    try
+                    {
+                    sleep(1000 + (int)(2000*Math.random()));    //Niños se crean cada 1 - 3 segundos
+                    } catch (InterruptedException e){ }
                 }
             }   
         }).start();    
