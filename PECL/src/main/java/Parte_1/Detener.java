@@ -11,21 +11,21 @@ import java.util.concurrent.locks.ReentrantLock;
  * @author blanf
  */
 public class Detener {
-    private boolean cerrado=false;      //Determina si se cierra campamento
+    private boolean detenido=false;      //Determina si se cierra campamento
     private Lock cerrojo = new ReentrantLock(); //variable cerrojo 
     private Condition parar = cerrojo.newCondition();   //Varuable condition asociada al cerrojo
 
-    
-    public void entrar()
+    /*Clase para hacer esperar los hilos cuando se detenga ejecución correctamente*/
+    public void comprobar()
     {
         try
         {
             cerrojo.lock();
-            while(cerrado)
+            while(detenido)  //Mientras la ejecución este detenida
             {
                 try
                 {
-                    parar.await();
+                    parar.await();  //Hilo espera hasta que se reanude ejecución
                 } catch(InterruptedException ie){ }
             }
         }
@@ -36,12 +36,12 @@ public class Detener {
     }
 
     //Método para reanudar ejecución del programa
-    public void abrir()
+    public void reanudar()
     {
         try
         {
             cerrojo.lock();     //Cierra cerrojo
-            cerrado=false;
+            detenido = false;      //Actualiza estado de ejecucióna no detenido
             parar.signalAll();  //Libera hilos que estuviesen esperando
         }
         finally
@@ -50,13 +50,13 @@ public class Detener {
         }
     }
     
-    //Método para deterner la ejecución del programa
-    public void cerrar()
+    //Método para detener la ejecución del programa
+    public void detener()
     {
         try
         {
             cerrojo.lock();     //Bloquea cerrojo
-            cerrado=true;       //Cierra campamento
+            detenido = true;       //Indica que se ha detenido la ejeución
         }
         finally
         {

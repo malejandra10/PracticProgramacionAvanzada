@@ -1,7 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/*Clase contiene y actualiza listas que se mostrarán en la interfaz
  */
 package Parte_1;
 
@@ -13,41 +10,46 @@ import javax.swing.JTextField;
  * @author blanf
  */
 public class ListaThreads {
+    //Inicializo variables
+    ArrayList<String> lista;    //Array que contiene elementos a mostrar
+    JTextField tf;  //Espacio dónde se mostrará la información de la lista
     
-    ArrayList<String> lista;
-    JTextField tf;
-    
+    //Constructir
     public ListaThreads(JTextField tf)
     {
         lista=new ArrayList<String>();
         this.tf=tf;
     }
     
+    //Método para introducir elemento en a lista
     public synchronized void meter(String id)
     {
-        lista.add(id);
-        imprimir();
+        lista.add(id);  //Añade string a la lista
+        imprimir(); //Muestra nuevo valor por interfaz
     }
     
+    //Método para sacar string de la lista
     public synchronized void sacar(String id)
     {
-        lista.remove(id);
-        imprimir();
+        lista.remove(id);   //Elimina string indicado de la lista
+        imprimir(); //Imprime nueva lista por pantalla
     }
     
+    //Método saca todos los elementos de la lista
     public synchronized void sacarTodos ( )
     {
-        lista.clear();
-        imprimir();
+        lista.clear();  //Elimina todos los elementos que contenia
+        imprimir(); //Imprime lista vacia
     }
     
+    //Método imprime por panatalla el contenido de la lista
     public void imprimir()
     {
-        String contenido="";
-        for(int i=0; i<lista.size(); i++)
+        String contenido="";    //String contiene contenidod e la lista
+        for(int i = 0; i < lista.size(); i++)   //Bucle recorre toda la lsita
         {
-           contenido=contenido+lista.get(i)+" ";
+           contenido = contenido + lista.get(i) + " ";    //Se guarda contenido de la lista a mostrar
         }
-        tf.setText(contenido);
+        tf.setText(contenido);  //Se escribe contenido en hueco correspondiente en interfaz
     }
 }

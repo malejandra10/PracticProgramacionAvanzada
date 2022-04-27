@@ -5,6 +5,8 @@
  */
 package Parte_1;
 
+import java.io.File;
+import java.io.IOException;
 import static java.lang.Thread.sleep;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -16,7 +18,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class Interfaz extends javax.swing.JFrame 
 {
     /*Inicializo variables*/
-    Campamento camp;
+    Campamento camp;    
     Detener deten;
     Monitor mon;
     Child c;
@@ -25,29 +27,28 @@ public class Interfaz extends javax.swing.JFrame
      */
     public Interfaz() {
         initComponents();
-        int contActChild = 0, contActMon = 0;
+        int contActChild = 0, contActMon = 0;   //Se inicializan los contadores de actividades de los niños y monitores
 
-        deten = new Detener();
+        deten = new Detener();  //Inicializao detener
         camp=new Campamento(50,colaEsperaIzq,colaEsperaDer,colaEsperaTirolina,colaEntradaMerendero,dentro,monitorTir,monitoresMerendero,monitoresZC,monitorSoga,colaEntradaMerendero,colaEsperaTirolina,hilosEntran,childMerendando,bandejasLimpias,bandejasSucias,childZC,childPreparacion,childEnTirolina,childEnFinal,equipoA,equipoB,deten);
-        
         
         //Bucle para crear los monitores
         for(int i = 1; i<=4; i++)
         {
             String n1 = String.valueOf(i);      //Convierte entero en string
-            mon = new Monitor('M' + n1, camp, contActMon,deten);
-            mon.start();
+            mon = new Monitor('M' + n1, camp, contActMon,deten);    //Creo monitor
+            mon.start();    //Empieza ejecución de monitor
         }
-        //Crea hilo anónimo en el que crearé todos los hilos que componen el sistema
+        //Crea hilo anónimo en el que crearé todos los hilos child que componen el sistema
         new Thread (new Runnable()
         {
             public void run()
             {
                 //Bucle para crear los hilos niños
-                for(int i = 1; i <= 200; i++)
+                for(int i = 1; i <= 100; i++)
                 {
-                    String n2 = String.valueOf(i);
-                    c = new Child('N' + n2, camp, contActChild,deten);
+                    String n2 = String.valueOf(i);  //Convierte valor de i en un string 
+                    c = new Child('N' + n2, camp, contActChild,deten);  //Creo hilo niño
                     c.start();
                     try
                     {
@@ -423,11 +424,11 @@ public class Interfaz extends javax.swing.JFrame
     }//GEN-LAST:event_monitorTirActionPerformed
 
     private void botonPausarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonPausarActionPerformed
-        deten.cerrar();  
+        deten.detener();  //Pausa ejecuión del programa
     }//GEN-LAST:event_botonPausarActionPerformed
 
     private void botonReanudarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonReanudarActionPerformed
-        deten.abrir();
+        deten.reanudar();  //Reanuda ejecución del programa
     }//GEN-LAST:event_botonReanudarActionPerformed
 
     /**

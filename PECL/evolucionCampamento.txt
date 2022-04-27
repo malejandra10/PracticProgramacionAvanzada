@@ -1,0 +1,2208 @@
+27/04/2022 18:20:52 Niño N1 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:20:53 Monitor M1 abre puerta derecha
+27/04/2022 18:20:53 Monitor M1 accede a actividad soga
+27/04/2022 18:20:53 Monitor M3 entra por la puerta derecha
+27/04/2022 18:20:53 Monitor M3 accede a actividad merienda
+27/04/2022 18:20:53 Niño N1 entra al campamento por la puerta derecha 
+27/04/2022 18:20:53 Niño N1 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:20:53 Niño N1 accede a la actividad tirolina
+27/04/2022 18:20:54 Niño N2 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:20:54 Monitor M2 abre puerta izquierda
+27/04/2022 18:20:54 Monitor M2 accede a actividad tirolina
+27/04/2022 18:20:54 Monitor M4 entra por la puerta izquierda
+27/04/2022 18:20:54 Niño N1 se prepara para tirarse en la tirolina
+27/04/2022 18:20:54 Niño N2 entra al campamento por la puerta izquierda 
+27/04/2022 18:20:54 Niño N2 selecciona siguiente actividad
+27/04/2022 18:20:54 Niño N2 accede a la actividad soga
+27/04/2022 18:20:54 Monitor M4 accede a actividad merienda
+27/04/2022 18:20:54 Niño N2 se mete en el quipo A
+27/04/2022 18:20:55 Niño N1 se tira por la tirolina
+27/04/2022 18:20:55 Niño N3 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:20:55 Niño N3 entra al campamento por la puerta derecha 
+27/04/2022 18:20:55 Niño N3 accede a la actividad soga
+27/04/2022 18:20:55 Niño N3 se mete en el equipo B
+27/04/2022 18:20:57 Niño N4 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:20:57 Niño N4 entra al campamento por la puerta izquierda 
+27/04/2022 18:20:57 Niño N4 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:20:58 Niño N1 llega al final de la tirolina
+27/04/2022 18:20:58 Monitor M3 limpia bandeja
+27/04/2022 18:20:58 Monitor M4 limpia bandeja
+27/04/2022 18:20:58 Niño N1 se baja de la tirolina
+27/04/2022 18:20:58 Niño N1 se va a la zona comun
+27/04/2022 18:20:58 Niño N4 accede a la actividad tirolina
+27/04/2022 18:20:58 Niño N1 accede a la zona comun
+27/04/2022 18:20:58 Niño N4 se prepara para tirarse en la tirolina
+27/04/2022 18:20:59 Niño N4 se tira por la tirolina
+27/04/2022 18:21:00 Niño N5 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:21:00 Niño N5 entra al campamento por la puerta derecha 
+27/04/2022 18:21:00 Niño N5 selecciona siguiente actividad
+27/04/2022 18:21:00 Niño N5 accede a la actividad soga
+27/04/2022 18:21:00 Niño N5 se mete en el equipo B
+27/04/2022 18:21:01 Niño N1 selecciona siguiente actividad
+27/04/2022 18:21:01 Niño N1 accede a la actividad soga
+27/04/2022 18:21:01 Niño N1 se mete en el equipo B
+27/04/2022 18:21:02 Niño N6 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:21:02 Niño N6 entra al campamento por la puerta izquierda 
+27/04/2022 18:21:02 Niño N6 accede a la actividad soga
+27/04/2022 18:21:02 Niño N6 se mete en el quipo A
+27/04/2022 18:21:02 Monitor M4 limpia bandeja
+27/04/2022 18:21:02 Niño N4 llega al final de la tirolina
+27/04/2022 18:21:03 Niño N4 se baja de la tirolina
+27/04/2022 18:21:03 Niño N4 se va a la zona comun
+27/04/2022 18:21:03 Niño N4 accede a la zona comun
+27/04/2022 18:21:03 Monitor M3 limpia bandeja
+27/04/2022 18:21:04 Niño N7 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:21:04 Niño N7 entra al campamento por la puerta derecha 
+27/04/2022 18:21:04 Niño N7 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:04 Niño N7 accede a la actividad tirolina
+27/04/2022 18:21:04 Niño N7 se prepara para tirarse en la tirolina
+27/04/2022 18:21:05 Niño N7 se tira por la tirolina
+27/04/2022 18:21:06 Monitor M4 limpia bandeja
+27/04/2022 18:21:06 Monitor M3 limpia bandeja
+27/04/2022 18:21:06 Niño N4 selecciona siguiente actividad
+27/04/2022 18:21:06 Niño N4 accede a la actividad soga
+27/04/2022 18:21:06 Niño N4 se mete en el quipo A
+27/04/2022 18:21:07 Niño N8 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:21:07 Niño N8 entra al campamento por la puerta izquierda 
+27/04/2022 18:21:07 Niño N8 selecciona siguiente actividad
+27/04/2022 18:21:07 Niño N8 accede a la actividad soga
+27/04/2022 18:21:07 Niño N8 se mete en el quipo A
+27/04/2022 18:21:08 Niño N7 llega al final de la tirolina
+27/04/2022 18:21:09 Niño N7 se baja de la tirolina
+27/04/2022 18:21:09 Niño N7 se va a la zona comun
+27/04/2022 18:21:09 Niño N7 accede a la zona comun
+27/04/2022 18:21:09 Monitor M4 limpia bandeja
+27/04/2022 18:21:09 Niño N9 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:21:09 Niño N9 entra al campamento por la puerta derecha 
+27/04/2022 18:21:09 Niño N9 accede a la actividad soga
+27/04/2022 18:21:09 Niño N9 se mete en el equipo B
+27/04/2022 18:21:11 Monitor M3 limpia bandeja
+27/04/2022 18:21:11 Niño N10 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:21:11 Niño N10 entra al campamento por la puerta izquierda 
+27/04/2022 18:21:11 Niño N10 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:11 Niño N10 accede a la actividad tirolina
+27/04/2022 18:21:11 Niño N10 se prepara para tirarse en la tirolina
+27/04/2022 18:21:12 Niño N10 se tira por la tirolina
+27/04/2022 18:21:12 Niño N11 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:21:12 Niño N11 entra al campamento por la puerta derecha 
+27/04/2022 18:21:12 Niño N11 selecciona siguiente actividad
+27/04/2022 18:21:12 Niño N11 accede a la actividad soga
+27/04/2022 18:21:12 Niño N11 se mete en el equipo B
+27/04/2022 18:21:12 Niño N7 selecciona siguiente actividad
+27/04/2022 18:21:12 Niño N7 accede a la actividad soga
+27/04/2022 18:21:12 Niño N7 se mete en el quipo A
+27/04/2022 18:21:12 Niño N2 empieza competición de soga
+27/04/2022 18:21:12 Niño N7 empieza competición de soga
+27/04/2022 18:21:12 Niño N11 empieza competición de soga
+27/04/2022 18:21:12 Niño N9 empieza competición de soga
+27/04/2022 18:21:12 Niño N8 empieza competición de soga
+27/04/2022 18:21:12 Niño N5 empieza competición de soga
+27/04/2022 18:21:12 Niño N4 empieza competición de soga
+27/04/2022 18:21:12 Niño N1 empieza competición de soga
+27/04/2022 18:21:12 Niño N6 empieza competición de soga
+27/04/2022 18:21:12 Niño N3 empieza competición de soga
+27/04/2022 18:21:14 Monitor M4 limpia bandeja
+27/04/2022 18:21:14 Niño N12 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:21:14 Niño N12 entra al campamento por la puerta izquierda 
+27/04/2022 18:21:14 Niño N12 accede a la actividad soga
+27/04/2022 18:21:14 Niño N12 selecciona otra actividad ya que no hay hueco en actividad soga
+27/04/2022 18:21:14 Niño N12 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:15 Niño N10 llega al final de la tirolina
+27/04/2022 18:21:15 Niño N13 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:21:15 Niño N13 entra al campamento por la puerta derecha 
+27/04/2022 18:21:15 Niño N13 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:15 Niño N10 se baja de la tirolina
+27/04/2022 18:21:15 Niño N10 se va a la zona comun
+27/04/2022 18:21:15 Niño N10 accede a la zona comun
+27/04/2022 18:21:15 Niño N12 accede a la actividad tirolina
+27/04/2022 18:21:15 Niño N12 se prepara para tirarse en la tirolina
+27/04/2022 18:21:16 Monitor M3 limpia bandeja
+27/04/2022 18:21:16 Niño N12 se tira por la tirolina
+27/04/2022 18:21:16 Niño N14 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:21:16 Niño N14 entra al campamento por la puerta izquierda 
+27/04/2022 18:21:16 Niño N14 selecciona siguiente actividad
+27/04/2022 18:21:16 Niño N14 accede a la actividad soga
+27/04/2022 18:21:16 Niño N14 selecciona otra actividad ya que no hay hueco en actividad soga
+27/04/2022 18:21:16 Niño N14 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:17 Monitor M4 limpia bandeja
+27/04/2022 18:21:17 Monitor M4 se va al descanso
+27/04/2022 18:21:17 Monitor M3 se va al descanso
+27/04/2022 18:21:18 Monitor M3 vuelve a su actividad
+27/04/2022 18:21:18 Monitor M3 accede a actividad merienda
+27/04/2022 18:21:18 Monitor M4 vuelve a su actividad
+27/04/2022 18:21:18 Monitor M4 accede a actividad merienda
+27/04/2022 18:21:19 Niño N10 selecciona siguiente actividad
+27/04/2022 18:21:19 Niño N10 accede a la actividad soga
+27/04/2022 18:21:19 Niño N10 selecciona otra actividad ya que no hay hueco en actividad soga
+27/04/2022 18:21:19 Niño N10 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:19 Niño N12 llega al final de la tirolina
+27/04/2022 18:21:19 Niño N15 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:21:19 Niño N15 entra al campamento por la puerta derecha 
+27/04/2022 18:21:19 Niño N15 accede a la actividad soga
+27/04/2022 18:21:19 Niño N15 selecciona otra actividad ya que no hay hueco en actividad soga
+27/04/2022 18:21:19 Niño N15 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:19 Niño N7 termina competición soga
+27/04/2022 18:21:19 Niño N7 ha ganado competición soga
+27/04/2022 18:21:19 Niño N4 termina competición soga
+27/04/2022 18:21:19 Niño N11 termina competición soga
+27/04/2022 18:21:19 Niño N2 termina competición soga
+27/04/2022 18:21:19 Niño N9 termina competición soga
+27/04/2022 18:21:19 Niño N7 se va a la zona comun
+27/04/2022 18:21:19 Niño N7 accede a la zona comun
+27/04/2022 18:21:19 Niño N4 ha ganado competición soga
+27/04/2022 18:21:19 Niño N4 se va a la zona comun
+27/04/2022 18:21:19 Niño N1 termina competición soga
+27/04/2022 18:21:19 Niño N6 termina competición soga
+27/04/2022 18:21:19 Niño N8 termina competición soga
+27/04/2022 18:21:19 Niño N3 termina competición soga
+27/04/2022 18:21:19 Niño N5 termina competición soga
+27/04/2022 18:21:19 Niño N4 accede a la zona comun
+27/04/2022 18:21:19 Niño N11 ha perdido competición soga
+27/04/2022 18:21:19 Niño N11 se va a la zona comun
+27/04/2022 18:21:19 Niño N11 accede a la zona comun
+27/04/2022 18:21:19 Niño N2 ha ganado competición soga
+27/04/2022 18:21:19 Niño N2 se va a la zona comun
+27/04/2022 18:21:19 Niño N2 accede a la zona comun
+27/04/2022 18:21:19 Niño N9 ha perdido competición soga
+27/04/2022 18:21:19 Niño N9 se va a la zona comun
+27/04/2022 18:21:19 Niño N9 accede a la zona comun
+27/04/2022 18:21:19 Niño N1 ha perdido competición soga
+27/04/2022 18:21:19 Niño N1 se va a la zona comun
+27/04/2022 18:21:19 Niño N1 accede a la zona comun
+27/04/2022 18:21:19 Niño N6 ha ganado competición soga
+27/04/2022 18:21:19 Niño N6 se va a la zona comun
+27/04/2022 18:21:19 Niño N6 accede a la zona comun
+27/04/2022 18:21:19 Niño N8 ha ganado competición soga
+27/04/2022 18:21:19 Niño N8 se va a la zona comun
+27/04/2022 18:21:19 Niño N8 accede a la zona comun
+27/04/2022 18:21:19 Niño N3 ha perdido competición soga
+27/04/2022 18:21:19 Niño N3 se va a la zona comun
+27/04/2022 18:21:19 Niño N3 accede a la zona comun
+27/04/2022 18:21:19 Niño N5 ha perdido competición soga
+27/04/2022 18:21:19 Niño N5 se va a la zona comun
+27/04/2022 18:21:19 Niño N5 accede a la zona comun
+27/04/2022 18:21:20 Niño N12 se baja de la tirolina
+27/04/2022 18:21:20 Niño N12 se va a la zona comun
+27/04/2022 18:21:20 Niño N12 accede a la zona comun
+27/04/2022 18:21:20 Niño N13 accede a la actividad tirolina
+27/04/2022 18:21:20 Niño N13 se prepara para tirarse en la tirolina
+27/04/2022 18:21:21 Niño N13 se tira por la tirolina
+27/04/2022 18:21:22 Niño N11 selecciona siguiente actividad
+27/04/2022 18:21:22 Niño N11 selecciona siguiente actividad
+27/04/2022 18:21:22 Niño N11 accede a la actividad soga
+27/04/2022 18:21:22 Niño N11 se mete en el equipo B
+27/04/2022 18:21:22 Niño N8 selecciona siguiente actividad
+27/04/2022 18:21:22 Niño N8 selecciona siguiente actividad
+27/04/2022 18:21:22 Niño N8 accede a la actividad soga
+27/04/2022 18:21:22 Niño N8 se mete en el quipo A
+27/04/2022 18:21:22 Niño N4 selecciona siguiente actividad
+27/04/2022 18:21:22 Niño N4 accede a la cola de la la actividad merienda
+27/04/2022 18:21:22 Niño N4 accede a la actividad merienda
+27/04/2022 18:21:22 Niño N4 coge plato limpio
+27/04/2022 18:21:22 Niño N16 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:21:22 Niño N16 entra al campamento por la puerta izquierda 
+27/04/2022 18:21:22 Niño N16 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:22 Niño N9 selecciona siguiente actividad
+27/04/2022 18:21:22 Niño N9 selecciona siguiente actividad
+27/04/2022 18:21:22 Niño N9 accede a la actividad soga
+27/04/2022 18:21:22 Niño N9 se mete en el equipo B
+27/04/2022 18:21:22 Monitor M4 limpia bandeja
+27/04/2022 18:21:23 Niño N3 selecciona siguiente actividad
+27/04/2022 18:21:23 Niño N3 selecciona siguiente actividad
+27/04/2022 18:21:23 Niño N3 accede a la actividad soga
+27/04/2022 18:21:23 Niño N3 se mete en el equipo B
+27/04/2022 18:21:23 Niño N7 selecciona siguiente actividad
+27/04/2022 18:21:23 Niño N7 accede a la cola de la la actividad merienda
+27/04/2022 18:21:23 Niño N7 accede a la actividad merienda
+27/04/2022 18:21:23 Niño N7 coge plato limpio
+27/04/2022 18:21:23 Niño N12 selecciona siguiente actividad
+27/04/2022 18:21:23 Niño N12 accede a la actividad soga
+27/04/2022 18:21:23 Niño N12 se mete en el quipo A
+27/04/2022 18:21:23 Niño N6 selecciona siguiente actividad
+27/04/2022 18:21:23 Niño N6 selecciona siguiente actividad
+27/04/2022 18:21:23 Niño N6 accede a la actividad soga
+27/04/2022 18:21:23 Niño N6 se mete en el quipo A
+27/04/2022 18:21:23 Monitor M3 limpia bandeja
+27/04/2022 18:21:23 Niño N17 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:21:23 Niño N17 entra al campamento por la puerta derecha 
+27/04/2022 18:21:23 Niño N17 selecciona siguiente actividad
+27/04/2022 18:21:23 Niño N17 accede a la actividad soga
+27/04/2022 18:21:23 Niño N17 se mete en el equipo B
+27/04/2022 18:21:23 Niño N2 selecciona siguiente actividad
+27/04/2022 18:21:23 Niño N2 selecciona siguiente actividad
+27/04/2022 18:21:23 Niño N2 accede a la actividad soga
+27/04/2022 18:21:23 Niño N2 se mete en el quipo A
+27/04/2022 18:21:23 Niño N1 selecciona siguiente actividad
+27/04/2022 18:21:23 Niño N1 selecciona siguiente actividad
+27/04/2022 18:21:23 Niño N1 accede a la actividad soga
+27/04/2022 18:21:23 Niño N1 se mete en el equipo B
+27/04/2022 18:21:23 Niño N5 selecciona siguiente actividad
+27/04/2022 18:21:23 Niño N5 selecciona siguiente actividad
+27/04/2022 18:21:23 Niño N5 accede a la actividad soga
+27/04/2022 18:21:23 Niño N5 se mete en el quipo A
+27/04/2022 18:21:23 Niño N5 empieza competición de soga
+27/04/2022 18:21:23 Niño N3 empieza competición de soga
+27/04/2022 18:21:23 Niño N9 empieza competición de soga
+27/04/2022 18:21:23 Niño N8 empieza competición de soga
+27/04/2022 18:21:23 Niño N11 empieza competición de soga
+27/04/2022 18:21:23 Niño N1 empieza competición de soga
+27/04/2022 18:21:23 Niño N6 empieza competición de soga
+27/04/2022 18:21:23 Niño N17 empieza competición de soga
+27/04/2022 18:21:23 Niño N2 empieza competición de soga
+27/04/2022 18:21:23 Niño N12 empieza competición de soga
+27/04/2022 18:21:24 Niño N13 llega al final de la tirolina
+27/04/2022 18:21:24 Niño N18 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:21:24 Niño N18 entra al campamento por la puerta izquierda 
+27/04/2022 18:21:24 Niño N18 accede a la actividad soga
+27/04/2022 18:21:24 Niño N18 selecciona otra actividad ya que no hay hueco en actividad soga
+27/04/2022 18:21:24 Niño N18 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:24 Niño N13 se baja de la tirolina
+27/04/2022 18:21:24 Niño N13 se va a la zona comun
+27/04/2022 18:21:24 Niño N13 accede a la zona comun
+27/04/2022 18:21:24 Niño N14 accede a la actividad tirolina
+27/04/2022 18:21:24 Niño N14 se prepara para tirarse en la tirolina
+27/04/2022 18:21:25 Niño N19 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:21:25 Niño N19 entra al campamento por la puerta derecha 
+27/04/2022 18:21:25 Niño N19 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:25 Niño N14 se tira por la tirolina
+27/04/2022 18:21:27 Monitor M4 limpia bandeja
+27/04/2022 18:21:27 Monitor M3 limpia bandeja
+27/04/2022 18:21:28 Niño N20 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:21:28 Niño N20 entra al campamento por la puerta izquierda 
+27/04/2022 18:21:28 Niño N20 selecciona siguiente actividad
+27/04/2022 18:21:28 Niño N20 accede a la actividad soga
+27/04/2022 18:21:28 Niño N20 selecciona otra actividad ya que no hay hueco en actividad soga
+27/04/2022 18:21:28 Niño N20 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:28 Niño N13 selecciona siguiente actividad
+27/04/2022 18:21:28 Niño N13 accede a la actividad soga
+27/04/2022 18:21:28 Niño N13 selecciona otra actividad ya que no hay hueco en actividad soga
+27/04/2022 18:21:28 Niño N13 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:28 Niño N14 llega al final de la tirolina
+27/04/2022 18:21:29 Niño N14 se baja de la tirolina
+27/04/2022 18:21:29 Niño N14 se va a la zona comun
+27/04/2022 18:21:29 Niño N14 accede a la zona comun
+27/04/2022 18:21:29 Niño N10 accede a la actividad tirolina
+27/04/2022 18:21:29 Niño N10 se prepara para tirarse en la tirolina
+27/04/2022 18:21:29 Niño N4 merienda
+27/04/2022 18:21:29 Niño N4 deja plato sucio en su pila
+27/04/2022 18:21:29 Niño N4 se va a la zona comun
+27/04/2022 18:21:29 Niño N4 accede a la zona comun
+27/04/2022 18:21:30 Niño N7 merienda
+27/04/2022 18:21:30 Niño N7 deja plato sucio en su pila
+27/04/2022 18:21:30 Niño N7 se va a la zona comun
+27/04/2022 18:21:30 Niño N7 accede a la zona comun
+27/04/2022 18:21:30 Niño N10 se tira por la tirolina
+27/04/2022 18:21:30 Niño N5 termina competición soga
+27/04/2022 18:21:30 Niño N5 ha ganado competición soga
+27/04/2022 18:21:30 Niño N3 termina competición soga
+27/04/2022 18:21:30 Niño N9 termina competición soga
+27/04/2022 18:21:30 Niño N11 termina competición soga
+27/04/2022 18:21:30 Niño N5 se va a la zona comun
+27/04/2022 18:21:30 Niño N8 termina competición soga
+27/04/2022 18:21:30 Niño N1 termina competición soga
+27/04/2022 18:21:30 Niño N5 accede a la zona comun
+27/04/2022 18:21:30 Niño N3 ha perdido competición soga
+27/04/2022 18:21:30 Niño N6 termina competición soga
+27/04/2022 18:21:30 Niño N2 termina competición soga
+27/04/2022 18:21:30 Niño N12 termina competición soga
+27/04/2022 18:21:30 Niño N17 termina competición soga
+27/04/2022 18:21:30 Niño N3 se va a la zona comun
+27/04/2022 18:21:30 Niño N3 accede a la zona comun
+27/04/2022 18:21:30 Niño N9 ha perdido competición soga
+27/04/2022 18:21:30 Niño N9 se va a la zona comun
+27/04/2022 18:21:30 Niño N9 accede a la zona comun
+27/04/2022 18:21:30 Niño N11 ha perdido competición soga
+27/04/2022 18:21:30 Niño N11 se va a la zona comun
+27/04/2022 18:21:30 Niño N11 accede a la zona comun
+27/04/2022 18:21:30 Niño N8 ha ganado competición soga
+27/04/2022 18:21:30 Niño N8 se va a la zona comun
+27/04/2022 18:21:30 Niño N8 accede a la zona comun
+27/04/2022 18:21:30 Niño N1 ha perdido competición soga
+27/04/2022 18:21:30 Niño N1 se va a la zona comun
+27/04/2022 18:21:30 Niño N1 accede a la zona comun
+27/04/2022 18:21:30 Niño N6 ha ganado competición soga
+27/04/2022 18:21:30 Niño N6 se va a la zona comun
+27/04/2022 18:21:30 Niño N6 accede a la zona comun
+27/04/2022 18:21:30 Niño N2 ha ganado competición soga
+27/04/2022 18:21:30 Niño N2 se va a la zona comun
+27/04/2022 18:21:30 Niño N2 accede a la zona comun
+27/04/2022 18:21:30 Niño N12 ha ganado competición soga
+27/04/2022 18:21:30 Niño N12 se va a la zona comun
+27/04/2022 18:21:30 Niño N12 accede a la zona comun
+27/04/2022 18:21:30 Niño N17 ha perdido competición soga
+27/04/2022 18:21:30 Niño N17 se va a la zona comun
+27/04/2022 18:21:30 Niño N17 accede a la zona comun
+27/04/2022 18:21:30 Niño N21 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:21:30 Niño N21 entra al campamento por la puerta derecha 
+27/04/2022 18:21:30 Niño N21 accede a la actividad soga
+27/04/2022 18:21:30 Niño N21 se mete en el equipo B
+27/04/2022 18:21:31 Niño N4 selecciona siguiente actividad
+27/04/2022 18:21:31 Niño N4 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:31 Niño N14 selecciona siguiente actividad
+27/04/2022 18:21:31 Niño N14 accede a la actividad soga
+27/04/2022 18:21:31 Niño N14 se mete en el quipo A
+27/04/2022 18:21:31 Monitor M4 limpia bandeja
+27/04/2022 18:21:31 Niño N22 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:21:31 Niño N22 entra al campamento por la puerta izquierda 
+27/04/2022 18:21:31 Niño N22 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:32 Monitor M3 limpia bandeja
+27/04/2022 18:21:33 Niño N17 selecciona siguiente actividad
+27/04/2022 18:21:33 Niño N17 selecciona siguiente actividad
+27/04/2022 18:21:33 Niño N17 accede a la actividad soga
+27/04/2022 18:21:33 Niño N17 se mete en el equipo B
+27/04/2022 18:21:33 Niño N3 selecciona siguiente actividad
+27/04/2022 18:21:33 Niño N3 selecciona siguiente actividad
+27/04/2022 18:21:33 Niño N3 accede a la actividad soga
+27/04/2022 18:21:33 Niño N3 se mete en el equipo B
+27/04/2022 18:21:33 Niño N6 selecciona siguiente actividad
+27/04/2022 18:21:33 Niño N6 accede a la cola de la la actividad merienda
+27/04/2022 18:21:33 Niño N6 accede a la actividad merienda
+27/04/2022 18:21:33 Niño N6 coge plato limpio
+27/04/2022 18:21:33 Niño N10 llega al final de la tirolina
+27/04/2022 18:21:33 Niño N2 selecciona siguiente actividad
+27/04/2022 18:21:33 Niño N2 accede a la cola de la la actividad merienda
+27/04/2022 18:21:33 Niño N2 accede a la actividad merienda
+27/04/2022 18:21:33 Niño N2 coge plato limpio
+27/04/2022 18:21:33 Niño N23 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:21:33 Niño N23 entra al campamento por la puerta derecha 
+27/04/2022 18:21:33 Niño N23 selecciona siguiente actividad
+27/04/2022 18:21:33 Niño N23 accede a la actividad soga
+27/04/2022 18:21:33 Niño N23 se mete en el equipo B
+27/04/2022 18:21:33 Niño N7 selecciona siguiente actividad
+27/04/2022 18:21:33 Niño N7 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:33 Niño N9 selecciona siguiente actividad
+27/04/2022 18:21:33 Niño N9 selecciona siguiente actividad
+27/04/2022 18:21:33 Niño N9 accede a la actividad soga
+27/04/2022 18:21:33 Niño N9 se mete en el equipo B
+27/04/2022 18:21:33 Niño N10 se baja de la tirolina
+27/04/2022 18:21:33 Niño N10 se va a la zona comun
+27/04/2022 18:21:33 Niño N10 accede a la zona comun
+27/04/2022 18:21:33 Niño N15 accede a la actividad tirolina
+27/04/2022 18:21:33 Niño N15 se prepara para tirarse en la tirolina
+27/04/2022 18:21:34 Niño N5 selecciona siguiente actividad
+27/04/2022 18:21:34 Niño N5 accede a la cola de la la actividad merienda
+27/04/2022 18:21:34 Niño N5 accede a la actividad merienda
+27/04/2022 18:21:34 Niño N5 coge plato limpio
+27/04/2022 18:21:34 Niño N1 selecciona siguiente actividad
+27/04/2022 18:21:34 Niño N1 accede a la cola de la la actividad merienda
+27/04/2022 18:21:34 Niño N1 accede a la actividad merienda
+27/04/2022 18:21:34 Niño N1 coge plato limpio
+27/04/2022 18:21:34 Niño N8 selecciona siguiente actividad
+27/04/2022 18:21:34 Niño N8 accede a la cola de la la actividad merienda
+27/04/2022 18:21:34 Niño N8 accede a la actividad merienda
+27/04/2022 18:21:34 Niño N8 coge plato limpio
+27/04/2022 18:21:34 Niño N12 selecciona siguiente actividad
+27/04/2022 18:21:34 Niño N12 accede a la cola de la la actividad merienda
+27/04/2022 18:21:34 Niño N12 accede a la actividad merienda
+27/04/2022 18:21:34 Niño N12 coge plato limpio
+27/04/2022 18:21:34 Niño N24 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:21:34 Niño N24 entra al campamento por la puerta izquierda 
+27/04/2022 18:21:34 Niño N24 accede a la actividad soga
+27/04/2022 18:21:34 Niño N24 se mete en el quipo A
+27/04/2022 18:21:34 Niño N11 selecciona siguiente actividad
+27/04/2022 18:21:34 Niño N11 selecciona siguiente actividad
+27/04/2022 18:21:34 Niño N11 accede a la actividad soga
+27/04/2022 18:21:34 Niño N11 se mete en el quipo A
+27/04/2022 18:21:34 Niño N15 se tira por la tirolina
+27/04/2022 18:21:35 Niño N25 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:21:35 Niño N25 entra al campamento por la puerta derecha 
+27/04/2022 18:21:35 Niño N25 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:35 Monitor M4 limpia bandeja
+27/04/2022 18:21:37 Monitor M3 limpia bandeja
+27/04/2022 18:21:37 Niño N10 selecciona siguiente actividad
+27/04/2022 18:21:37 Niño N10 accede a la actividad soga
+27/04/2022 18:21:37 Niño N10 se mete en el quipo A
+27/04/2022 18:21:37 Niño N15 llega al final de la tirolina
+27/04/2022 18:21:38 Niño N26 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:21:38 Niño N26 entra al campamento por la puerta izquierda 
+27/04/2022 18:21:38 Niño N26 selecciona siguiente actividad
+27/04/2022 18:21:38 Niño N26 accede a la actividad soga
+27/04/2022 18:21:38 Niño N26 se mete en el quipo A
+27/04/2022 18:21:38 Niño N26 empieza competición de soga
+27/04/2022 18:21:38 Niño N14 empieza competición de soga
+27/04/2022 18:21:38 Niño N9 empieza competición de soga
+27/04/2022 18:21:38 Niño N10 empieza competición de soga
+27/04/2022 18:21:38 Niño N23 empieza competición de soga
+27/04/2022 18:21:38 Niño N3 empieza competición de soga
+27/04/2022 18:21:38 Niño N17 empieza competición de soga
+27/04/2022 18:21:38 Niño N21 empieza competición de soga
+27/04/2022 18:21:38 Niño N11 empieza competición de soga
+27/04/2022 18:21:38 Niño N24 empieza competición de soga
+27/04/2022 18:21:38 Niño N15 se baja de la tirolina
+27/04/2022 18:21:38 Niño N15 se va a la zona comun
+27/04/2022 18:21:38 Niño N15 accede a la zona comun
+27/04/2022 18:21:38 Niño N16 accede a la actividad tirolina
+27/04/2022 18:21:38 Niño N16 se prepara para tirarse en la tirolina
+27/04/2022 18:21:39 Niño N16 se tira por la tirolina
+27/04/2022 18:21:39 Monitor M4 limpia bandeja
+27/04/2022 18:21:40 Monitor M3 limpia bandeja
+27/04/2022 18:21:40 Niño N27 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:21:40 Niño N27 entra al campamento por la puerta derecha 
+27/04/2022 18:21:40 Niño N27 accede a la actividad soga
+27/04/2022 18:21:40 Niño N27 selecciona otra actividad ya que no hay hueco en actividad soga
+27/04/2022 18:21:40 Niño N27 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:40 Niño N6 merienda
+27/04/2022 18:21:40 Niño N6 deja plato sucio en su pila
+27/04/2022 18:21:40 Niño N6 se va a la zona comun
+27/04/2022 18:21:40 Niño N6 accede a la zona comun
+27/04/2022 18:21:40 Niño N2 merienda
+27/04/2022 18:21:40 Niño N2 deja plato sucio en su pila
+27/04/2022 18:21:40 Niño N2 se va a la zona comun
+27/04/2022 18:21:40 Niño N2 accede a la zona comun
+27/04/2022 18:21:41 Niño N5 merienda
+27/04/2022 18:21:41 Niño N5 deja plato sucio en su pila
+27/04/2022 18:21:41 Niño N5 se va a la zona comun
+27/04/2022 18:21:41 Niño N5 accede a la zona comun
+27/04/2022 18:21:41 Niño N1 merienda
+27/04/2022 18:21:41 Niño N1 deja plato sucio en su pila
+27/04/2022 18:21:41 Niño N1 se va a la zona comun
+27/04/2022 18:21:41 Niño N1 accede a la zona comun
+27/04/2022 18:21:41 Niño N8 merienda
+27/04/2022 18:21:41 Niño N8 deja plato sucio en su pila
+27/04/2022 18:21:41 Niño N8 se va a la zona comun
+27/04/2022 18:21:41 Niño N8 accede a la zona comun
+27/04/2022 18:21:41 Niño N12 merienda
+27/04/2022 18:21:41 Niño N12 deja plato sucio en su pila
+27/04/2022 18:21:41 Niño N12 se va a la zona comun
+27/04/2022 18:21:41 Niño N12 accede a la zona comun
+27/04/2022 18:21:41 Niño N15 selecciona siguiente actividad
+27/04/2022 18:21:41 Niño N15 accede a la actividad soga
+27/04/2022 18:21:41 Niño N15 selecciona otra actividad ya que no hay hueco en actividad soga
+27/04/2022 18:21:41 Niño N15 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:42 Niño N16 llega al final de la tirolina
+27/04/2022 18:21:42 Niño N16 se baja de la tirolina
+27/04/2022 18:21:42 Niño N16 se va a la zona comun
+27/04/2022 18:21:42 Niño N16 accede a la zona comun
+27/04/2022 18:21:42 Niño N18 accede a la actividad tirolina
+27/04/2022 18:21:42 Monitor M2 se va al descanso
+27/04/2022 18:21:43 Niño N28 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:21:43 Niño N28 entra al campamento por la puerta izquierda 
+27/04/2022 18:21:43 Niño N28 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:43 Niño N6 selecciona siguiente actividad
+27/04/2022 18:21:43 Niño N6 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:43 Monitor M4 limpia bandeja
+27/04/2022 18:21:43 Monitor M4 se va al descanso
+27/04/2022 18:21:43 Monitor M3 se va al descanso
+27/04/2022 18:21:43 Niño N12 selecciona siguiente actividad
+27/04/2022 18:21:43 Niño N12 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:44 Niño N1 selecciona siguiente actividad
+27/04/2022 18:21:44 Niño N1 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:44 Niño N8 selecciona siguiente actividad
+27/04/2022 18:21:44 Niño N8 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:44 Niño N2 selecciona siguiente actividad
+27/04/2022 18:21:44 Niño N2 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:44 Monitor M4 vuelve a su actividad
+27/04/2022 18:21:44 Monitor M4 accede a actividad merienda
+27/04/2022 18:21:44 Monitor M2 vuelve a su actividad
+27/04/2022 18:21:44 Monitor M2 accede a actividad tirolina
+27/04/2022 18:21:44 Niño N18 se prepara para tirarse en la tirolina
+27/04/2022 18:21:44 Niño N5 selecciona siguiente actividad
+27/04/2022 18:21:44 Niño N5 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:45 Niño N26 termina competición soga
+27/04/2022 18:21:45 Niño N26 ha ganado competición soga
+27/04/2022 18:21:45 Niño N14 termina competición soga
+27/04/2022 18:21:45 Niño N26 se va a la zona comun
+27/04/2022 18:21:45 Niño N26 accede a la zona comun
+27/04/2022 18:21:45 Niño N14 ha ganado competición soga
+27/04/2022 18:21:45 Niño N14 se va a la zona comun
+27/04/2022 18:21:45 Niño N14 accede a la zona comun
+27/04/2022 18:21:45 Niño N9 termina competición soga
+27/04/2022 18:21:45 Niño N24 termina competición soga
+27/04/2022 18:21:45 Niño N11 termina competición soga
+27/04/2022 18:21:45 Niño N17 termina competición soga
+27/04/2022 18:21:45 Niño N21 termina competición soga
+27/04/2022 18:21:45 Niño N10 termina competición soga
+27/04/2022 18:21:45 Niño N3 termina competición soga
+27/04/2022 18:21:45 Niño N23 termina competición soga
+27/04/2022 18:21:45 Niño N9 ha perdido competición soga
+27/04/2022 18:21:45 Niño N9 se va a la zona comun
+27/04/2022 18:21:45 Niño N9 accede a la zona comun
+27/04/2022 18:21:45 Niño N24 ha ganado competición soga
+27/04/2022 18:21:45 Niño N24 se va a la zona comun
+27/04/2022 18:21:45 Niño N24 accede a la zona comun
+27/04/2022 18:21:45 Niño N11 ha ganado competición soga
+27/04/2022 18:21:45 Niño N11 se va a la zona comun
+27/04/2022 18:21:45 Niño N11 accede a la zona comun
+27/04/2022 18:21:45 Niño N17 ha perdido competición soga
+27/04/2022 18:21:45 Niño N17 se va a la zona comun
+27/04/2022 18:21:45 Niño N17 accede a la zona comun
+27/04/2022 18:21:45 Niño N21 ha perdido competición soga
+27/04/2022 18:21:45 Niño N21 se va a la zona comun
+27/04/2022 18:21:45 Niño N21 accede a la zona comun
+27/04/2022 18:21:45 Niño N10 ha ganado competición soga
+27/04/2022 18:21:45 Niño N10 se va a la zona comun
+27/04/2022 18:21:45 Niño N10 accede a la zona comun
+27/04/2022 18:21:45 Niño N3 ha perdido competición soga
+27/04/2022 18:21:45 Niño N3 se va a la zona comun
+27/04/2022 18:21:45 Niño N3 accede a la zona comun
+27/04/2022 18:21:45 Niño N23 ha perdido competición soga
+27/04/2022 18:21:45 Niño N23 se va a la zona comun
+27/04/2022 18:21:45 Niño N23 accede a la zona comun
+27/04/2022 18:21:45 Monitor M3 vuelve a su actividad
+27/04/2022 18:21:45 Monitor M3 accede a actividad merienda
+27/04/2022 18:21:45 Niño N18 se tira por la tirolina
+27/04/2022 18:21:45 Niño N16 selecciona siguiente actividad
+27/04/2022 18:21:45 Niño N16 accede a la actividad soga
+27/04/2022 18:21:45 Niño N16 se mete en el quipo A
+27/04/2022 18:21:45 Niño N29 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:21:45 Niño N29 entra al campamento por la puerta derecha 
+27/04/2022 18:21:45 Niño N29 selecciona siguiente actividad
+27/04/2022 18:21:45 Niño N29 accede a la actividad soga
+27/04/2022 18:21:45 Niño N29 se mete en el equipo B
+27/04/2022 18:21:47 Niño N3 selecciona siguiente actividad
+27/04/2022 18:21:47 Niño N3 accede a la cola de la la actividad merienda
+27/04/2022 18:21:47 Niño N3 accede a la actividad merienda
+27/04/2022 18:21:47 Niño N3 coge plato limpio
+27/04/2022 18:21:47 Niño N10 selecciona siguiente actividad
+27/04/2022 18:21:47 Niño N10 accede a la cola de la la actividad merienda
+27/04/2022 18:21:47 Niño N10 accede a la actividad merienda
+27/04/2022 18:21:47 Niño N10 coge plato limpio
+27/04/2022 18:21:47 Niño N24 selecciona siguiente actividad
+27/04/2022 18:21:47 Niño N24 selecciona siguiente actividad
+27/04/2022 18:21:47 Niño N24 accede a la actividad soga
+27/04/2022 18:21:47 Niño N24 se mete en el quipo A
+27/04/2022 18:21:47 Niño N14 selecciona siguiente actividad
+27/04/2022 18:21:47 Niño N14 accede a la cola de la la actividad merienda
+27/04/2022 18:21:47 Niño N14 accede a la actividad merienda
+27/04/2022 18:21:47 Niño N14 coge plato limpio
+27/04/2022 18:21:47 Niño N9 selecciona siguiente actividad
+27/04/2022 18:21:47 Niño N9 accede a la cola de la la actividad merienda
+27/04/2022 18:21:47 Niño N9 accede a la actividad merienda
+27/04/2022 18:21:47 Niño N9 coge plato limpio
+27/04/2022 18:21:48 Niño N18 llega al final de la tirolina
+27/04/2022 18:21:48 Niño N17 selecciona siguiente actividad
+27/04/2022 18:21:48 Niño N17 selecciona siguiente actividad
+27/04/2022 18:21:48 Niño N17 accede a la actividad soga
+27/04/2022 18:21:48 Niño N17 se mete en el equipo B
+27/04/2022 18:21:48 Niño N11 selecciona siguiente actividad
+27/04/2022 18:21:48 Niño N11 accede a la cola de la la actividad merienda
+27/04/2022 18:21:48 Niño N11 accede a la actividad merienda
+27/04/2022 18:21:48 Niño N11 coge plato limpio
+27/04/2022 18:21:48 Niño N23 selecciona siguiente actividad
+27/04/2022 18:21:48 Niño N23 selecciona siguiente actividad
+27/04/2022 18:21:48 Niño N23 accede a la actividad soga
+27/04/2022 18:21:48 Niño N23 se mete en el equipo B
+27/04/2022 18:21:48 Niño N30 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:21:48 Niño N30 entra al campamento por la puerta izquierda 
+27/04/2022 18:21:48 Niño N30 accede a la actividad soga
+27/04/2022 18:21:48 Niño N30 se mete en el quipo A
+27/04/2022 18:21:48 Monitor M4 limpia bandeja
+27/04/2022 18:21:48 Niño N26 selecciona siguiente actividad
+27/04/2022 18:21:48 Niño N26 selecciona siguiente actividad
+27/04/2022 18:21:48 Niño N26 accede a la actividad soga
+27/04/2022 18:21:48 Niño N26 se mete en el quipo A
+27/04/2022 18:21:48 Niño N21 selecciona siguiente actividad
+27/04/2022 18:21:48 Niño N21 selecciona siguiente actividad
+27/04/2022 18:21:48 Niño N21 accede a la actividad soga
+27/04/2022 18:21:48 Niño N21 se mete en el equipo B
+27/04/2022 18:21:49 Niño N18 se baja de la tirolina
+27/04/2022 18:21:49 Niño N18 se va a la zona comun
+27/04/2022 18:21:49 Niño N18 accede a la zona comun
+27/04/2022 18:21:49 Niño N19 accede a la actividad tirolina
+27/04/2022 18:21:49 Niño N19 se prepara para tirarse en la tirolina
+27/04/2022 18:21:49 Monitor M3 limpia bandeja
+27/04/2022 18:21:49 Niño N31 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:21:49 Niño N31 entra al campamento por la puerta derecha 
+27/04/2022 18:21:49 Niño N31 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:50 Niño N19 se tira por la tirolina
+27/04/2022 18:21:51 Niño N32 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:21:51 Niño N32 entra al campamento por la puerta izquierda 
+27/04/2022 18:21:51 Niño N32 selecciona siguiente actividad
+27/04/2022 18:21:51 Niño N32 accede a la actividad soga
+27/04/2022 18:21:51 Niño N32 se mete en el quipo A
+27/04/2022 18:21:52 Niño N18 selecciona siguiente actividad
+27/04/2022 18:21:52 Niño N18 accede a la actividad soga
+27/04/2022 18:21:52 Niño N18 se mete en el equipo B
+27/04/2022 18:21:52 Niño N18 empieza competición de soga
+27/04/2022 18:21:52 Niño N29 empieza competición de soga
+27/04/2022 18:21:52 Niño N30 empieza competición de soga
+27/04/2022 18:21:52 Niño N16 empieza competición de soga
+27/04/2022 18:21:52 Niño N32 empieza competición de soga
+27/04/2022 18:21:52 Niño N21 empieza competición de soga
+27/04/2022 18:21:52 Niño N26 empieza competición de soga
+27/04/2022 18:21:52 Niño N23 empieza competición de soga
+27/04/2022 18:21:52 Niño N17 empieza competición de soga
+27/04/2022 18:21:52 Niño N24 empieza competición de soga
+27/04/2022 18:21:53 Niño N19 llega al final de la tirolina
+27/04/2022 18:21:53 Niño N33 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:21:53 Niño N33 entra al campamento por la puerta derecha 
+27/04/2022 18:21:53 Niño N33 accede a la actividad soga
+27/04/2022 18:21:53 Niño N33 selecciona otra actividad ya que no hay hueco en actividad soga
+27/04/2022 18:21:53 Niño N33 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:53 Niño N19 se baja de la tirolina
+27/04/2022 18:21:53 Niño N19 se va a la zona comun
+27/04/2022 18:21:53 Niño N19 accede a la zona comun
+27/04/2022 18:21:53 Niño N20 accede a la actividad tirolina
+27/04/2022 18:21:53 Niño N20 se prepara para tirarse en la tirolina
+27/04/2022 18:21:53 Monitor M4 limpia bandeja
+27/04/2022 18:21:53 Monitor M3 limpia bandeja
+27/04/2022 18:21:54 Niño N3 merienda
+27/04/2022 18:21:54 Niño N3 deja plato sucio en su pila
+27/04/2022 18:21:54 Niño N3 se va a la zona comun
+27/04/2022 18:21:54 Niño N3 accede a la zona comun
+27/04/2022 18:21:54 Niño N10 merienda
+27/04/2022 18:21:54 Niño N10 deja plato sucio en su pila
+27/04/2022 18:21:54 Niño N10 se va a la zona comun
+27/04/2022 18:21:54 Niño N10 accede a la zona comun
+27/04/2022 18:21:54 Niño N14 merienda
+27/04/2022 18:21:54 Niño N14 deja plato sucio en su pila
+27/04/2022 18:21:54 Niño N14 se va a la zona comun
+27/04/2022 18:21:54 Niño N14 accede a la zona comun
+27/04/2022 18:21:54 Niño N20 se tira por la tirolina
+27/04/2022 18:21:54 Niño N9 merienda
+27/04/2022 18:21:54 Niño N9 deja plato sucio en su pila
+27/04/2022 18:21:54 Niño N9 se va a la zona comun
+27/04/2022 18:21:54 Niño N9 accede a la zona comun
+27/04/2022 18:21:55 Niño N34 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:21:55 Niño N34 entra al campamento por la puerta izquierda 
+27/04/2022 18:21:55 Niño N34 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:55 Niño N11 merienda
+27/04/2022 18:21:55 Niño N11 deja plato sucio en su pila
+27/04/2022 18:21:55 Niño N11 se va a la zona comun
+27/04/2022 18:21:55 Niño N11 accede a la zona comun
+27/04/2022 18:21:56 Niño N3 selecciona siguiente actividad
+27/04/2022 18:21:56 Niño N3 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:56 Niño N19 selecciona siguiente actividad
+27/04/2022 18:21:56 Niño N19 accede a la actividad soga
+27/04/2022 18:21:56 Niño N19 selecciona otra actividad ya que no hay hueco en actividad soga
+27/04/2022 18:21:56 Niño N19 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:56 Niño N14 selecciona siguiente actividad
+27/04/2022 18:21:56 Niño N14 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:57 Niño N10 selecciona siguiente actividad
+27/04/2022 18:21:57 Niño N10 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:57 Niño N9 selecciona siguiente actividad
+27/04/2022 18:21:57 Niño N9 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:57 Monitor M3 limpia bandeja
+27/04/2022 18:21:57 Niño N20 llega al final de la tirolina
+27/04/2022 18:21:57 Niño N35 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:21:57 Niño N35 entra al campamento por la puerta derecha 
+27/04/2022 18:21:57 Niño N35 selecciona siguiente actividad
+27/04/2022 18:21:57 Niño N35 accede a la actividad soga
+27/04/2022 18:21:57 Niño N35 selecciona otra actividad ya que no hay hueco en actividad soga
+27/04/2022 18:21:57 Niño N35 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:58 Niño N20 se baja de la tirolina
+27/04/2022 18:21:58 Niño N20 se va a la zona comun
+27/04/2022 18:21:58 Niño N20 accede a la zona comun
+27/04/2022 18:21:58 Niño N13 accede a la actividad tirolina
+27/04/2022 18:21:58 Niño N13 se prepara para tirarse en la tirolina
+27/04/2022 18:21:58 Monitor M4 limpia bandeja
+27/04/2022 18:21:59 Niño N13 se tira por la tirolina
+27/04/2022 18:21:59 Niño N36 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:21:59 Niño N36 entra al campamento por la puerta izquierda 
+27/04/2022 18:21:59 Niño N36 accede a la actividad soga
+27/04/2022 18:21:59 Niño N36 selecciona otra actividad ya que no hay hueco en actividad soga
+27/04/2022 18:21:59 Niño N36 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:59 Niño N11 selecciona siguiente actividad
+27/04/2022 18:21:59 Niño N11 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:21:59 Niño N16 termina competición soga
+27/04/2022 18:21:59 Niño N18 termina competición soga
+27/04/2022 18:21:59 Niño N29 termina competición soga
+27/04/2022 18:21:59 Niño N30 termina competición soga
+27/04/2022 18:21:59 Niño N16 ha ganado competición soga
+27/04/2022 18:21:59 Niño N24 termina competición soga
+27/04/2022 18:21:59 Niño N32 termina competición soga
+27/04/2022 18:21:59 Niño N23 termina competición soga
+27/04/2022 18:21:59 Niño N26 termina competición soga
+27/04/2022 18:21:59 Niño N17 termina competición soga
+27/04/2022 18:21:59 Niño N21 termina competición soga
+27/04/2022 18:21:59 Niño N16 se va a la zona comun
+27/04/2022 18:21:59 Niño N16 accede a la zona comun
+27/04/2022 18:21:59 Niño N18 ha perdido competición soga
+27/04/2022 18:21:59 Niño N18 se va a la zona comun
+27/04/2022 18:21:59 Niño N18 accede a la zona comun
+27/04/2022 18:21:59 Niño N29 ha perdido competición soga
+27/04/2022 18:21:59 Niño N29 se va a la zona comun
+27/04/2022 18:21:59 Niño N29 accede a la zona comun
+27/04/2022 18:21:59 Niño N30 ha ganado competición soga
+27/04/2022 18:21:59 Niño N30 se va a la zona comun
+27/04/2022 18:21:59 Niño N30 accede a la zona comun
+27/04/2022 18:21:59 Niño N24 ha ganado competición soga
+27/04/2022 18:21:59 Niño N24 se va a la zona comun
+27/04/2022 18:21:59 Niño N24 accede a la zona comun
+27/04/2022 18:21:59 Niño N32 ha ganado competición soga
+27/04/2022 18:21:59 Niño N32 se va a la zona comun
+27/04/2022 18:21:59 Niño N32 accede a la zona comun
+27/04/2022 18:21:59 Niño N23 ha perdido competición soga
+27/04/2022 18:21:59 Niño N23 se va a la zona comun
+27/04/2022 18:21:59 Niño N23 accede a la zona comun
+27/04/2022 18:21:59 Niño N26 ha ganado competición soga
+27/04/2022 18:21:59 Niño N26 se va a la zona comun
+27/04/2022 18:21:59 Niño N26 accede a la zona comun
+27/04/2022 18:21:59 Niño N17 ha perdido competición soga
+27/04/2022 18:21:59 Niño N17 se va a la zona comun
+27/04/2022 18:21:59 Niño N17 accede a la zona comun
+27/04/2022 18:21:59 Niño N21 ha perdido competición soga
+27/04/2022 18:21:59 Niño N21 se va a la zona comun
+27/04/2022 18:21:59 Niño N21 accede a la zona comun
+27/04/2022 18:22:00 Niño N20 selecciona siguiente actividad
+27/04/2022 18:22:00 Niño N20 accede a la actividad soga
+27/04/2022 18:22:00 Niño N20 se mete en el quipo A
+27/04/2022 18:22:00 Niño N37 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:22:00 Niño N37 entra al campamento por la puerta derecha 
+27/04/2022 18:22:00 Niño N37 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:22:00 Monitor M3 limpia bandeja
+27/04/2022 18:22:01 Niño N32 selecciona siguiente actividad
+27/04/2022 18:22:01 Niño N32 selecciona siguiente actividad
+27/04/2022 18:22:01 Niño N32 accede a la actividad soga
+27/04/2022 18:22:01 Niño N32 se mete en el quipo A
+27/04/2022 18:22:01 Niño N17 selecciona siguiente actividad
+27/04/2022 18:22:01 Niño N17 accede a la cola de la la actividad merienda
+27/04/2022 18:22:01 Niño N17 accede a la actividad merienda
+27/04/2022 18:22:01 Niño N17 coge plato limpio
+27/04/2022 18:22:01 Monitor M4 limpia bandeja
+27/04/2022 18:22:01 Niño N38 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:22:01 Niño N38 entra al campamento por la puerta izquierda 
+27/04/2022 18:22:01 Niño N38 selecciona siguiente actividad
+27/04/2022 18:22:01 Niño N38 accede a la actividad soga
+27/04/2022 18:22:01 Niño N38 se mete en el quipo A
+27/04/2022 18:22:02 Niño N18 selecciona siguiente actividad
+27/04/2022 18:22:02 Niño N18 selecciona siguiente actividad
+27/04/2022 18:22:02 Niño N18 accede a la actividad soga
+27/04/2022 18:22:02 Niño N18 se mete en el quipo A
+27/04/2022 18:22:02 Niño N13 llega al final de la tirolina
+27/04/2022 18:22:02 Niño N21 selecciona siguiente actividad
+27/04/2022 18:22:02 Niño N21 selecciona siguiente actividad
+27/04/2022 18:22:02 Niño N21 accede a la actividad soga
+27/04/2022 18:22:02 Niño N21 se mete en el equipo B
+27/04/2022 18:22:02 Niño N26 selecciona siguiente actividad
+27/04/2022 18:22:02 Niño N26 accede a la cola de la la actividad merienda
+27/04/2022 18:22:02 Niño N26 accede a la actividad merienda
+27/04/2022 18:22:02 Niño N26 coge plato limpio
+27/04/2022 18:22:02 Niño N23 selecciona siguiente actividad
+27/04/2022 18:22:02 Niño N23 selecciona siguiente actividad
+27/04/2022 18:22:02 Niño N23 accede a la actividad soga
+27/04/2022 18:22:02 Niño N23 se mete en el equipo B
+27/04/2022 18:22:02 Niño N30 selecciona siguiente actividad
+27/04/2022 18:22:02 Niño N30 selecciona siguiente actividad
+27/04/2022 18:22:02 Niño N30 accede a la actividad soga
+27/04/2022 18:22:02 Niño N30 se mete en el quipo A
+27/04/2022 18:22:02 Niño N24 selecciona siguiente actividad
+27/04/2022 18:22:02 Niño N24 accede a la cola de la la actividad merienda
+27/04/2022 18:22:02 Niño N24 accede a la actividad merienda
+27/04/2022 18:22:02 Niño N24 coge plato limpio
+27/04/2022 18:22:02 Niño N13 se baja de la tirolina
+27/04/2022 18:22:02 Niño N13 se va a la zona comun
+27/04/2022 18:22:02 Niño N13 accede a la zona comun
+27/04/2022 18:22:02 Niño N4 accede a la actividad tirolina
+27/04/2022 18:22:02 Niño N4 se prepara para tirarse en la tirolina
+27/04/2022 18:22:02 Niño N16 selecciona siguiente actividad
+27/04/2022 18:22:02 Niño N16 accede a la cola de la la actividad merienda
+27/04/2022 18:22:02 Niño N16 accede a la actividad merienda
+27/04/2022 18:22:02 Niño N16 coge plato limpio
+27/04/2022 18:22:02 Niño N29 selecciona siguiente actividad
+27/04/2022 18:22:02 Niño N29 selecciona siguiente actividad
+27/04/2022 18:22:02 Niño N29 accede a la actividad soga
+27/04/2022 18:22:02 Niño N29 se mete en el equipo B
+27/04/2022 18:22:03 Niño N4 se tira por la tirolina
+27/04/2022 18:22:04 Monitor M3 limpia bandeja
+27/04/2022 18:22:04 Niño N39 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:22:04 Niño N39 entra al campamento por la puerta derecha 
+27/04/2022 18:22:04 Niño N39 accede a la actividad soga
+27/04/2022 18:22:04 Niño N39 se mete en el equipo B
+27/04/2022 18:22:05 Monitor M4 limpia bandeja
+27/04/2022 18:22:06 Niño N40 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:22:06 Niño N40 entra al campamento por la puerta izquierda 
+27/04/2022 18:22:06 Niño N40 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:22:06 Niño N13 selecciona siguiente actividad
+27/04/2022 18:22:06 Niño N13 accede a la actividad soga
+27/04/2022 18:22:06 Niño N13 se mete en el equipo B
+27/04/2022 18:22:06 Niño N13 empieza competición de soga
+27/04/2022 18:22:06 Niño N20 empieza competición de soga
+27/04/2022 18:22:06 Niño N23 empieza competición de soga
+27/04/2022 18:22:06 Niño N39 empieza competición de soga
+27/04/2022 18:22:06 Niño N21 empieza competición de soga
+27/04/2022 18:22:06 Niño N18 empieza competición de soga
+27/04/2022 18:22:06 Niño N38 empieza competición de soga
+27/04/2022 18:22:06 Niño N32 empieza competición de soga
+27/04/2022 18:22:06 Niño N29 empieza competición de soga
+27/04/2022 18:22:06 Niño N30 empieza competición de soga
+27/04/2022 18:22:06 Niño N4 llega al final de la tirolina
+27/04/2022 18:22:07 Niño N4 se baja de la tirolina
+27/04/2022 18:22:07 Niño N4 se va a la zona comun
+27/04/2022 18:22:07 Niño N4 accede a la zona comun
+27/04/2022 18:22:07 Niño N22 accede a la actividad tirolina
+27/04/2022 18:22:07 Niño N22 se prepara para tirarse en la tirolina
+27/04/2022 18:22:07 Niño N41 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:22:07 Niño N41 entra al campamento por la puerta derecha 
+27/04/2022 18:22:07 Niño N41 selecciona siguiente actividad
+27/04/2022 18:22:07 Niño N41 accede a la actividad soga
+27/04/2022 18:22:07 Niño N41 selecciona otra actividad ya que no hay hueco en actividad soga
+27/04/2022 18:22:07 Niño N41 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:22:07 Monitor M3 limpia bandeja
+27/04/2022 18:22:07 Monitor M3 se va al descanso
+27/04/2022 18:22:07 Monitor M4 se va al descanso
+27/04/2022 18:22:08 Niño N22 se tira por la tirolina
+27/04/2022 18:22:08 Niño N17 merienda
+27/04/2022 18:22:08 Niño N17 deja plato sucio en su pila
+27/04/2022 18:22:08 Niño N17 se va a la zona comun
+27/04/2022 18:22:08 Niño N17 accede a la zona comun
+27/04/2022 18:22:08 Niño N42 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:22:08 Niño N42 entra al campamento por la puerta izquierda 
+27/04/2022 18:22:08 Niño N42 accede a la actividad soga
+27/04/2022 18:22:08 Niño N42 selecciona otra actividad ya que no hay hueco en actividad soga
+27/04/2022 18:22:08 Niño N42 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:22:09 Niño N26 merienda
+27/04/2022 18:22:09 Niño N26 deja plato sucio en su pila
+27/04/2022 18:22:09 Niño N26 se va a la zona comun
+27/04/2022 18:22:09 Niño N26 accede a la zona comun
+27/04/2022 18:22:09 Monitor M3 vuelve a su actividad
+27/04/2022 18:22:09 Monitor M3 accede a actividad merienda
+27/04/2022 18:22:09 Niño N4 selecciona siguiente actividad
+27/04/2022 18:22:09 Niño N4 accede a la actividad soga
+27/04/2022 18:22:09 Niño N4 selecciona otra actividad ya que no hay hueco en actividad soga
+27/04/2022 18:22:09 Niño N4 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:22:09 Niño N24 merienda
+27/04/2022 18:22:09 Niño N24 deja plato sucio en su pila
+27/04/2022 18:22:09 Niño N24 se va a la zona comun
+27/04/2022 18:22:09 Niño N24 accede a la zona comun
+27/04/2022 18:22:09 Niño N16 merienda
+27/04/2022 18:22:09 Niño N16 deja plato sucio en su pila
+27/04/2022 18:22:09 Niño N16 se va a la zona comun
+27/04/2022 18:22:09 Niño N16 accede a la zona comun
+27/04/2022 18:22:09 Monitor M4 vuelve a su actividad
+27/04/2022 18:22:09 Monitor M4 accede a actividad merienda
+27/04/2022 18:22:11 Niño N22 llega al final de la tirolina
+27/04/2022 18:22:11 Niño N43 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:22:11 Niño N43 entra al campamento por la puerta derecha 
+27/04/2022 18:22:11 Niño N43 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:22:11 Niño N24 selecciona siguiente actividad
+27/04/2022 18:22:11 Niño N24 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:22:11 Niño N22 se baja de la tirolina
+27/04/2022 18:22:11 Niño N22 se va a la zona comun
+27/04/2022 18:22:11 Niño N22 accede a la zona comun
+27/04/2022 18:22:11 Niño N7 accede a la actividad tirolina
+27/04/2022 18:22:11 Niño N7 se prepara para tirarse en la tirolina
+27/04/2022 18:22:11 Niño N16 selecciona siguiente actividad
+27/04/2022 18:22:11 Niño N16 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:22:12 Niño N17 selecciona siguiente actividad
+27/04/2022 18:22:12 Niño N17 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:22:12 Niño N26 selecciona siguiente actividad
+27/04/2022 18:22:12 Niño N26 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:22:12 Niño N7 se tira por la tirolina
+27/04/2022 18:22:12 Monitor M3 limpia bandeja
+27/04/2022 18:22:13 Niño N44 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:22:13 Niño N44 entra al campamento por la puerta izquierda 
+27/04/2022 18:22:13 Niño N44 selecciona siguiente actividad
+27/04/2022 18:22:13 Niño N44 accede a la actividad soga
+27/04/2022 18:22:13 Niño N44 selecciona otra actividad ya que no hay hueco en actividad soga
+27/04/2022 18:22:13 Niño N44 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:22:13 Niño N13 termina competición soga
+27/04/2022 18:22:13 Niño N23 termina competición soga
+27/04/2022 18:22:13 Niño N39 termina competición soga
+27/04/2022 18:22:13 Niño N20 termina competición soga
+27/04/2022 18:22:13 Niño N13 ha perdido competición soga
+27/04/2022 18:22:13 Niño N13 se va a la zona comun
+27/04/2022 18:22:13 Niño N13 accede a la zona comun
+27/04/2022 18:22:13 Niño N23 ha perdido competición soga
+27/04/2022 18:22:13 Niño N30 termina competición soga
+27/04/2022 18:22:13 Niño N23 se va a la zona comun
+27/04/2022 18:22:13 Niño N23 accede a la zona comun
+27/04/2022 18:22:13 Niño N39 ha perdido competición soga
+27/04/2022 18:22:13 Niño N39 se va a la zona comun
+27/04/2022 18:22:13 Niño N39 accede a la zona comun
+27/04/2022 18:22:13 Niño N20 ha ganado competición soga
+27/04/2022 18:22:13 Niño N20 se va a la zona comun
+27/04/2022 18:22:13 Niño N20 accede a la zona comun
+27/04/2022 18:22:13 Niño N30 ha ganado competición soga
+27/04/2022 18:22:13 Niño N21 termina competición soga
+27/04/2022 18:22:13 Niño N30 se va a la zona comun
+27/04/2022 18:22:13 Niño N30 accede a la zona comun
+27/04/2022 18:22:13 Niño N38 termina competición soga
+27/04/2022 18:22:13 Niño N18 termina competición soga
+27/04/2022 18:22:13 Niño N29 termina competición soga
+27/04/2022 18:22:13 Niño N21 ha perdido competición soga
+27/04/2022 18:22:13 Niño N21 se va a la zona comun
+27/04/2022 18:22:13 Niño N21 accede a la zona comun
+27/04/2022 18:22:13 Niño N38 ha ganado competición soga
+27/04/2022 18:22:13 Niño N38 se va a la zona comun
+27/04/2022 18:22:13 Niño N38 accede a la zona comun
+27/04/2022 18:22:13 Niño N18 ha ganado competición soga
+27/04/2022 18:22:13 Niño N18 se va a la zona comun
+27/04/2022 18:22:13 Niño N18 accede a la zona comun
+27/04/2022 18:22:13 Niño N29 ha perdido competición soga
+27/04/2022 18:22:13 Niño N29 se va a la zona comun
+27/04/2022 18:22:13 Niño N29 accede a la zona comun
+27/04/2022 18:22:13 Niño N32 termina competición soga
+27/04/2022 18:22:13 Niño N32 ha ganado competición soga
+27/04/2022 18:22:13 Niño N32 se va a la zona comun
+27/04/2022 18:22:13 Niño N32 accede a la zona comun
+27/04/2022 18:22:13 Monitor M4 limpia bandeja
+27/04/2022 18:22:14 Niño N22 selecciona siguiente actividad
+27/04/2022 18:22:14 Niño N22 accede a la actividad soga
+27/04/2022 18:22:14 Niño N22 se mete en el quipo A
+27/04/2022 18:22:15 Niño N18 selecciona siguiente actividad
+27/04/2022 18:22:15 Niño N18 accede a la cola de la la actividad merienda
+27/04/2022 18:22:15 Niño N18 accede a la actividad merienda
+27/04/2022 18:22:15 Niño N18 coge plato limpio
+27/04/2022 18:22:15 Niño N7 llega al final de la tirolina
+27/04/2022 18:22:15 Niño N29 selecciona siguiente actividad
+27/04/2022 18:22:15 Niño N29 selecciona siguiente actividad
+27/04/2022 18:22:15 Niño N29 accede a la actividad soga
+27/04/2022 18:22:15 Niño N29 se mete en el equipo B
+27/04/2022 18:22:15 Niño N38 selecciona siguiente actividad
+27/04/2022 18:22:15 Niño N38 selecciona siguiente actividad
+27/04/2022 18:22:15 Niño N38 accede a la actividad soga
+27/04/2022 18:22:15 Niño N38 se mete en el quipo A
+27/04/2022 18:22:15 Niño N45 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:22:15 Niño N45 entra al campamento por la puerta derecha 
+27/04/2022 18:22:15 Niño N45 accede a la actividad soga
+27/04/2022 18:22:15 Niño N45 se mete en el equipo B
+27/04/2022 18:22:16 Niño N7 se baja de la tirolina
+27/04/2022 18:22:16 Niño N7 se va a la zona comun
+27/04/2022 18:22:16 Niño N7 accede a la zona comun
+27/04/2022 18:22:16 Niño N25 accede a la actividad tirolina
+27/04/2022 18:22:16 Niño N25 se prepara para tirarse en la tirolina
+27/04/2022 18:22:16 Niño N20 selecciona siguiente actividad
+27/04/2022 18:22:16 Niño N20 accede a la cola de la la actividad merienda
+27/04/2022 18:22:16 Niño N20 accede a la actividad merienda
+27/04/2022 18:22:16 Niño N20 coge plato limpio
+27/04/2022 18:22:16 Niño N13 selecciona siguiente actividad
+27/04/2022 18:22:16 Niño N13 accede a la cola de la la actividad merienda
+27/04/2022 18:22:16 Niño N13 accede a la actividad merienda
+27/04/2022 18:22:16 Niño N13 coge plato limpio
+27/04/2022 18:22:16 Niño N21 selecciona siguiente actividad
+27/04/2022 18:22:16 Niño N21 accede a la cola de la la actividad merienda
+27/04/2022 18:22:16 Niño N21 accede a la actividad merienda
+27/04/2022 18:22:16 Niño N21 coge plato limpio
+27/04/2022 18:22:16 Niño N39 selecciona siguiente actividad
+27/04/2022 18:22:16 Niño N39 selecciona siguiente actividad
+27/04/2022 18:22:16 Niño N39 accede a la actividad soga
+27/04/2022 18:22:16 Niño N39 se mete en el equipo B
+27/04/2022 18:22:16 Monitor M4 limpia bandeja
+27/04/2022 18:22:17 Monitor M3 limpia bandeja
+27/04/2022 18:22:17 Niño N25 se tira por la tirolina
+27/04/2022 18:22:17 Niño N30 selecciona siguiente actividad
+27/04/2022 18:22:17 Niño N30 accede a la cola de la la actividad merienda
+27/04/2022 18:22:17 Niño N30 accede a la actividad merienda
+27/04/2022 18:22:17 Niño N30 coge plato limpio
+27/04/2022 18:22:17 Niño N32 selecciona siguiente actividad
+27/04/2022 18:22:17 Niño N32 accede a la cola de la la actividad merienda
+27/04/2022 18:22:17 Niño N32 accede a la actividad merienda
+27/04/2022 18:22:17 Niño N32 coge plato limpio
+27/04/2022 18:22:17 Niño N23 selecciona siguiente actividad
+27/04/2022 18:22:17 Niño N23 accede a la cola de la la actividad merienda
+27/04/2022 18:22:17 Niño N23 accede a la actividad merienda
+27/04/2022 18:22:17 Niño N23 coge plato limpio
+27/04/2022 18:22:18 Niño N7 selecciona siguiente actividad
+27/04/2022 18:22:18 Niño N7 accede a la actividad soga
+27/04/2022 18:22:18 Niño N7 se mete en el equipo B
+27/04/2022 18:22:18 Niño N46 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:22:18 Niño N46 entra al campamento por la puerta izquierda 
+27/04/2022 18:22:18 Niño N46 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:22:20 Niño N25 llega al final de la tirolina
+27/04/2022 18:22:20 Niño N25 se baja de la tirolina
+27/04/2022 18:22:20 Niño N25 se va a la zona comun
+27/04/2022 18:22:20 Niño N25 accede a la zona comun
+27/04/2022 18:22:20 Niño N27 accede a la actividad tirolina
+27/04/2022 18:22:20 Niño N27 se prepara para tirarse en la tirolina
+27/04/2022 18:22:20 Monitor M4 limpia bandeja
+27/04/2022 18:22:21 Niño N47 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:22:21 Niño N47 entra al campamento por la puerta derecha 
+27/04/2022 18:22:21 Niño N47 selecciona siguiente actividad
+27/04/2022 18:22:21 Niño N47 accede a la actividad soga
+27/04/2022 18:22:21 Niño N47 se mete en el equipo B
+27/04/2022 18:22:21 Niño N27 se tira por la tirolina
+27/04/2022 18:22:21 Monitor M3 limpia bandeja
+27/04/2022 18:22:22 Niño N18 merienda
+27/04/2022 18:22:22 Niño N18 deja plato sucio en su pila
+27/04/2022 18:22:22 Niño N18 se va a la zona comun
+27/04/2022 18:22:22 Niño N18 accede a la zona comun
+27/04/2022 18:22:22 Niño N48 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:22:22 Niño N48 entra al campamento por la puerta izquierda 
+27/04/2022 18:22:22 Niño N48 accede a la actividad soga
+27/04/2022 18:22:22 Niño N48 se mete en el quipo A
+27/04/2022 18:22:23 Niño N25 selecciona siguiente actividad
+27/04/2022 18:22:23 Niño N25 accede a la actividad soga
+27/04/2022 18:22:23 Niño N25 se mete en el quipo A
+27/04/2022 18:22:23 Niño N20 merienda
+27/04/2022 18:22:23 Niño N20 deja plato sucio en su pila
+27/04/2022 18:22:23 Niño N20 se va a la zona comun
+27/04/2022 18:22:23 Niño N20 accede a la zona comun
+27/04/2022 18:22:23 Niño N13 merienda
+27/04/2022 18:22:23 Niño N13 deja plato sucio en su pila
+27/04/2022 18:22:23 Niño N13 se va a la zona comun
+27/04/2022 18:22:23 Niño N13 accede a la zona comun
+27/04/2022 18:22:23 Niño N21 merienda
+27/04/2022 18:22:23 Niño N21 deja plato sucio en su pila
+27/04/2022 18:22:23 Niño N21 se va a la zona comun
+27/04/2022 18:22:23 Niño N21 accede a la zona comun
+27/04/2022 18:22:24 Niño N30 merienda
+27/04/2022 18:22:24 Niño N30 deja plato sucio en su pila
+27/04/2022 18:22:24 Niño N30 se va a la zona comun
+27/04/2022 18:22:24 Niño N30 accede a la zona comun
+27/04/2022 18:22:24 Niño N32 merienda
+27/04/2022 18:22:24 Niño N32 deja plato sucio en su pila
+27/04/2022 18:22:24 Niño N32 se va a la zona comun
+27/04/2022 18:22:24 Niño N32 accede a la zona comun
+27/04/2022 18:22:24 Niño N23 merienda
+27/04/2022 18:22:24 Niño N23 deja plato sucio en su pila
+27/04/2022 18:22:24 Niño N23 se va a la zona comun
+27/04/2022 18:22:24 Niño N23 accede a la zona comun
+27/04/2022 18:22:24 Niño N27 llega al final de la tirolina
+27/04/2022 18:22:24 Monitor M4 limpia bandeja
+27/04/2022 18:22:25 Niño N27 se baja de la tirolina
+27/04/2022 18:22:25 Niño N27 se va a la zona comun
+27/04/2022 18:22:25 Niño N27 accede a la zona comun
+27/04/2022 18:22:25 Niño N15 accede a la actividad tirolina
+27/04/2022 18:22:25 Niño N15 se prepara para tirarse en la tirolina
+27/04/2022 18:22:25 Niño N49 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:22:25 Niño N49 entra al campamento por la puerta derecha 
+27/04/2022 18:22:25 Niño N49 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:22:25 Niño N20 selecciona siguiente actividad
+27/04/2022 18:22:25 Niño N20 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:22:26 Niño N15 se tira por la tirolina
+27/04/2022 18:22:26 Niño N18 selecciona siguiente actividad
+27/04/2022 18:22:26 Niño N18 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:22:26 Monitor M3 limpia bandeja
+27/04/2022 18:22:26 Niño N30 selecciona siguiente actividad
+27/04/2022 18:22:26 Niño N30 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:22:26 Niño N50 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:22:26 Niño N50 entra al campamento por la puerta izquierda 
+27/04/2022 18:22:26 Niño N50 selecciona siguiente actividad
+27/04/2022 18:22:26 Niño N50 accede a la actividad soga
+27/04/2022 18:22:26 Niño N50 se mete en el quipo A
+27/04/2022 18:22:26 Niño N50 empieza competición de soga
+27/04/2022 18:22:26 Niño N22 empieza competición de soga
+27/04/2022 18:22:26 Niño N29 empieza competición de soga
+27/04/2022 18:22:26 Niño N48 empieza competición de soga
+27/04/2022 18:22:26 Niño N47 empieza competición de soga
+27/04/2022 18:22:26 Niño N7 empieza competición de soga
+27/04/2022 18:22:26 Niño N39 empieza competición de soga
+27/04/2022 18:22:26 Niño N45 empieza competición de soga
+27/04/2022 18:22:26 Niño N38 empieza competición de soga
+27/04/2022 18:22:26 Niño N25 empieza competición de soga
+27/04/2022 18:22:27 Niño N13 selecciona siguiente actividad
+27/04/2022 18:22:27 Niño N13 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:22:27 Niño N21 selecciona siguiente actividad
+27/04/2022 18:22:27 Niño N21 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:22:27 Niño N32 selecciona siguiente actividad
+27/04/2022 18:22:27 Niño N32 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:22:28 Niño N23 selecciona siguiente actividad
+27/04/2022 18:22:28 Niño N23 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:22:28 Niño N27 selecciona siguiente actividad
+27/04/2022 18:22:28 Niño N27 accede a la actividad soga
+27/04/2022 18:22:28 Niño N27 selecciona otra actividad ya que no hay hueco en actividad soga
+27/04/2022 18:22:28 Niño N27 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:22:29 Niño N51 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:22:29 Niño N51 entra al campamento por la puerta derecha 
+27/04/2022 18:22:29 Niño N51 accede a la actividad soga
+27/04/2022 18:22:29 Niño N51 selecciona otra actividad ya que no hay hueco en actividad soga
+27/04/2022 18:22:29 Niño N51 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:22:29 Niño N15 llega al final de la tirolina
+27/04/2022 18:22:29 Monitor M4 limpia bandeja
+27/04/2022 18:22:29 Niño N15 se baja de la tirolina
+27/04/2022 18:22:29 Niño N15 se va a la zona comun
+27/04/2022 18:22:29 Niño N15 accede a la zona comun
+27/04/2022 18:22:29 Monitor M2 se va al descanso
+27/04/2022 18:22:29 Niño N28 accede a la actividad tirolina
+27/04/2022 18:22:30 Monitor M3 limpia bandeja
+27/04/2022 18:22:31 Monitor M2 vuelve a su actividad
+27/04/2022 18:22:31 Monitor M2 accede a actividad tirolina
+27/04/2022 18:22:31 Niño N28 se prepara para tirarse en la tirolina
+27/04/2022 18:22:31 Niño N52 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:22:31 Niño N52 entra al campamento por la puerta izquierda 
+27/04/2022 18:22:31 Niño N52 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:22:32 Niño N28 se tira por la tirolina
+27/04/2022 18:22:32 Niño N15 selecciona siguiente actividad
+27/04/2022 18:22:32 Niño N15 accede a la actividad soga
+27/04/2022 18:22:32 Niño N15 selecciona otra actividad ya que no hay hueco en actividad soga
+27/04/2022 18:22:32 Niño N15 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:22:33 Monitor M4 limpia bandeja
+27/04/2022 18:22:33 Monitor M4 se va al descanso
+27/04/2022 18:22:33 Monitor M3 se va al descanso
+27/04/2022 18:22:33 Niño N53 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:22:33 Niño N39 termina competición soga
+27/04/2022 18:22:33 Niño N45 termina competición soga
+27/04/2022 18:22:33 Niño N38 termina competición soga
+27/04/2022 18:22:33 Niño N39 ha perdido competición soga
+27/04/2022 18:22:33 Niño N39 se va a la zona comun
+27/04/2022 18:22:33 Niño N39 accede a la zona comun
+27/04/2022 18:22:33 Niño N45 ha perdido competición soga
+27/04/2022 18:22:33 Niño N45 se va a la zona comun
+27/04/2022 18:22:33 Niño N22 termina competición soga
+27/04/2022 18:22:33 Niño N48 termina competición soga
+27/04/2022 18:22:33 Niño N50 termina competición soga
+27/04/2022 18:22:33 Niño N7 termina competición soga
+27/04/2022 18:22:33 Niño N29 termina competición soga
+27/04/2022 18:22:33 Niño N45 accede a la zona comun
+27/04/2022 18:22:33 Niño N47 termina competición soga
+27/04/2022 18:22:33 Niño N38 ha ganado competición soga
+27/04/2022 18:22:33 Niño N38 se va a la zona comun
+27/04/2022 18:22:33 Niño N38 accede a la zona comun
+27/04/2022 18:22:33 Niño N22 ha ganado competición soga
+27/04/2022 18:22:33 Niño N22 se va a la zona comun
+27/04/2022 18:22:33 Niño N22 accede a la zona comun
+27/04/2022 18:22:33 Niño N48 ha ganado competición soga
+27/04/2022 18:22:33 Niño N48 se va a la zona comun
+27/04/2022 18:22:33 Niño N48 accede a la zona comun
+27/04/2022 18:22:33 Niño N50 ha ganado competición soga
+27/04/2022 18:22:33 Niño N50 se va a la zona comun
+27/04/2022 18:22:33 Niño N50 accede a la zona comun
+27/04/2022 18:22:33 Niño N25 termina competición soga
+27/04/2022 18:22:33 Niño N7 ha perdido competición soga
+27/04/2022 18:22:33 Niño N7 se va a la zona comun
+27/04/2022 18:22:33 Niño N7 accede a la zona comun
+27/04/2022 18:22:33 Niño N29 ha perdido competición soga
+27/04/2022 18:22:33 Niño N29 se va a la zona comun
+27/04/2022 18:22:33 Niño N29 accede a la zona comun
+27/04/2022 18:22:33 Niño N47 ha perdido competición soga
+27/04/2022 18:22:33 Niño N47 se va a la zona comun
+27/04/2022 18:22:33 Niño N47 accede a la zona comun
+27/04/2022 18:22:33 Niño N25 ha ganado competición soga
+27/04/2022 18:22:33 Niño N25 se va a la zona comun
+27/04/2022 18:22:33 Niño N25 accede a la zona comun
+27/04/2022 18:22:34 Monitor M3 vuelve a su actividad
+27/04/2022 18:22:34 Monitor M3 accede a actividad merienda
+27/04/2022 18:22:34 Monitor M4 vuelve a su actividad
+27/04/2022 18:22:34 Monitor M4 accede a actividad merienda
+27/04/2022 18:22:35 Niño N28 llega al final de la tirolina
+27/04/2022 18:22:35 Niño N54 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:22:35 Niño N28 se baja de la tirolina
+27/04/2022 18:22:35 Niño N28 se va a la zona comun
+27/04/2022 18:22:35 Niño N28 accede a la zona comun
+27/04/2022 18:22:35 Niño N6 accede a la actividad tirolina
+27/04/2022 18:22:35 Niño N6 se prepara para tirarse en la tirolina
+27/04/2022 18:22:36 Niño N48 selecciona siguiente actividad
+27/04/2022 18:22:36 Niño N48 selecciona siguiente actividad
+27/04/2022 18:22:36 Niño N48 accede a la actividad soga
+27/04/2022 18:22:36 Niño N48 se mete en el quipo A
+27/04/2022 18:22:36 Niño N45 selecciona siguiente actividad
+27/04/2022 18:22:36 Niño N45 selecciona siguiente actividad
+27/04/2022 18:22:36 Niño N45 accede a la actividad soga
+27/04/2022 18:22:36 Niño N45 se mete en el equipo B
+27/04/2022 18:22:36 Niño N25 selecciona siguiente actividad
+27/04/2022 18:22:36 Niño N25 accede a la cola de la la actividad merienda
+27/04/2022 18:22:36 Niño N25 accede a la actividad merienda
+27/04/2022 18:22:36 Niño N25 coge plato limpio
+27/04/2022 18:22:36 Niño N6 se tira por la tirolina
+27/04/2022 18:22:36 Niño N29 selecciona siguiente actividad
+27/04/2022 18:22:36 Niño N29 accede a la cola de la la actividad merienda
+27/04/2022 18:22:36 Niño N29 accede a la actividad merienda
+27/04/2022 18:22:36 Niño N29 coge plato limpio
+27/04/2022 18:22:36 Niño N50 selecciona siguiente actividad
+27/04/2022 18:22:36 Niño N50 selecciona siguiente actividad
+27/04/2022 18:22:36 Niño N50 accede a la actividad soga
+27/04/2022 18:22:36 Niño N50 se mete en el quipo A
+27/04/2022 18:22:36 Niño N47 selecciona siguiente actividad
+27/04/2022 18:22:36 Niño N47 selecciona siguiente actividad
+27/04/2022 18:22:36 Niño N47 accede a la actividad soga
+27/04/2022 18:22:36 Niño N47 se mete en el equipo B
+27/04/2022 18:22:37 Niño N22 selecciona siguiente actividad
+27/04/2022 18:22:37 Niño N22 accede a la cola de la la actividad merienda
+27/04/2022 18:22:37 Niño N22 accede a la actividad merienda
+27/04/2022 18:22:37 Niño N22 coge plato limpio
+27/04/2022 18:22:37 Niño N7 selecciona siguiente actividad
+27/04/2022 18:22:37 Niño N7 accede a la cola de la la actividad merienda
+27/04/2022 18:22:37 Niño N7 accede a la actividad merienda
+27/04/2022 18:22:37 Niño N7 coge plato limpio
+27/04/2022 18:22:37 Niño N55 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:22:37 Niño N38 selecciona siguiente actividad
+27/04/2022 18:22:37 Niño N38 accede a la cola de la la actividad merienda
+27/04/2022 18:22:37 Niño N38 accede a la actividad merienda
+27/04/2022 18:22:37 Niño N38 coge plato limpio
+27/04/2022 18:22:37 Niño N39 selecciona siguiente actividad
+27/04/2022 18:22:37 Niño N39 selecciona siguiente actividad
+27/04/2022 18:22:37 Niño N39 accede a la actividad soga
+27/04/2022 18:22:37 Niño N39 se mete en el equipo B
+27/04/2022 18:22:38 Monitor M3 limpia bandeja
+27/04/2022 18:22:39 Niño N28 selecciona siguiente actividad
+27/04/2022 18:22:39 Niño N28 accede a la actividad soga
+27/04/2022 18:22:39 Niño N28 se mete en el quipo A
+27/04/2022 18:22:39 Monitor M4 limpia bandeja
+27/04/2022 18:22:39 Niño N6 llega al final de la tirolina
+27/04/2022 18:22:40 Niño N56 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:22:40 Niño N6 se baja de la tirolina
+27/04/2022 18:22:40 Niño N6 se va a la zona comun
+27/04/2022 18:22:40 Niño N6 accede a la zona comun
+27/04/2022 18:22:40 Niño N12 accede a la actividad tirolina
+27/04/2022 18:22:40 Niño N12 se prepara para tirarse en la tirolina
+27/04/2022 18:22:41 Niño N12 se tira por la tirolina
+27/04/2022 18:22:41 Niño N57 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:22:42 Monitor M3 limpia bandeja
+27/04/2022 18:22:42 Monitor M4 limpia bandeja
+27/04/2022 18:22:43 Niño N6 selecciona siguiente actividad
+27/04/2022 18:22:43 Niño N6 accede a la actividad soga
+27/04/2022 18:22:43 Niño N6 se mete en el quipo A
+27/04/2022 18:22:43 Niño N25 merienda
+27/04/2022 18:22:43 Niño N25 deja plato sucio en su pila
+27/04/2022 18:22:43 Niño N25 se va a la zona comun
+27/04/2022 18:22:43 Niño N25 accede a la zona comun
+27/04/2022 18:22:43 Niño N29 merienda
+27/04/2022 18:22:43 Niño N29 deja plato sucio en su pila
+27/04/2022 18:22:43 Niño N29 se va a la zona comun
+27/04/2022 18:22:43 Niño N29 accede a la zona comun
+27/04/2022 18:22:44 Niño N12 llega al final de la tirolina
+27/04/2022 18:22:44 Niño N58 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:22:44 Niño N22 merienda
+27/04/2022 18:22:44 Niño N22 deja plato sucio en su pila
+27/04/2022 18:22:44 Niño N22 se va a la zona comun
+27/04/2022 18:22:44 Niño N22 accede a la zona comun
+27/04/2022 18:22:44 Niño N7 merienda
+27/04/2022 18:22:44 Niño N7 deja plato sucio en su pila
+27/04/2022 18:22:44 Niño N7 se va a la zona comun
+27/04/2022 18:22:44 Niño N7 accede a la zona comun
+27/04/2022 18:22:44 Niño N12 se baja de la tirolina
+27/04/2022 18:22:44 Niño N12 se va a la zona comun
+27/04/2022 18:22:44 Niño N12 accede a la zona comun
+27/04/2022 18:22:44 Niño N1 accede a la actividad tirolina
+27/04/2022 18:22:44 Niño N1 se prepara para tirarse en la tirolina
+27/04/2022 18:22:44 Niño N38 merienda
+27/04/2022 18:22:44 Niño N38 deja plato sucio en su pila
+27/04/2022 18:22:44 Niño N38 se va a la zona comun
+27/04/2022 18:22:44 Niño N38 accede a la zona comun
+27/04/2022 18:22:45 Niño N1 se tira por la tirolina
+27/04/2022 18:22:46 Niño N29 selecciona siguiente actividad
+27/04/2022 18:22:46 Niño N29 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:22:46 Niño N59 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:22:46 Niño N22 selecciona siguiente actividad
+27/04/2022 18:22:46 Niño N22 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:22:47 Niño N25 selecciona siguiente actividad
+27/04/2022 18:22:47 Niño N25 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:22:47 Monitor M3 limpia bandeja
+27/04/2022 18:22:47 Monitor M4 limpia bandeja
+27/04/2022 18:22:48 Niño N7 selecciona siguiente actividad
+27/04/2022 18:22:48 Niño N7 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:22:48 Niño N12 selecciona siguiente actividad
+27/04/2022 18:22:48 Niño N12 accede a la actividad soga
+27/04/2022 18:22:48 Niño N12 se mete en el quipo A
+27/04/2022 18:22:48 Niño N60 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:22:48 Niño N1 llega al final de la tirolina
+27/04/2022 18:22:48 Niño N38 selecciona siguiente actividad
+27/04/2022 18:22:48 Niño N38 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:22:49 Niño N1 se baja de la tirolina
+27/04/2022 18:22:49 Niño N1 se va a la zona comun
+27/04/2022 18:22:49 Niño N1 accede a la zona comun
+27/04/2022 18:22:49 Niño N8 accede a la actividad tirolina
+27/04/2022 18:22:49 Niño N8 se prepara para tirarse en la tirolina
+27/04/2022 18:22:50 Niño N8 se tira por la tirolina
+27/04/2022 18:22:50 Niño N61 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:22:51 Niño N62 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:22:52 Monitor M3 limpia bandeja
+27/04/2022 18:22:52 Monitor M4 limpia bandeja
+27/04/2022 18:22:52 Niño N63 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:22:53 Niño N1 selecciona siguiente actividad
+27/04/2022 18:22:53 Niño N1 accede a la actividad soga
+27/04/2022 18:22:53 Niño N1 se mete en el equipo B
+27/04/2022 18:22:53 Niño N8 llega al final de la tirolina
+27/04/2022 18:22:53 Niño N8 se baja de la tirolina
+27/04/2022 18:22:53 Niño N8 se va a la zona comun
+27/04/2022 18:22:53 Niño N8 accede a la zona comun
+27/04/2022 18:22:53 Niño N2 accede a la actividad tirolina
+27/04/2022 18:22:53 Niño N2 se prepara para tirarse en la tirolina
+27/04/2022 18:22:54 Niño N2 se tira por la tirolina
+27/04/2022 18:22:54 Niño N64 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:22:55 Monitor M3 limpia bandeja
+27/04/2022 18:22:55 Niño N65 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:22:55 Monitor M4 limpia bandeja
+27/04/2022 18:22:56 Niño N8 selecciona siguiente actividad
+27/04/2022 18:22:56 Niño N8 accede a la actividad soga
+27/04/2022 18:22:56 Niño N8 se mete en el equipo B
+27/04/2022 18:22:56 Niño N8 empieza competición de soga
+27/04/2022 18:22:56 Niño N48 empieza competición de soga
+27/04/2022 18:22:56 Niño N39 empieza competición de soga
+27/04/2022 18:22:56 Niño N47 empieza competición de soga
+27/04/2022 18:22:56 Niño N50 empieza competición de soga
+27/04/2022 18:22:56 Niño N45 empieza competición de soga
+27/04/2022 18:22:56 Niño N1 empieza competición de soga
+27/04/2022 18:22:56 Niño N12 empieza competición de soga
+27/04/2022 18:22:56 Niño N6 empieza competición de soga
+27/04/2022 18:22:56 Niño N28 empieza competición de soga
+27/04/2022 18:22:57 Niño N2 llega al final de la tirolina
+27/04/2022 18:22:58 Niño N2 se baja de la tirolina
+27/04/2022 18:22:58 Niño N2 se va a la zona comun
+27/04/2022 18:22:58 Niño N2 accede a la zona comun
+27/04/2022 18:22:58 Niño N5 accede a la actividad tirolina
+27/04/2022 18:22:58 Niño N5 se prepara para tirarse en la tirolina
+27/04/2022 18:22:58 Niño N66 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:22:59 Niño N5 se tira por la tirolina
+27/04/2022 18:23:00 Niño N67 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:23:01 Niño N68 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:23:01 Niño N2 selecciona siguiente actividad
+27/04/2022 18:23:01 Niño N2 accede a la actividad soga
+27/04/2022 18:23:01 Niño N2 selecciona otra actividad ya que no hay hueco en actividad soga
+27/04/2022 18:23:01 Niño N2 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:23:02 Niño N5 llega al final de la tirolina
+27/04/2022 18:23:02 Niño N5 se baja de la tirolina
+27/04/2022 18:23:02 Niño N5 se va a la zona comun
+27/04/2022 18:23:02 Niño N5 accede a la zona comun
+27/04/2022 18:23:02 Niño N31 accede a la actividad tirolina
+27/04/2022 18:23:02 Niño N31 se prepara para tirarse en la tirolina
+27/04/2022 18:23:03 Niño N47 termina competición soga
+27/04/2022 18:23:03 Niño N48 termina competición soga
+27/04/2022 18:23:03 Niño N39 termina competición soga
+27/04/2022 18:23:03 Niño N50 termina competición soga
+27/04/2022 18:23:03 Niño N47 ha perdido competición soga
+27/04/2022 18:23:03 Niño N47 se va a la zona comun
+27/04/2022 18:23:03 Niño N47 accede a la zona comun
+27/04/2022 18:23:03 Niño N1 termina competición soga
+27/04/2022 18:23:03 Niño N48 ha ganado competición soga
+27/04/2022 18:23:03 Niño N28 termina competición soga
+27/04/2022 18:23:03 Niño N6 termina competición soga
+27/04/2022 18:23:03 Niño N12 termina competición soga
+27/04/2022 18:23:03 Niño N48 se va a la zona comun
+27/04/2022 18:23:03 Niño N48 accede a la zona comun
+27/04/2022 18:23:03 Niño N39 ha perdido competición soga
+27/04/2022 18:23:03 Niño N39 se va a la zona comun
+27/04/2022 18:23:03 Niño N39 accede a la zona comun
+27/04/2022 18:23:03 Niño N8 termina competición soga
+27/04/2022 18:23:03 Niño N45 termina competición soga
+27/04/2022 18:23:03 Niño N50 ha ganado competición soga
+27/04/2022 18:23:03 Niño N50 se va a la zona comun
+27/04/2022 18:23:03 Niño N50 accede a la zona comun
+27/04/2022 18:23:03 Niño N1 ha perdido competición soga
+27/04/2022 18:23:03 Niño N1 se va a la zona comun
+27/04/2022 18:23:03 Niño N1 accede a la zona comun
+27/04/2022 18:23:03 Niño N28 ha ganado competición soga
+27/04/2022 18:23:03 Niño N28 se va a la zona comun
+27/04/2022 18:23:03 Niño N28 accede a la zona comun
+27/04/2022 18:23:03 Niño N6 ha ganado competición soga
+27/04/2022 18:23:03 Niño N6 se va a la zona comun
+27/04/2022 18:23:03 Niño N6 accede a la zona comun
+27/04/2022 18:23:03 Niño N12 ha ganado competición soga
+27/04/2022 18:23:03 Niño N12 se va a la zona comun
+27/04/2022 18:23:03 Niño N12 accede a la zona comun
+27/04/2022 18:23:03 Niño N8 ha perdido competición soga
+27/04/2022 18:23:03 Niño N8 se va a la zona comun
+27/04/2022 18:23:03 Niño N8 accede a la zona comun
+27/04/2022 18:23:03 Niño N45 ha perdido competición soga
+27/04/2022 18:23:03 Niño N45 se va a la zona comun
+27/04/2022 18:23:03 Niño N45 accede a la zona comun
+27/04/2022 18:23:03 Niño N31 se tira por la tirolina
+27/04/2022 18:23:04 Niño N69 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:23:05 Niño N5 selecciona siguiente actividad
+27/04/2022 18:23:05 Niño N5 accede a la actividad soga
+27/04/2022 18:23:05 Niño N5 se mete en el equipo B
+27/04/2022 18:23:05 Niño N48 selecciona siguiente actividad
+27/04/2022 18:23:05 Niño N48 accede a la cola de la la actividad merienda
+27/04/2022 18:23:05 Niño N48 accede a la actividad merienda
+27/04/2022 18:23:06 Niño N70 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:23:06 Niño N45 selecciona siguiente actividad
+27/04/2022 18:23:06 Niño N45 selecciona siguiente actividad
+27/04/2022 18:23:06 Niño N45 accede a la actividad soga
+27/04/2022 18:23:06 Niño N45 se mete en el equipo B
+27/04/2022 18:23:06 Niño N31 llega al final de la tirolina
+27/04/2022 18:23:06 Niño N28 selecciona siguiente actividad
+27/04/2022 18:23:06 Niño N28 accede a la cola de la la actividad merienda
+27/04/2022 18:23:06 Niño N28 accede a la actividad merienda
+27/04/2022 18:23:06 Niño N8 selecciona siguiente actividad
+27/04/2022 18:23:06 Niño N8 accede a la cola de la la actividad merienda
+27/04/2022 18:23:06 Niño N8 accede a la actividad merienda
+27/04/2022 18:23:06 Niño N47 selecciona siguiente actividad
+27/04/2022 18:23:06 Niño N47 selecciona siguiente actividad
+27/04/2022 18:23:06 Niño N47 accede a la actividad soga
+27/04/2022 18:23:06 Niño N47 se mete en el equipo B
+27/04/2022 18:23:06 Niño N1 selecciona siguiente actividad
+27/04/2022 18:23:06 Niño N1 accede a la cola de la la actividad merienda
+27/04/2022 18:23:06 Niño N1 accede a la actividad merienda
+27/04/2022 18:23:06 Niño N6 selecciona siguiente actividad
+27/04/2022 18:23:06 Niño N6 accede a la cola de la la actividad merienda
+27/04/2022 18:23:06 Niño N6 accede a la actividad merienda
+27/04/2022 18:23:06 Niño N39 selecciona siguiente actividad
+27/04/2022 18:23:06 Niño N39 accede a la cola de la la actividad merienda
+27/04/2022 18:23:06 Niño N39 accede a la actividad merienda
+27/04/2022 18:23:07 Niño N50 selecciona siguiente actividad
+27/04/2022 18:23:07 Niño N50 accede a la cola de la la actividad merienda
+27/04/2022 18:23:07 Niño N50 accede a la actividad merienda
+27/04/2022 18:23:07 Niño N31 se baja de la tirolina
+27/04/2022 18:23:07 Niño N31 se va a la zona comun
+27/04/2022 18:23:07 Niño N31 accede a la zona comun
+27/04/2022 18:23:07 Niño N33 accede a la actividad tirolina
+27/04/2022 18:23:07 Niño N33 se prepara para tirarse en la tirolina
+27/04/2022 18:23:07 Niño N71 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:23:07 Niño N12 selecciona siguiente actividad
+27/04/2022 18:23:07 Niño N12 accede a la cola de la la actividad merienda
+27/04/2022 18:23:07 Niño N12 accede a la actividad merienda
+27/04/2022 18:23:08 Niño N33 se tira por la tirolina
+27/04/2022 18:23:08 Niño N72 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:23:09 Niño N31 selecciona siguiente actividad
+27/04/2022 18:23:09 Niño N31 accede a la actividad soga
+27/04/2022 18:23:09 Niño N31 se mete en el equipo B
+27/04/2022 18:23:11 Niño N33 llega al final de la tirolina
+27/04/2022 18:23:11 Niño N73 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:23:11 Niño N33 se baja de la tirolina
+27/04/2022 18:23:11 Niño N33 se va a la zona comun
+27/04/2022 18:23:11 Niño N33 accede a la zona comun
+27/04/2022 18:23:11 Niño N34 accede a la actividad tirolina
+27/04/2022 18:23:11 Niño N34 se prepara para tirarse en la tirolina
+27/04/2022 18:23:12 Niño N34 se tira por la tirolina
+27/04/2022 18:23:13 Niño N74 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:23:14 Niño N33 selecciona siguiente actividad
+27/04/2022 18:23:14 Niño N33 accede a la actividad soga
+27/04/2022 18:23:14 Niño N33 se mete en el equipo B
+27/04/2022 18:23:14 Niño N75 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:23:15 Niño N34 llega al final de la tirolina
+27/04/2022 18:23:16 Niño N34 se baja de la tirolina
+27/04/2022 18:23:16 Niño N34 se va a la zona comun
+27/04/2022 18:23:16 Niño N34 accede a la zona comun
+27/04/2022 18:23:16 Monitor M2 se va al descanso
+27/04/2022 18:23:16 Niño N3 accede a la actividad tirolina
+27/04/2022 18:23:17 Monitor M2 vuelve a su actividad
+27/04/2022 18:23:17 Monitor M2 accede a actividad tirolina
+27/04/2022 18:23:17 Niño N3 se prepara para tirarse en la tirolina
+27/04/2022 18:23:17 Niño N76 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:23:18 Niño N3 se tira por la tirolina
+27/04/2022 18:23:19 Niño N34 selecciona siguiente actividad
+27/04/2022 18:23:19 Niño N34 accede a la actividad soga
+27/04/2022 18:23:19 Niño N34 se mete en el quipo A
+27/04/2022 18:23:19 Niño N77 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:23:21 Niño N78 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:23:21 Niño N3 llega al final de la tirolina
+27/04/2022 18:23:22 Niño N3 se baja de la tirolina
+27/04/2022 18:23:22 Niño N3 se va a la zona comun
+27/04/2022 18:23:22 Niño N3 accede a la zona comun
+27/04/2022 18:23:22 Niño N19 accede a la actividad tirolina
+27/04/2022 18:23:22 Niño N19 se prepara para tirarse en la tirolina
+27/04/2022 18:23:22 Niño N79 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:23:23 Niño N19 se tira por la tirolina
+27/04/2022 18:23:24 Niño N80 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:23:25 Niño N3 selecciona siguiente actividad
+27/04/2022 18:23:25 Niño N3 accede a la actividad soga
+27/04/2022 18:23:25 Niño N3 se mete en el quipo A
+27/04/2022 18:23:25 Niño N81 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:23:26 Niño N19 llega al final de la tirolina
+27/04/2022 18:23:26 Niño N19 se baja de la tirolina
+27/04/2022 18:23:26 Niño N19 se va a la zona comun
+27/04/2022 18:23:26 Niño N19 accede a la zona comun
+27/04/2022 18:23:26 Niño N14 accede a la actividad tirolina
+27/04/2022 18:23:26 Niño N14 se prepara para tirarse en la tirolina
+27/04/2022 18:23:27 Niño N14 se tira por la tirolina
+27/04/2022 18:23:27 Niño N82 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:23:29 Niño N19 selecciona siguiente actividad
+27/04/2022 18:23:29 Niño N19 accede a la actividad soga
+27/04/2022 18:23:29 Niño N19 se mete en el quipo A
+27/04/2022 18:23:29 Niño N83 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:23:30 Niño N14 llega al final de la tirolina
+27/04/2022 18:23:31 Niño N14 se baja de la tirolina
+27/04/2022 18:23:31 Niño N14 se va a la zona comun
+27/04/2022 18:23:31 Niño N14 accede a la zona comun
+27/04/2022 18:23:31 Niño N10 accede a la actividad tirolina
+27/04/2022 18:23:31 Niño N10 se prepara para tirarse en la tirolina
+27/04/2022 18:23:31 Niño N84 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:23:32 Niño N10 se tira por la tirolina
+27/04/2022 18:23:32 Niño N85 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:23:34 Niño N86 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:23:35 Niño N14 selecciona siguiente actividad
+27/04/2022 18:23:35 Niño N14 accede a la actividad soga
+27/04/2022 18:23:35 Niño N14 se mete en el quipo A
+27/04/2022 18:23:35 Niño N10 llega al final de la tirolina
+27/04/2022 18:23:35 Niño N10 se baja de la tirolina
+27/04/2022 18:23:35 Niño N10 se va a la zona comun
+27/04/2022 18:23:35 Niño N10 accede a la zona comun
+27/04/2022 18:23:35 Niño N9 accede a la actividad tirolina
+27/04/2022 18:23:35 Niño N9 se prepara para tirarse en la tirolina
+27/04/2022 18:23:36 Niño N87 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:23:36 Niño N9 se tira por la tirolina
+27/04/2022 18:23:38 Niño N10 selecciona siguiente actividad
+27/04/2022 18:23:38 Niño N10 accede a la actividad soga
+27/04/2022 18:23:38 Niño N10 se mete en el quipo A
+27/04/2022 18:23:38 Niño N10 empieza competición de soga
+27/04/2022 18:23:38 Niño N5 empieza competición de soga
+27/04/2022 18:23:38 Niño N33 empieza competición de soga
+27/04/2022 18:23:38 Niño N14 empieza competición de soga
+27/04/2022 18:23:38 Niño N31 empieza competición de soga
+27/04/2022 18:23:38 Niño N47 empieza competición de soga
+27/04/2022 18:23:38 Niño N45 empieza competición de soga
+27/04/2022 18:23:38 Niño N19 empieza competición de soga
+27/04/2022 18:23:38 Niño N3 empieza competición de soga
+27/04/2022 18:23:38 Niño N34 empieza competición de soga
+27/04/2022 18:23:39 Niño N88 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:23:39 Niño N9 llega al final de la tirolina
+27/04/2022 18:23:40 Niño N89 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:23:40 Niño N9 se baja de la tirolina
+27/04/2022 18:23:40 Niño N9 se va a la zona comun
+27/04/2022 18:23:40 Niño N9 accede a la zona comun
+27/04/2022 18:23:40 Niño N35 accede a la actividad tirolina
+27/04/2022 18:23:40 Niño N35 se prepara para tirarse en la tirolina
+27/04/2022 18:23:41 Niño N35 se tira por la tirolina
+27/04/2022 18:23:42 Niño N90 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:23:43 Niño N9 selecciona siguiente actividad
+27/04/2022 18:23:43 Niño N9 accede a la actividad soga
+27/04/2022 18:23:43 Niño N9 selecciona otra actividad ya que no hay hueco en actividad soga
+27/04/2022 18:23:43 Niño N9 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:23:44 Niño N35 llega al final de la tirolina
+27/04/2022 18:23:44 Niño N91 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:23:44 Niño N35 se baja de la tirolina
+27/04/2022 18:23:44 Niño N35 se va a la zona comun
+27/04/2022 18:23:44 Niño N35 accede a la zona comun
+27/04/2022 18:23:44 Niño N36 accede a la actividad tirolina
+27/04/2022 18:23:44 Niño N36 se prepara para tirarse en la tirolina
+27/04/2022 18:23:45 Niño N36 se tira por la tirolina
+27/04/2022 18:23:45 Niño N19 termina competición soga
+27/04/2022 18:23:45 Niño N34 termina competición soga
+27/04/2022 18:23:45 Niño N3 termina competición soga
+27/04/2022 18:23:45 Niño N45 termina competición soga
+27/04/2022 18:23:45 Niño N5 termina competición soga
+27/04/2022 18:23:45 Niño N31 termina competición soga
+27/04/2022 18:23:45 Niño N33 termina competición soga
+27/04/2022 18:23:45 Niño N14 termina competición soga
+27/04/2022 18:23:45 Niño N10 termina competición soga
+27/04/2022 18:23:45 Niño N47 termina competición soga
+27/04/2022 18:23:45 Niño N19 ha ganado competición soga
+27/04/2022 18:23:45 Niño N19 se va a la zona comun
+27/04/2022 18:23:45 Niño N19 accede a la zona comun
+27/04/2022 18:23:45 Niño N34 ha ganado competición soga
+27/04/2022 18:23:45 Niño N34 se va a la zona comun
+27/04/2022 18:23:45 Niño N34 accede a la zona comun
+27/04/2022 18:23:45 Niño N3 ha ganado competición soga
+27/04/2022 18:23:45 Niño N3 se va a la zona comun
+27/04/2022 18:23:45 Niño N3 accede a la zona comun
+27/04/2022 18:23:45 Niño N45 ha perdido competición soga
+27/04/2022 18:23:45 Niño N45 se va a la zona comun
+27/04/2022 18:23:45 Niño N45 accede a la zona comun
+27/04/2022 18:23:45 Niño N5 ha perdido competición soga
+27/04/2022 18:23:45 Niño N5 se va a la zona comun
+27/04/2022 18:23:45 Niño N5 accede a la zona comun
+27/04/2022 18:23:45 Niño N31 ha perdido competición soga
+27/04/2022 18:23:45 Niño N31 se va a la zona comun
+27/04/2022 18:23:45 Niño N31 accede a la zona comun
+27/04/2022 18:23:45 Niño N33 ha perdido competición soga
+27/04/2022 18:23:45 Niño N33 se va a la zona comun
+27/04/2022 18:23:45 Niño N33 accede a la zona comun
+27/04/2022 18:23:45 Niño N14 ha ganado competición soga
+27/04/2022 18:23:45 Niño N14 se va a la zona comun
+27/04/2022 18:23:45 Niño N14 accede a la zona comun
+27/04/2022 18:23:45 Niño N10 ha ganado competición soga
+27/04/2022 18:23:45 Niño N10 se va a la zona comun
+27/04/2022 18:23:45 Niño N10 accede a la zona comun
+27/04/2022 18:23:45 Niño N47 ha perdido competición soga
+27/04/2022 18:23:45 Niño N47 se va a la zona comun
+27/04/2022 18:23:45 Niño N47 accede a la zona comun
+27/04/2022 18:23:46 Niño N35 selecciona siguiente actividad
+27/04/2022 18:23:46 Niño N35 accede a la actividad soga
+27/04/2022 18:23:46 Niño N35 se mete en el equipo B
+27/04/2022 18:23:47 Niño N92 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:23:47 Niño N19 selecciona siguiente actividad
+27/04/2022 18:23:47 Niño N19 accede a la cola de la la actividad merienda
+27/04/2022 18:23:47 Niño N19 accede a la actividad merienda
+27/04/2022 18:23:47 Niño N14 selecciona siguiente actividad
+27/04/2022 18:23:47 Niño N14 accede a la cola de la la actividad merienda
+27/04/2022 18:23:47 Niño N14 accede a la actividad merienda
+27/04/2022 18:23:48 Niño N33 selecciona siguiente actividad
+27/04/2022 18:23:48 Niño N33 selecciona siguiente actividad
+27/04/2022 18:23:48 Niño N33 accede a la actividad soga
+27/04/2022 18:23:48 Niño N33 se mete en el equipo B
+27/04/2022 18:23:48 Niño N31 selecciona siguiente actividad
+27/04/2022 18:23:48 Niño N31 selecciona siguiente actividad
+27/04/2022 18:23:48 Niño N31 accede a la actividad soga
+27/04/2022 18:23:48 Niño N31 se mete en el equipo B
+27/04/2022 18:23:48 Niño N45 selecciona siguiente actividad
+27/04/2022 18:23:48 Niño N45 accede a la cola de la la actividad merienda
+27/04/2022 18:23:48 Niño N45 accede a la actividad merienda
+27/04/2022 18:23:48 Niño N47 selecciona siguiente actividad
+27/04/2022 18:23:48 Niño N47 accede a la cola de la la actividad merienda
+27/04/2022 18:23:48 Niño N47 accede a la actividad merienda
+27/04/2022 18:23:48 Niño N36 llega al final de la tirolina
+27/04/2022 18:23:49 Niño N5 selecciona siguiente actividad
+27/04/2022 18:23:49 Niño N5 accede a la cola de la la actividad merienda
+27/04/2022 18:23:49 Niño N5 accede a la actividad merienda
+27/04/2022 18:23:49 Niño N36 se baja de la tirolina
+27/04/2022 18:23:49 Niño N36 se va a la zona comun
+27/04/2022 18:23:49 Niño N36 accede a la zona comun
+27/04/2022 18:23:49 Niño N11 accede a la actividad tirolina
+27/04/2022 18:23:49 Niño N11 se prepara para tirarse en la tirolina
+27/04/2022 18:23:49 Niño N34 selecciona siguiente actividad
+27/04/2022 18:23:49 Niño N34 accede a la cola de la la actividad merienda
+27/04/2022 18:23:49 Niño N34 accede a la actividad merienda
+27/04/2022 18:23:49 Niño N10 selecciona siguiente actividad
+27/04/2022 18:23:49 Niño N10 accede a la cola de la la actividad merienda
+27/04/2022 18:23:49 Niño N10 accede a la actividad merienda
+27/04/2022 18:23:49 Niño N3 selecciona siguiente actividad
+27/04/2022 18:23:49 Niño N3 accede a la cola de la la actividad merienda
+27/04/2022 18:23:49 Niño N3 accede a la actividad merienda
+27/04/2022 18:23:49 Niño N93 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:23:50 Niño N11 se tira por la tirolina
+27/04/2022 18:23:51 Niño N94 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:23:52 Niño N36 selecciona siguiente actividad
+27/04/2022 18:23:52 Niño N36 accede a la actividad soga
+27/04/2022 18:23:52 Niño N36 se mete en el quipo A
+27/04/2022 18:23:53 Niño N11 llega al final de la tirolina
+27/04/2022 18:23:53 Niño N95 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:23:53 Niño N11 se baja de la tirolina
+27/04/2022 18:23:53 Niño N11 se va a la zona comun
+27/04/2022 18:23:53 Niño N11 accede a la zona comun
+27/04/2022 18:23:53 Niño N37 accede a la actividad tirolina
+27/04/2022 18:23:53 Niño N37 se prepara para tirarse en la tirolina
+27/04/2022 18:23:54 Niño N37 se tira por la tirolina
+27/04/2022 18:23:56 Niño N96 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:23:57 Niño N11 selecciona siguiente actividad
+27/04/2022 18:23:57 Niño N11 accede a la actividad soga
+27/04/2022 18:23:57 Niño N11 se mete en el equipo B
+27/04/2022 18:23:57 Niño N37 llega al final de la tirolina
+27/04/2022 18:23:57 Niño N97 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:23:58 Niño N37 se baja de la tirolina
+27/04/2022 18:23:58 Niño N37 se va a la zona comun
+27/04/2022 18:23:58 Niño N37 accede a la zona comun
+27/04/2022 18:23:58 Niño N40 accede a la actividad tirolina
+27/04/2022 18:23:58 Niño N40 se prepara para tirarse en la tirolina
+27/04/2022 18:23:59 Niño N40 se tira por la tirolina
+27/04/2022 18:24:00 Niño N98 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:24:01 Niño N37 selecciona siguiente actividad
+27/04/2022 18:24:01 Niño N37 accede a la actividad soga
+27/04/2022 18:24:01 Niño N37 se mete en el equipo B
+27/04/2022 18:24:02 Niño N40 llega al final de la tirolina
+27/04/2022 18:24:02 Niño N40 se baja de la tirolina
+27/04/2022 18:24:02 Niño N40 se va a la zona comun
+27/04/2022 18:24:02 Niño N40 accede a la zona comun
+27/04/2022 18:24:02 Monitor M2 se va al descanso
+27/04/2022 18:24:02 Niño N41 accede a la actividad tirolina
+27/04/2022 18:24:03 Niño N99 intenta entrar al campamento por la puerta derecha 
+27/04/2022 18:24:04 Monitor M2 vuelve a su actividad
+27/04/2022 18:24:04 Monitor M2 accede a actividad tirolina
+27/04/2022 18:24:04 Niño N41 se prepara para tirarse en la tirolina
+27/04/2022 18:24:05 Niño N41 se tira por la tirolina
+27/04/2022 18:24:06 Niño N40 selecciona siguiente actividad
+27/04/2022 18:24:06 Niño N40 accede a la actividad soga
+27/04/2022 18:24:06 Niño N40 se mete en el quipo A
+27/04/2022 18:24:06 Niño N100 intenta entrar al campamento por la puerta izquierda 
+27/04/2022 18:24:08 Niño N41 llega al final de la tirolina
+27/04/2022 18:24:08 Niño N41 se baja de la tirolina
+27/04/2022 18:24:08 Niño N41 se va a la zona comun
+27/04/2022 18:24:08 Niño N41 accede a la zona comun
+27/04/2022 18:24:08 Niño N42 accede a la actividad tirolina
+27/04/2022 18:24:08 Niño N42 se prepara para tirarse en la tirolina
+27/04/2022 18:24:09 Niño N42 se tira por la tirolina
+27/04/2022 18:24:11 Niño N41 selecciona siguiente actividad
+27/04/2022 18:24:11 Niño N41 accede a la actividad soga
+27/04/2022 18:24:11 Niño N41 se mete en el quipo A
+27/04/2022 18:24:12 Niño N42 llega al final de la tirolina
+27/04/2022 18:24:13 Niño N42 se baja de la tirolina
+27/04/2022 18:24:13 Niño N42 se va a la zona comun
+27/04/2022 18:24:13 Niño N42 accede a la zona comun
+27/04/2022 18:24:13 Niño N4 accede a la actividad tirolina
+27/04/2022 18:24:13 Niño N4 se prepara para tirarse en la tirolina
+27/04/2022 18:24:14 Niño N4 se tira por la tirolina
+27/04/2022 18:24:16 Niño N42 selecciona siguiente actividad
+27/04/2022 18:24:16 Niño N42 accede a la actividad soga
+27/04/2022 18:24:16 Niño N42 se mete en el quipo A
+27/04/2022 18:24:17 Niño N4 llega al final de la tirolina
+27/04/2022 18:24:17 Niño N4 se baja de la tirolina
+27/04/2022 18:24:17 Niño N4 se va a la zona comun
+27/04/2022 18:24:17 Niño N4 accede a la zona comun
+27/04/2022 18:24:17 Niño N43 accede a la actividad tirolina
+27/04/2022 18:24:17 Niño N43 se prepara para tirarse en la tirolina
+27/04/2022 18:24:18 Niño N43 se tira por la tirolina
+27/04/2022 18:24:21 Niño N4 selecciona siguiente actividad
+27/04/2022 18:24:21 Niño N4 accede a la actividad soga
+27/04/2022 18:24:21 Niño N4 se mete en el quipo A
+27/04/2022 18:24:21 Niño N4 empieza competición de soga
+27/04/2022 18:24:21 Niño N35 empieza competición de soga
+27/04/2022 18:24:21 Niño N36 empieza competición de soga
+27/04/2022 18:24:21 Niño N31 empieza competición de soga
+27/04/2022 18:24:21 Niño N33 empieza competición de soga
+27/04/2022 18:24:21 Niño N42 empieza competición de soga
+27/04/2022 18:24:21 Niño N41 empieza competición de soga
+27/04/2022 18:24:21 Niño N40 empieza competición de soga
+27/04/2022 18:24:21 Niño N37 empieza competición de soga
+27/04/2022 18:24:21 Niño N11 empieza competición de soga
+27/04/2022 18:24:21 Niño N43 llega al final de la tirolina
+27/04/2022 18:24:22 Niño N43 se baja de la tirolina
+27/04/2022 18:24:22 Niño N43 se va a la zona comun
+27/04/2022 18:24:22 Niño N43 accede a la zona comun
+27/04/2022 18:24:22 Niño N24 accede a la actividad tirolina
+27/04/2022 18:24:22 Niño N24 se prepara para tirarse en la tirolina
+27/04/2022 18:24:23 Niño N24 se tira por la tirolina
+27/04/2022 18:24:24 Niño N43 selecciona siguiente actividad
+27/04/2022 18:24:24 Niño N43 accede a la actividad soga
+27/04/2022 18:24:24 Niño N43 selecciona otra actividad ya que no hay hueco en actividad soga
+27/04/2022 18:24:24 Niño N43 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:24:26 Niño N24 llega al final de la tirolina
+27/04/2022 18:24:26 Niño N24 se baja de la tirolina
+27/04/2022 18:24:26 Niño N24 se va a la zona comun
+27/04/2022 18:24:26 Niño N24 accede a la zona comun
+27/04/2022 18:24:26 Niño N16 accede a la actividad tirolina
+27/04/2022 18:24:26 Niño N16 se prepara para tirarse en la tirolina
+27/04/2022 18:24:27 Niño N16 se tira por la tirolina
+27/04/2022 18:24:28 Niño N35 termina competición soga
+27/04/2022 18:24:28 Niño N36 termina competición soga
+27/04/2022 18:24:28 Niño N31 termina competición soga
+27/04/2022 18:24:28 Niño N35 ha perdido competición soga
+27/04/2022 18:24:28 Niño N35 se va a la zona comun
+27/04/2022 18:24:28 Niño N35 accede a la zona comun
+27/04/2022 18:24:28 Niño N36 ha ganado competición soga
+27/04/2022 18:24:28 Niño N36 se va a la zona comun
+27/04/2022 18:24:28 Niño N36 accede a la zona comun
+27/04/2022 18:24:28 Niño N33 termina competición soga
+27/04/2022 18:24:28 Niño N40 termina competición soga
+27/04/2022 18:24:28 Niño N41 termina competición soga
+27/04/2022 18:24:28 Niño N11 termina competición soga
+27/04/2022 18:24:28 Niño N37 termina competición soga
+27/04/2022 18:24:28 Niño N42 termina competición soga
+27/04/2022 18:24:28 Niño N31 ha perdido competición soga
+27/04/2022 18:24:28 Niño N4 termina competición soga
+27/04/2022 18:24:28 Niño N31 se va a la zona comun
+27/04/2022 18:24:28 Niño N31 accede a la zona comun
+27/04/2022 18:24:28 Niño N33 ha perdido competición soga
+27/04/2022 18:24:28 Niño N33 se va a la zona comun
+27/04/2022 18:24:28 Niño N33 accede a la zona comun
+27/04/2022 18:24:28 Niño N40 ha ganado competición soga
+27/04/2022 18:24:28 Niño N40 se va a la zona comun
+27/04/2022 18:24:28 Niño N40 accede a la zona comun
+27/04/2022 18:24:28 Niño N41 ha ganado competición soga
+27/04/2022 18:24:28 Niño N41 se va a la zona comun
+27/04/2022 18:24:28 Niño N41 accede a la zona comun
+27/04/2022 18:24:28 Niño N11 ha perdido competición soga
+27/04/2022 18:24:28 Niño N11 se va a la zona comun
+27/04/2022 18:24:28 Niño N11 accede a la zona comun
+27/04/2022 18:24:28 Niño N37 ha perdido competición soga
+27/04/2022 18:24:28 Niño N37 se va a la zona comun
+27/04/2022 18:24:28 Niño N37 accede a la zona comun
+27/04/2022 18:24:28 Niño N42 ha ganado competición soga
+27/04/2022 18:24:28 Niño N42 se va a la zona comun
+27/04/2022 18:24:28 Niño N42 accede a la zona comun
+27/04/2022 18:24:28 Niño N4 ha ganado competición soga
+27/04/2022 18:24:28 Niño N4 se va a la zona comun
+27/04/2022 18:24:28 Niño N4 accede a la zona comun
+27/04/2022 18:24:30 Niño N24 selecciona siguiente actividad
+27/04/2022 18:24:30 Niño N24 accede a la actividad soga
+27/04/2022 18:24:30 Niño N24 se mete en el quipo A
+27/04/2022 18:24:30 Niño N40 selecciona siguiente actividad
+27/04/2022 18:24:30 Niño N40 accede a la cola de la la actividad merienda
+27/04/2022 18:24:30 Niño N40 accede a la actividad merienda
+27/04/2022 18:24:30 Niño N36 selecciona siguiente actividad
+27/04/2022 18:24:30 Niño N36 accede a la cola de la la actividad merienda
+27/04/2022 18:24:30 Niño N36 accede a la actividad merienda
+27/04/2022 18:24:30 Niño N37 selecciona siguiente actividad
+27/04/2022 18:24:30 Niño N37 selecciona siguiente actividad
+27/04/2022 18:24:30 Niño N37 accede a la actividad soga
+27/04/2022 18:24:30 Niño N37 se mete en el equipo B
+27/04/2022 18:24:31 Niño N16 llega al final de la tirolina
+27/04/2022 18:24:31 Niño N4 selecciona siguiente actividad
+27/04/2022 18:24:31 Niño N4 accede a la cola de la la actividad merienda
+27/04/2022 18:24:31 Niño N4 accede a la actividad merienda
+27/04/2022 18:24:31 Niño N41 selecciona siguiente actividad
+27/04/2022 18:24:31 Niño N41 accede a la cola de la la actividad merienda
+27/04/2022 18:24:31 Niño N41 accede a la actividad merienda
+27/04/2022 18:24:31 Niño N42 selecciona siguiente actividad
+27/04/2022 18:24:31 Niño N42 accede a la cola de la la actividad merienda
+27/04/2022 18:24:31 Niño N33 selecciona siguiente actividad
+27/04/2022 18:24:31 Niño N33 accede a la cola de la la actividad merienda
+27/04/2022 18:24:31 Niño N16 se baja de la tirolina
+27/04/2022 18:24:31 Niño N16 se va a la zona comun
+27/04/2022 18:24:31 Niño N16 accede a la zona comun
+27/04/2022 18:24:31 Niño N17 accede a la actividad tirolina
+27/04/2022 18:24:31 Niño N17 se prepara para tirarse en la tirolina
+27/04/2022 18:24:31 Niño N35 selecciona siguiente actividad
+27/04/2022 18:24:31 Niño N35 selecciona siguiente actividad
+27/04/2022 18:24:31 Niño N35 accede a la actividad soga
+27/04/2022 18:24:31 Niño N35 se mete en el equipo B
+27/04/2022 18:24:32 Niño N31 selecciona siguiente actividad
+27/04/2022 18:24:32 Niño N31 accede a la cola de la la actividad merienda
+27/04/2022 18:24:32 Niño N11 selecciona siguiente actividad
+27/04/2022 18:24:32 Niño N11 accede a la cola de la la actividad merienda
+27/04/2022 18:24:32 Niño N17 se tira por la tirolina
+27/04/2022 18:24:34 Niño N16 selecciona siguiente actividad
+27/04/2022 18:24:34 Niño N16 accede a la actividad soga
+27/04/2022 18:24:34 Niño N16 se mete en el quipo A
+27/04/2022 18:24:35 Niño N17 llega al final de la tirolina
+27/04/2022 18:24:36 Niño N17 se baja de la tirolina
+27/04/2022 18:24:36 Niño N17 se va a la zona comun
+27/04/2022 18:24:36 Niño N17 accede a la zona comun
+27/04/2022 18:24:36 Niño N26 accede a la actividad tirolina
+27/04/2022 18:24:36 Niño N26 se prepara para tirarse en la tirolina
+27/04/2022 18:24:37 Niño N26 se tira por la tirolina
+27/04/2022 18:24:38 Niño N17 selecciona siguiente actividad
+27/04/2022 18:24:38 Niño N17 accede a la actividad soga
+27/04/2022 18:24:38 Niño N17 se mete en el equipo B
+27/04/2022 18:24:40 Niño N26 llega al final de la tirolina
+27/04/2022 18:24:40 Niño N26 se baja de la tirolina
+27/04/2022 18:24:40 Niño N26 se va a la zona comun
+27/04/2022 18:24:40 Niño N26 accede a la zona comun
+27/04/2022 18:24:40 Niño N44 accede a la actividad tirolina
+27/04/2022 18:24:40 Niño N44 se prepara para tirarse en la tirolina
+27/04/2022 18:24:41 Niño N44 se tira por la tirolina
+27/04/2022 18:24:43 Niño N26 selecciona siguiente actividad
+27/04/2022 18:24:43 Niño N26 accede a la actividad soga
+27/04/2022 18:24:43 Niño N26 se mete en el quipo A
+27/04/2022 18:24:44 Niño N44 llega al final de la tirolina
+27/04/2022 18:24:45 Niño N44 se baja de la tirolina
+27/04/2022 18:24:45 Niño N44 se va a la zona comun
+27/04/2022 18:24:45 Niño N44 accede a la zona comun
+27/04/2022 18:24:45 Niño N46 accede a la actividad tirolina
+27/04/2022 18:24:45 Niño N46 se prepara para tirarse en la tirolina
+27/04/2022 18:24:46 Niño N46 se tira por la tirolina
+27/04/2022 18:24:47 Niño N44 selecciona siguiente actividad
+27/04/2022 18:24:47 Niño N44 accede a la actividad soga
+27/04/2022 18:24:47 Niño N44 se mete en el quipo A
+27/04/2022 18:24:49 Niño N46 llega al final de la tirolina
+27/04/2022 18:24:49 Niño N46 se baja de la tirolina
+27/04/2022 18:24:49 Niño N46 se va a la zona comun
+27/04/2022 18:24:49 Niño N46 accede a la zona comun
+27/04/2022 18:24:49 Monitor M2 se va al descanso
+27/04/2022 18:24:49 Niño N49 accede a la actividad tirolina
+27/04/2022 18:24:51 Monitor M2 vuelve a su actividad
+27/04/2022 18:24:51 Monitor M2 accede a actividad tirolina
+27/04/2022 18:24:51 Niño N49 se prepara para tirarse en la tirolina
+27/04/2022 18:24:52 Niño N49 se tira por la tirolina
+27/04/2022 18:24:52 Niño N46 selecciona siguiente actividad
+27/04/2022 18:24:52 Niño N46 accede a la actividad soga
+27/04/2022 18:24:52 Niño N46 se mete en el quipo A
+27/04/2022 18:24:55 Niño N49 llega al final de la tirolina
+27/04/2022 18:24:55 Niño N49 se baja de la tirolina
+27/04/2022 18:24:55 Niño N49 se va a la zona comun
+27/04/2022 18:24:55 Niño N49 accede a la zona comun
+27/04/2022 18:24:55 Niño N20 accede a la actividad tirolina
+27/04/2022 18:24:55 Niño N20 se prepara para tirarse en la tirolina
+27/04/2022 18:24:56 Niño N20 se tira por la tirolina
+27/04/2022 18:24:59 Niño N49 selecciona siguiente actividad
+27/04/2022 18:24:59 Niño N49 accede a la actividad soga
+27/04/2022 18:24:59 Niño N49 se mete en el equipo B
+27/04/2022 18:24:59 Niño N20 llega al final de la tirolina
+27/04/2022 18:25:00 Niño N20 se baja de la tirolina
+27/04/2022 18:25:00 Niño N20 se va a la zona comun
+27/04/2022 18:25:00 Niño N20 accede a la zona comun
+27/04/2022 18:25:00 Niño N18 accede a la actividad tirolina
+27/04/2022 18:25:00 Niño N18 se prepara para tirarse en la tirolina
+27/04/2022 18:25:01 Niño N18 se tira por la tirolina
+27/04/2022 18:25:03 Niño N20 selecciona siguiente actividad
+27/04/2022 18:25:03 Niño N20 accede a la actividad soga
+27/04/2022 18:25:03 Niño N20 se mete en el equipo B
+27/04/2022 18:25:03 Niño N20 empieza competición de soga
+27/04/2022 18:25:03 Niño N24 empieza competición de soga
+27/04/2022 18:25:03 Niño N35 empieza competición de soga
+27/04/2022 18:25:03 Niño N26 empieza competición de soga
+27/04/2022 18:25:03 Niño N37 empieza competición de soga
+27/04/2022 18:25:03 Niño N49 empieza competición de soga
+27/04/2022 18:25:03 Niño N46 empieza competición de soga
+27/04/2022 18:25:03 Niño N44 empieza competición de soga
+27/04/2022 18:25:03 Niño N17 empieza competición de soga
+27/04/2022 18:25:03 Niño N16 empieza competición de soga
+27/04/2022 18:25:04 Niño N18 llega al final de la tirolina
+27/04/2022 18:25:04 Niño N18 se baja de la tirolina
+27/04/2022 18:25:04 Niño N18 se va a la zona comun
+27/04/2022 18:25:04 Niño N18 accede a la zona comun
+27/04/2022 18:25:04 Niño N30 accede a la actividad tirolina
+27/04/2022 18:25:04 Niño N30 se prepara para tirarse en la tirolina
+27/04/2022 18:25:05 Niño N30 se tira por la tirolina
+27/04/2022 18:25:07 Niño N18 selecciona siguiente actividad
+27/04/2022 18:25:07 Niño N18 accede a la actividad soga
+27/04/2022 18:25:07 Niño N18 selecciona otra actividad ya que no hay hueco en actividad soga
+27/04/2022 18:25:07 Niño N18 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:25:08 Niño N30 llega al final de la tirolina
+27/04/2022 18:25:09 Niño N30 se baja de la tirolina
+27/04/2022 18:25:09 Niño N30 se va a la zona comun
+27/04/2022 18:25:09 Niño N30 accede a la zona comun
+27/04/2022 18:25:09 Niño N13 accede a la actividad tirolina
+27/04/2022 18:25:09 Niño N13 se prepara para tirarse en la tirolina
+27/04/2022 18:25:10 Niño N24 termina competición soga
+27/04/2022 18:25:10 Niño N24 ha ganado competición soga
+27/04/2022 18:25:10 Niño N24 se va a la zona comun
+27/04/2022 18:25:10 Niño N24 accede a la zona comun
+27/04/2022 18:25:10 Niño N49 termina competición soga
+27/04/2022 18:25:10 Niño N16 termina competición soga
+27/04/2022 18:25:10 Niño N17 termina competición soga
+27/04/2022 18:25:10 Niño N46 termina competición soga
+27/04/2022 18:25:10 Niño N44 termina competición soga
+27/04/2022 18:25:10 Niño N20 termina competición soga
+27/04/2022 18:25:10 Niño N35 termina competición soga
+27/04/2022 18:25:10 Niño N26 termina competición soga
+27/04/2022 18:25:10 Niño N37 termina competición soga
+27/04/2022 18:25:10 Niño N49 ha perdido competición soga
+27/04/2022 18:25:10 Niño N49 se va a la zona comun
+27/04/2022 18:25:10 Niño N49 accede a la zona comun
+27/04/2022 18:25:10 Niño N16 ha ganado competición soga
+27/04/2022 18:25:10 Niño N16 se va a la zona comun
+27/04/2022 18:25:10 Niño N16 accede a la zona comun
+27/04/2022 18:25:10 Niño N17 ha perdido competición soga
+27/04/2022 18:25:10 Niño N17 se va a la zona comun
+27/04/2022 18:25:10 Niño N17 accede a la zona comun
+27/04/2022 18:25:10 Niño N46 ha ganado competición soga
+27/04/2022 18:25:10 Niño N46 se va a la zona comun
+27/04/2022 18:25:10 Niño N46 accede a la zona comun
+27/04/2022 18:25:10 Niño N44 ha ganado competición soga
+27/04/2022 18:25:10 Niño N44 se va a la zona comun
+27/04/2022 18:25:10 Niño N44 accede a la zona comun
+27/04/2022 18:25:10 Niño N20 ha perdido competición soga
+27/04/2022 18:25:10 Niño N20 se va a la zona comun
+27/04/2022 18:25:10 Niño N20 accede a la zona comun
+27/04/2022 18:25:10 Niño N35 ha perdido competición soga
+27/04/2022 18:25:10 Niño N35 se va a la zona comun
+27/04/2022 18:25:10 Niño N35 accede a la zona comun
+27/04/2022 18:25:10 Niño N26 ha ganado competición soga
+27/04/2022 18:25:10 Niño N26 se va a la zona comun
+27/04/2022 18:25:10 Niño N26 accede a la zona comun
+27/04/2022 18:25:10 Niño N37 ha perdido competición soga
+27/04/2022 18:25:10 Niño N37 se va a la zona comun
+27/04/2022 18:25:10 Niño N37 accede a la zona comun
+27/04/2022 18:25:10 Monitor M1 se va al descanso
+27/04/2022 18:25:10 Niño N13 se tira por la tirolina
+27/04/2022 18:25:11 Monitor M1 vuelve a su actividad
+27/04/2022 18:25:11 Monitor M1 accede a actividad soga
+27/04/2022 18:25:12 Niño N26 selecciona siguiente actividad
+27/04/2022 18:25:12 Niño N26 accede a la cola de la la actividad merienda
+27/04/2022 18:25:12 Niño N49 selecciona siguiente actividad
+27/04/2022 18:25:12 Niño N49 selecciona siguiente actividad
+27/04/2022 18:25:12 Niño N49 accede a la actividad soga
+27/04/2022 18:25:12 Niño N49 se mete en el equipo B
+27/04/2022 18:25:12 Niño N17 selecciona siguiente actividad
+27/04/2022 18:25:12 Niño N17 accede a la cola de la la actividad merienda
+27/04/2022 18:25:13 Niño N16 selecciona siguiente actividad
+27/04/2022 18:25:13 Niño N16 accede a la cola de la la actividad merienda
+27/04/2022 18:25:13 Niño N30 selecciona siguiente actividad
+27/04/2022 18:25:13 Niño N30 accede a la actividad soga
+27/04/2022 18:25:13 Niño N30 se mete en el quipo A
+27/04/2022 18:25:13 Niño N13 llega al final de la tirolina
+27/04/2022 18:25:13 Niño N46 selecciona siguiente actividad
+27/04/2022 18:25:13 Niño N46 accede a la cola de la la actividad merienda
+27/04/2022 18:25:13 Niño N44 selecciona siguiente actividad
+27/04/2022 18:25:13 Niño N44 accede a la cola de la la actividad merienda
+27/04/2022 18:25:13 Niño N35 selecciona siguiente actividad
+27/04/2022 18:25:13 Niño N35 accede a la cola de la la actividad merienda
+27/04/2022 18:25:13 Niño N20 selecciona siguiente actividad
+27/04/2022 18:25:13 Niño N20 accede a la cola de la la actividad merienda
+27/04/2022 18:25:13 Niño N24 selecciona siguiente actividad
+27/04/2022 18:25:13 Niño N24 accede a la cola de la la actividad merienda
+27/04/2022 18:25:13 Niño N37 selecciona siguiente actividad
+27/04/2022 18:25:13 Niño N37 accede a la cola de la la actividad merienda
+27/04/2022 18:25:13 Niño N13 se baja de la tirolina
+27/04/2022 18:25:13 Niño N13 se va a la zona comun
+27/04/2022 18:25:13 Niño N13 accede a la zona comun
+27/04/2022 18:25:13 Niño N21 accede a la actividad tirolina
+27/04/2022 18:25:13 Niño N21 se prepara para tirarse en la tirolina
+27/04/2022 18:25:14 Niño N21 se tira por la tirolina
+27/04/2022 18:25:17 Niño N13 selecciona siguiente actividad
+27/04/2022 18:25:17 Niño N13 accede a la actividad soga
+27/04/2022 18:25:17 Niño N13 se mete en el equipo B
+27/04/2022 18:25:17 Niño N21 llega al final de la tirolina
+27/04/2022 18:25:18 Niño N21 se baja de la tirolina
+27/04/2022 18:25:18 Niño N21 se va a la zona comun
+27/04/2022 18:25:18 Niño N21 accede a la zona comun
+27/04/2022 18:25:18 Niño N32 accede a la actividad tirolina
+27/04/2022 18:25:18 Niño N32 se prepara para tirarse en la tirolina
+27/04/2022 18:25:19 Niño N32 se tira por la tirolina
+27/04/2022 18:25:21 Niño N21 selecciona siguiente actividad
+27/04/2022 18:25:21 Niño N21 accede a la actividad soga
+27/04/2022 18:25:21 Niño N21 se mete en el equipo B
+27/04/2022 18:25:22 Niño N32 llega al final de la tirolina
+27/04/2022 18:25:22 Niño N32 se baja de la tirolina
+27/04/2022 18:25:22 Niño N32 se va a la zona comun
+27/04/2022 18:25:22 Niño N32 accede a la zona comun
+27/04/2022 18:25:22 Niño N23 accede a la actividad tirolina
+27/04/2022 18:25:22 Niño N23 se prepara para tirarse en la tirolina
+27/04/2022 18:25:23 Niño N23 se tira por la tirolina
+27/04/2022 18:25:26 Niño N32 selecciona siguiente actividad
+27/04/2022 18:25:26 Niño N32 accede a la actividad soga
+27/04/2022 18:25:26 Niño N32 se mete en el quipo A
+27/04/2022 18:25:26 Niño N23 llega al final de la tirolina
+27/04/2022 18:25:27 Niño N23 se baja de la tirolina
+27/04/2022 18:25:27 Niño N23 se va a la zona comun
+27/04/2022 18:25:27 Niño N23 accede a la zona comun
+27/04/2022 18:25:27 Niño N27 accede a la actividad tirolina
+27/04/2022 18:25:27 Niño N27 se prepara para tirarse en la tirolina
+27/04/2022 18:25:28 Niño N27 se tira por la tirolina
+27/04/2022 18:25:29 Niño N23 selecciona siguiente actividad
+27/04/2022 18:25:29 Niño N23 accede a la actividad soga
+27/04/2022 18:25:29 Niño N23 se mete en el equipo B
+27/04/2022 18:25:31 Niño N27 llega al final de la tirolina
+27/04/2022 18:25:31 Niño N27 se baja de la tirolina
+27/04/2022 18:25:31 Niño N27 se va a la zona comun
+27/04/2022 18:25:31 Niño N27 accede a la zona comun
+27/04/2022 18:25:31 Niño N51 accede a la actividad tirolina
+27/04/2022 18:25:31 Niño N51 se prepara para tirarse en la tirolina
+27/04/2022 18:25:32 Niño N51 se tira por la tirolina
+27/04/2022 18:25:35 Niño N27 selecciona siguiente actividad
+27/04/2022 18:25:35 Niño N27 accede a la actividad soga
+27/04/2022 18:25:35 Niño N27 se mete en el equipo B
+27/04/2022 18:25:35 Niño N51 llega al final de la tirolina
+27/04/2022 18:25:36 Niño N51 se baja de la tirolina
+27/04/2022 18:25:36 Niño N51 se va a la zona comun
+27/04/2022 18:25:36 Niño N51 accede a la zona comun
+27/04/2022 18:25:36 Monitor M2 se va al descanso
+27/04/2022 18:25:36 Niño N52 accede a la actividad tirolina
+27/04/2022 18:25:37 Monitor M2 vuelve a su actividad
+27/04/2022 18:25:37 Monitor M2 accede a actividad tirolina
+27/04/2022 18:25:37 Niño N52 se prepara para tirarse en la tirolina
+27/04/2022 18:25:38 Niño N52 se tira por la tirolina
+27/04/2022 18:25:39 Niño N51 selecciona siguiente actividad
+27/04/2022 18:25:39 Niño N51 accede a la actividad soga
+27/04/2022 18:25:39 Niño N51 se mete en el quipo A
+27/04/2022 18:25:41 Niño N52 llega al final de la tirolina
+27/04/2022 18:25:41 Niño N52 se baja de la tirolina
+27/04/2022 18:25:41 Niño N52 se va a la zona comun
+27/04/2022 18:25:41 Niño N52 accede a la zona comun
+27/04/2022 18:25:41 Niño N15 accede a la actividad tirolina
+27/04/2022 18:25:42 Niño N15 se prepara para tirarse en la tirolina
+27/04/2022 18:25:43 Niño N15 se tira por la tirolina
+27/04/2022 18:25:44 Niño N52 selecciona siguiente actividad
+27/04/2022 18:25:44 Niño N52 accede a la actividad soga
+27/04/2022 18:25:44 Niño N52 se mete en el quipo A
+27/04/2022 18:25:46 Niño N15 llega al final de la tirolina
+27/04/2022 18:25:46 Niño N15 se baja de la tirolina
+27/04/2022 18:25:46 Niño N15 se va a la zona comun
+27/04/2022 18:25:46 Niño N15 accede a la zona comun
+27/04/2022 18:25:46 Niño N29 accede a la actividad tirolina
+27/04/2022 18:25:46 Niño N29 se prepara para tirarse en la tirolina
+27/04/2022 18:25:47 Niño N29 se tira por la tirolina
+27/04/2022 18:25:50 Niño N15 selecciona siguiente actividad
+27/04/2022 18:25:50 Niño N15 accede a la actividad soga
+27/04/2022 18:25:50 Niño N15 se mete en el quipo A
+27/04/2022 18:25:50 Niño N15 empieza competición de soga
+27/04/2022 18:25:50 Niño N49 empieza competición de soga
+27/04/2022 18:25:50 Niño N21 empieza competición de soga
+27/04/2022 18:25:50 Niño N13 empieza competición de soga
+27/04/2022 18:25:50 Niño N27 empieza competición de soga
+27/04/2022 18:25:50 Niño N52 empieza competición de soga
+27/04/2022 18:25:50 Niño N30 empieza competición de soga
+27/04/2022 18:25:50 Niño N51 empieza competición de soga
+27/04/2022 18:25:50 Niño N23 empieza competición de soga
+27/04/2022 18:25:50 Niño N32 empieza competición de soga
+27/04/2022 18:25:50 Niño N29 llega al final de la tirolina
+27/04/2022 18:25:51 Niño N29 se baja de la tirolina
+27/04/2022 18:25:51 Niño N29 se va a la zona comun
+27/04/2022 18:25:51 Niño N29 accede a la zona comun
+27/04/2022 18:25:51 Niño N22 accede a la actividad tirolina
+27/04/2022 18:25:51 Niño N22 se prepara para tirarse en la tirolina
+27/04/2022 18:25:52 Niño N22 se tira por la tirolina
+27/04/2022 18:25:54 Niño N29 selecciona siguiente actividad
+27/04/2022 18:25:54 Niño N29 accede a la actividad soga
+27/04/2022 18:25:54 Niño N29 selecciona otra actividad ya que no hay hueco en actividad soga
+27/04/2022 18:25:54 Niño N29 accede a la cola de espera de la actividad tirolina
+27/04/2022 18:25:55 Niño N22 llega al final de la tirolina
+27/04/2022 18:25:55 Niño N22 se baja de la tirolina
+27/04/2022 18:25:55 Niño N22 se va a la zona comun
+27/04/2022 18:25:55 Niño N22 accede a la zona comun
+27/04/2022 18:25:55 Niño N25 accede a la actividad tirolina
+27/04/2022 18:25:55 Niño N25 se prepara para tirarse en la tirolina
+27/04/2022 18:25:56 Niño N25 se tira por la tirolina
+27/04/2022 18:25:57 Niño N49 termina competición soga
+27/04/2022 18:25:57 Niño N49 ha perdido competición soga
+27/04/2022 18:25:57 Niño N49 se va a la zona comun
+27/04/2022 18:25:57 Niño N49 accede a la zona comun
+27/04/2022 18:25:57 Niño N27 termina competición soga
+27/04/2022 18:25:57 Niño N27 ha perdido competición soga
+27/04/2022 18:25:57 Niño N13 termina competición soga
+27/04/2022 18:25:57 Niño N27 se va a la zona comun
+27/04/2022 18:25:57 Niño N27 accede a la zona comun
+27/04/2022 18:25:57 Niño N21 termina competición soga
+27/04/2022 18:25:57 Niño N13 ha perdido competición soga
+27/04/2022 18:25:57 Niño N13 se va a la zona comun
+27/04/2022 18:25:57 Niño N13 accede a la zona comun
+27/04/2022 18:25:57 Niño N21 ha perdido competición soga
+27/04/2022 18:25:57 Niño N21 se va a la zona comun
+27/04/2022 18:25:57 Niño N21 accede a la zona comun
+27/04/2022 18:25:57 Niño N15 termina competición soga
+27/04/2022 18:25:57 Niño N15 ha ganado competición soga
+27/04/2022 18:25:57 Niño N23 termina competición soga
+27/04/2022 18:25:57 Niño N32 termina competición soga
+27/04/2022 18:25:57 Niño N51 termina competición soga
+27/04/2022 18:25:57 Niño N52 termina competición soga
+27/04/2022 18:25:57 Niño N30 termina competición soga
+27/04/2022 18:25:57 Niño N15 se va a la zona comun
+27/04/2022 18:25:57 Niño N15 accede a la zona comun
+27/04/2022 18:25:57 Niño N23 ha perdido competición soga
+27/04/2022 18:25:57 Niño N23 se va a la zona comun
+27/04/2022 18:25:57 Niño N23 accede a la zona comun
+27/04/2022 18:25:57 Niño N32 ha ganado competición soga
+27/04/2022 18:25:57 Niño N32 se va a la zona comun
+27/04/2022 18:25:57 Niño N32 accede a la zona comun
+27/04/2022 18:25:57 Niño N51 ha ganado competición soga
+27/04/2022 18:25:57 Niño N51 se va a la zona comun
+27/04/2022 18:25:57 Niño N51 accede a la zona comun
+27/04/2022 18:25:57 Niño N52 ha ganado competición soga
+27/04/2022 18:25:57 Niño N52 se va a la zona comun
+27/04/2022 18:25:57 Niño N52 accede a la zona comun
+27/04/2022 18:25:57 Niño N30 ha ganado competición soga
+27/04/2022 18:25:57 Niño N30 se va a la zona comun
+27/04/2022 18:25:57 Niño N30 accede a la zona comun
+27/04/2022 18:25:58 Niño N22 selecciona siguiente actividad
+27/04/2022 18:25:58 Niño N22 accede a la actividad soga
+27/04/2022 18:25:58 Niño N22 se mete en el quipo A
+27/04/2022 18:25:59 Niño N25 llega al final de la tirolina
+27/04/2022 18:26:00 Niño N25 se baja de la tirolina
+27/04/2022 18:26:00 Niño N25 se va a la zona comun
+27/04/2022 18:26:00 Niño N25 accede a la zona comun
+27/04/2022 18:26:00 Niño N7 accede a la actividad tirolina
+27/04/2022 18:26:00 Niño N7 se prepara para tirarse en la tirolina
+27/04/2022 18:26:00 Niño N52 selecciona siguiente actividad
+27/04/2022 18:26:00 Niño N52 accede a la cola de la la actividad merienda
+27/04/2022 18:26:00 Niño N13 selecciona siguiente actividad
+27/04/2022 18:26:00 Niño N13 accede a la cola de la la actividad merienda
+27/04/2022 18:26:00 Niño N21 selecciona siguiente actividad
+27/04/2022 18:26:00 Niño N21 accede a la cola de la la actividad merienda
+27/04/2022 18:26:00 Niño N49 selecciona siguiente actividad
+27/04/2022 18:26:00 Niño N49 accede a la cola de la la actividad merienda
+27/04/2022 18:26:00 Niño N32 selecciona siguiente actividad
+27/04/2022 18:26:00 Niño N32 accede a la cola de la la actividad merienda
+27/04/2022 18:26:01 Niño N7 se tira por la tirolina
+27/04/2022 18:26:01 Niño N27 selecciona siguiente actividad
+27/04/2022 18:26:01 Niño N27 accede a la cola de la la actividad merienda
+27/04/2022 18:26:01 Niño N15 selecciona siguiente actividad
+27/04/2022 18:26:01 Niño N15 accede a la cola de la la actividad merienda
+27/04/2022 18:26:01 Niño N51 selecciona siguiente actividad
+27/04/2022 18:26:01 Niño N51 accede a la cola de la la actividad merienda
+27/04/2022 18:26:01 Niño N30 selecciona siguiente actividad
+27/04/2022 18:26:01 Niño N30 accede a la cola de la la actividad merienda
+27/04/2022 18:26:01 Niño N23 selecciona siguiente actividad
+27/04/2022 18:26:01 Niño N23 accede a la cola de la la actividad merienda
+27/04/2022 18:26:02 Niño N25 selecciona siguiente actividad
+27/04/2022 18:26:02 Niño N25 accede a la actividad soga
+27/04/2022 18:26:02 Niño N25 se mete en el equipo B
+27/04/2022 18:26:04 Niño N7 llega al final de la tirolina
+27/04/2022 18:26:04 Niño N7 se baja de la tirolina
+27/04/2022 18:26:04 Niño N7 se va a la zona comun
+27/04/2022 18:26:04 Niño N7 accede a la zona comun
+27/04/2022 18:26:04 Niño N38 accede a la actividad tirolina
+27/04/2022 18:26:04 Niño N38 se prepara para tirarse en la tirolina
+27/04/2022 18:26:05 Niño N38 se tira por la tirolina
+27/04/2022 18:26:06 Niño N7 selecciona siguiente actividad
+27/04/2022 18:26:06 Niño N7 accede a la actividad soga
+27/04/2022 18:26:06 Niño N7 se mete en el equipo B
+27/04/2022 18:26:08 Niño N38 llega al final de la tirolina
+27/04/2022 18:26:09 Niño N38 se baja de la tirolina
+27/04/2022 18:26:09 Niño N38 se va a la zona comun
+27/04/2022 18:26:09 Niño N38 accede a la zona comun
+27/04/2022 18:26:09 Niño N2 accede a la actividad tirolina
+27/04/2022 18:26:09 Niño N2 se prepara para tirarse en la tirolina
+27/04/2022 18:26:10 Niño N2 se tira por la tirolina
+27/04/2022 18:26:11 Niño N38 selecciona siguiente actividad
+27/04/2022 18:26:11 Niño N38 accede a la actividad soga
+27/04/2022 18:26:11 Niño N38 se mete en el quipo A
+27/04/2022 18:26:13 Niño N2 llega al final de la tirolina
+27/04/2022 18:26:13 Niño N2 se baja de la tirolina
+27/04/2022 18:26:13 Niño N2 se va a la zona comun
+27/04/2022 18:26:13 Niño N2 accede a la zona comun
+27/04/2022 18:26:13 Niño N9 accede a la actividad tirolina
+27/04/2022 18:26:13 Niño N9 se prepara para tirarse en la tirolina
+27/04/2022 18:26:14 Niño N9 se tira por la tirolina
+27/04/2022 18:26:16 Niño N2 selecciona siguiente actividad
+27/04/2022 18:26:16 Niño N2 accede a la actividad soga
+27/04/2022 18:26:16 Niño N2 se mete en el quipo A
+27/04/2022 18:26:17 Niño N9 llega al final de la tirolina
+27/04/2022 18:26:18 Niño N9 se baja de la tirolina
+27/04/2022 18:26:18 Niño N9 se va a la zona comun
+27/04/2022 18:26:18 Niño N9 accede a la zona comun
+27/04/2022 18:26:18 Niño N43 accede a la actividad tirolina
+27/04/2022 18:26:18 Niño N43 se prepara para tirarse en la tirolina
+27/04/2022 18:26:19 Niño N43 se tira por la tirolina
+27/04/2022 18:26:20 Niño N9 selecciona siguiente actividad
+27/04/2022 18:26:20 Niño N9 accede a la actividad soga
+27/04/2022 18:26:20 Niño N9 se mete en el equipo B
+27/04/2022 18:26:22 Niño N43 llega al final de la tirolina
+27/04/2022 18:26:22 Niño N43 se baja de la tirolina
+27/04/2022 18:26:22 Niño N43 se va a la zona comun
+27/04/2022 18:26:22 Niño N43 accede a la zona comun
+27/04/2022 18:26:22 Monitor M2 se va al descanso
+27/04/2022 18:26:22 Niño N18 accede a la actividad tirolina
+27/04/2022 18:26:24 Monitor M2 vuelve a su actividad
+27/04/2022 18:26:24 Monitor M2 accede a actividad tirolina
+27/04/2022 18:26:24 Niño N18 se prepara para tirarse en la tirolina
+27/04/2022 18:26:24 Niño N43 selecciona siguiente actividad
+27/04/2022 18:26:24 Niño N43 accede a la actividad soga
+27/04/2022 18:26:24 Niño N43 se mete en el equipo B
+27/04/2022 18:26:25 Niño N18 se tira por la tirolina
+27/04/2022 18:26:28 Niño N18 llega al final de la tirolina
+27/04/2022 18:26:28 Niño N18 se baja de la tirolina
+27/04/2022 18:26:28 Niño N18 se va a la zona comun
+27/04/2022 18:26:28 Niño N18 accede a la zona comun
+27/04/2022 18:26:28 Niño N29 accede a la actividad tirolina
+27/04/2022 18:26:28 Niño N29 se prepara para tirarse en la tirolina
+27/04/2022 18:26:29 Niño N29 se tira por la tirolina
+27/04/2022 18:26:31 Niño N18 selecciona siguiente actividad
+27/04/2022 18:26:31 Niño N18 accede a la actividad soga
+27/04/2022 18:26:31 Niño N18 se mete en el quipo A
+27/04/2022 18:26:32 Niño N29 llega al final de la tirolina
+27/04/2022 18:26:33 Niño N29 se baja de la tirolina
+27/04/2022 18:26:33 Niño N29 se va a la zona comun
+27/04/2022 18:26:33 Niño N29 accede a la zona comun
+27/04/2022 18:26:37 Niño N29 selecciona siguiente actividad
+27/04/2022 18:26:37 Niño N29 accede a la actividad soga
+27/04/2022 18:26:37 Niño N29 se mete en el equipo B

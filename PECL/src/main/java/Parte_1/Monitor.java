@@ -1,7 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/*Clase hilo monitor cuyso atributos son identificador, campamento, contador de actividades y clase detener 
  */
 package Parte_1;;
 
@@ -34,22 +31,25 @@ public class Monitor extends Thread{
         this.id = id;
     }
     
+    //Devuelve valor de la variable contador de actividades
     public  int getContActividades() {
         return contActividades;
     }
 
+    //Establece valor de contActividades
     public void setContActividades(int contActividades) {
         this.contActividades = contActividades;
     }
-     public int sumar(int n)
+    //Método para sumar valor al contador de actividades
+    public int sumar(int n)
     {
-        this.contActividades = contActividades + n;
-        return contActividades;
+        this.contActividades = contActividades + n; //Suma valor indicador
+        return contActividades; //Devuelve nuevo valor del contador
     }
     //Ejecuta hilo
     public void run()
     {
-        detener.entrar();
+        detener.comprobar();    //Punto de detención del programa
         camp.entrar(this); //Entra en el campamento si hay hueco; y sino espera en la cola
     }
     
