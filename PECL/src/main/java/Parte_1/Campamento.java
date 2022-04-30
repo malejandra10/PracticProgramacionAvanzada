@@ -22,39 +22,29 @@ import javax.swing.JTextField;
  */
 public class Campamento {
     private boolean entradaIzq = false, entradaDer= false, finSoga = true; //Variables almacenan si entradas estan abiertas
-    private int aforo,num, capTir = 1, capMer = 20, capSoga = 10, numLimpias = 0, numSucias = 25, numJugadores = 0, numA = 0, numB = 0,contSoga = 0, contTir = 0,contMer = 0,contMer2 = 0;     //Aforo maximo del campamento y parte numérica del identificador
-    private ArrayList<Child> equiA, equiB;  //Arrays que contendrán miembros de cada equipo en actividad soga
+    private int aforo,num, capTir = 1, capMer = 20, capSoga = 10, numLimpias = 0, numSucias = 25, numJugadores = 0, numA = 0, numB = 0, contTir = 0,contMer = 0, ganador;     //Aforo maximo del campamento y parte numérica del identificador
+    private ArrayList<Child> equiA, equiB, participantes;  //Arrays que contendrán miembros de cada equipo en actividad soga
     private ListaThreads colaEntradaIzq, colaEntradaDer, colaTirolina, colaMerienda, dentro, monEnTirolina,monEnMerienda,monEnZonaComun, monEnSoga, childEnSoga, childEnMer,limpias,sucias,childEnZc,childEnTirPrep,childEnTir,childEnFinTir,equipoA,equipoB; //Colas de espera y niños dentro de cada actividad y de entrada
     private Semaphore semaforoAforo, semaforoCapTir, semaforoCapMer, semaforoCapSoga; //Variable semaforo para proteger variable aforo
     private Lock cerrojoIzq = new ReentrantLock(); //variable cerrojo para cuando puertaIzq esta cerrada 
     private Lock cerrojoDer = new ReentrantLock(); //variable cerrojo para cuando puerta derecha esta cerrada
-    private Lock cerrojoLimpias = new ReentrantLock(); //variable cerrojo para bandejas limpias
-    private Lock cerrojoSucias = new ReentrantLock(); //variable cerrojo para bandejas sucias
-    private Lock cerrojoBandejas = new ReentrantLock(); //cerrojo para exclusión mutua de actividad merienda
     private Condition cerradaIzq = cerrojoIzq.newCondition();   //Variable condition asociada al cerrojo de la puerta izq
     private Condition cerradaDer = cerrojoDer.newCondition();   //Variable condition asociada al cerrojo de la puerta derecha
-    private Condition limp = cerrojoBandejas.newCondition();    //Para esperar si no hay bandejas limpias
-    private Condition suc = cerrojoBandejas.newCondition(); //Para esperar si no hay bandejas sucias
     private int maxJugadores = 10;  //Numero de jugadores necesarios para jugar a actividad soga
     private CyclicBarrier barreraSoga = new CyclicBarrier(maxJugadores); //Para esperar a que haya 10 jugadores en actividad soga
-    private CyclicBarrier des = new CyclicBarrier(2);   //Controla que ambos monitores vayan a la vez al descanso
-    private CountDownLatch contadorSoga = new CountDownLatch (100);  //Para bloquear monitor mientras se realiza actividad soga
-    private CountDownLatch contadorTirolina = new CountDownLatch (10);  //Para bloquear monitor mientras se realiza actividad tirolina
-    private CountDownLatch contadorMerienda = new CountDownLatch (10);  //Para bloquear monitor mientras se realiza actividad merienda
-    private Semaphore esperaTir = new Semaphore (0, true);
+    private Semaphore señal = new Semaphore (0, true);  //Bloquea a niño en tirolina hasta que monitor de señal para tirarse
+    private Semaphore subido = new Semaphore (0, true); //Bloquea a monitor hasta que hay niño en la tirolina
+    private Semaphore esperaTir = new Semaphore (0, true);  //Bloqeua niños en actividad tirolina hasta que monitor vuelva del descanso
     private Semaphore esperaSoga = new Semaphore (100, true);   //Para que niños esperen a la vuelta del monitor del descanso
     private Semaphore esperaMer = new Semaphore (10, true); //Niños esperen a la vuelta del monitor del descanso en actividad merienda
     private Semaphore siguiente = new Semaphore (1, true);  //Controla que salgan niños de uno en uno de la actividad soga
-    private Semaphore descanso = new Semaphore (1, true);   //Solo puedan ir monitores de merienda de uno a uno a descanso
     private Semaphore servir = new Semaphore (numLimpias, true);    //Controla que niños no cojan bandeja si no hay limpias disponibles
-    private Semaphore  limpiar= new Semaphore (numSucias, true); //Controla que monitores se bloqueen si no hay bandejas sucias que limpiar
+    private Semaphore limpiar = new Semaphore (numSucias, true); //Controla que monitores se bloqueen si no hay bandejas sucias que limpiar
+    private Semaphore hacerEquipo = new Semaphore (0, true);    //Bloquea a monitor hasta que haya 10 niños en actividad soga para hacer equipos
+    private Semaphore elegirGanador = new Semaphore (0, true);    //Bloquea a monitor hasta que haya termine competición soga y pueda elegir quien gana
     private Detener detener;    //Para detener y reanudad ejecución del programa
     private Log log;    //Para escribir en archivo evolción de la ejecución del programa
-    private FileWriter file;    //Archivo dónde se escribirá evolución del programa
-    private CountDownLatch señal = new CountDownLatch (1);  //Para niño se tire cuando monitor de señal en actividad tirolina
-    private CountDownLatch empezarTir = new CountDownLatch (1); //Niño espere hasta que monitor este en actividad (la primera vez que llega) 
-    
-    
+    private FileWriter file;    //Archivo dónde se escribirá evolución del programa  
     
     /*Constructor de la clase*/
     public Campamento(int aforo,JTextField espEn1,JTextField espEn2,JTextField espTir,JTextField espMer, JTextField den, JTextField monEnTir,JTextField monEnMer,JTextField monEnZC, JTextField monEnSo,JTextField colaMer,JTextField colaTir, JTextField enSoga, JTextField enMer, JTextField limp, JTextField suc, JTextField zc, JTextField tirPrep,JTextField enTir, JTextField finTir, JTextField a,JTextField b,Detener deten)
@@ -87,6 +77,7 @@ public class Campamento {
         equipoB = new ListaThreads (b);
         equiA = new ArrayList<Child>();
         equiB = new ArrayList<Child>();
+        participantes = new ArrayList<Child>();
         limpias.meter(" " + 0);
         sucias.meter(" " + 25);
         
@@ -225,35 +216,30 @@ public class Campamento {
     {
         
         contMer = 0;    //Contador guarda numero de platos limpios servidos reseteandose csda vez que monitores vuelven del descanso
-        esperaMer.release(5);  //libera a los niños que estuviesen bloqueados esperando a que el monitor volviese
+        //esperaMer.release(5);  //libera a los niños que estuviesen bloqueados esperando a que el monitor volviese
         
-        while(true)
+        for (int i = 0; i < 10; i ++)   //Bucle comprueba si monitor ha servido 10 platos
         {
             detener.comprobar();   //Se detiene ejecución del programa en este punto
-            if(contMer == 10 || contMer == 11)   //Si sirven 10 comidas monitores se van a descanso
+            try
             {
-                esperaMer.drainPermits();   //Bloquea a los niños que esten en la actividad
-                try
-                {
-                    des.await();    //Espera a que ambos monitores lleguen
-                    descanso.acquire(); //permite pasar a los monitores de uno en uno al descanso
-                }catch(Exception e){}
-                log.escribir(" Monitor " + m.getMId() + " se va al descanso\n"); //Escribe estado del monitor en archivo
-                monEnMerienda.sacar(m.getMId());    //Saca a monitor de la actividad
-                zonaComun(m,n); //Manda monitor a zona comun
-            }
-            limpiar.acquire();  //monitor se bloquea si no hay platos que lavar
-            sleep(3000 + (int) (2000 * Math.random())); //Tarda entre 3 y 5 segundos en limpiar y servir
-            log.escribir(" Monitor " + m.getMId() + " limpia bandeja\n"); //Escribe estado del monitor en archivo
-            contMer++;  //Aumenta número de meriendas llevadas a cabo por ambos monitores
-            limpias.sacar(" " + numLimpias);    //Actualiza el número de bandejas limpias sacando anterior valor
-            numLimpias++;   //Aumenta número de bandejas limpias disponibles
-            limpias.meter(" " + numLimpias);    //Muestra nuevo número de bandejas limpias en interfaz
-            sucias.sacar(" " + numSucias);      //Saca antiguo valor de bandejas sucias
-            numSucias--;    //Disminuye el número de bandejas sucias
-            sucias.meter(" " + numSucias);  //Introduce nuevo número de bandejas sucias
-            servir.release();   //avisa de que hay un plato mas limpio disponible
+                limpiar.acquire();  //monitor se bloquea si no hay platos que lavar
+                sleep(3000 + (int) (2000 * Math.random())); //Tarda entre 3 y 5 segundos en limpiar y servir
+                log.escribir(" Monitor " + m.getMId() + " limpia bandeja\n"); //Escribe estado del monitor en archivo
+                m.sumar(1); //Suma uno a contador de actividades del monitor
+                contMer++;  //Aumenta número de meriendas llevadas a cabo por ambos monitores
+                limpias.sacar(" " + numLimpias);    //Actualiza el número de bandejas limpias sacando anterior valor
+                numLimpias++;   //Aumenta número de bandejas limpias disponibles
+                limpias.meter(" " + numLimpias);    //Muestra nuevo número de bandejas limpias en interfaz
+                sucias.sacar(" " + numSucias);      //Saca antiguo valor de bandejas sucias
+                numSucias--;    //Disminuye el número de bandejas sucias
+                sucias.meter(" " + numSucias);  //Introduce nuevo número de bandejas sucias
+                servir.release();   //avisa de que hay un plato mas limpio disponible;
+            }catch(Exception e){}
         }
+        log.escribir(" Monitor " + m.getMId() + " se va al descanso\n"); //Escribe estado del monitor en archivo
+        monEnMerienda.sacar(m.getMId());    //Saca a monitor de la actividad
+        zonaComun(m,n); //Manda monitor a zona comun
     }
     
     
@@ -261,44 +247,67 @@ public class Campamento {
     public void soga(Monitor m, int n)
     {
         esperaSoga.release(100);    //libera permisos para que puedan entrar niños cuando monitor vuelve del descanso
-        while(true) //Monitor realiza esta actividad continuamente
+        for (int i = 0; i <100; i++) //Bucle controla que cuando monitor haga 10 veces esta actividad se vaya al descanso
         {
          detener.comprobar();  //Ejecución se detendrá en este punto si se indica
             try
             {
-                contadorSoga.await();   //espera hasta que actividad se ha realizado 10 veces (es decir han pasado 100 niños)
-                esperaSoga.drainPermits();  //bloquea a los niños que entran mientras no haya monitor
-                contadorSoga = new CountDownLatch(100); //Reinicializa barrera
-                log.escribir(" Monitor " + m.getMId() + " se va al descanso\n");    //Escribe estado del monitor en archivo
-                monEnSoga.sacar(m.getMId());    //Se saca monitor de la actividad
-                m.sumar(10); //Se suma las veces que s eha realizado actividad
-                zonaComun(m,n); //Se envia monitor a la zona comun para que descanse 
+                hacerEquipo.acquire(); //Bloquea a monitor hasta que haya 10 niños para formar los equipos
+                while(!participantes.isEmpty()) //Mientras la lista de participantes no este vacia hace equipos
+                {
+                    if(paridadId(numId(participantes.get(0))) && numA < 5 || numB == 5)    //si identificador del niño es par y equipo A no esta acompleto
+                    {
+                        log.escribir(" Niño " + participantes.get(0).getCId() + " se mete en el quipo A\n"); //Escribe estado del niño en archivo
+                        equipoA.meter(participantes.get(0).getCId());  //Introducimos niño en equipo A
+                        equiA.add(participantes.get(0));   //Añade a niño al equipo
+                        numA++;         //Aumentamos número de jugadores en equipo
+                        participantes.remove(0); //Saca de la lista a niño introducido en equipo
+                    }
+                    else    //Si identificador del niño es impar o equipo A esta completo
+                    {
+                        log.escribir(" Niño " + participantes.get(0).getCId() + " se mete en el equipo B\n"); //Escribe estado del niño en archivo
+                        equipoB.meter(participantes.get(0).getCId());  //Introducimos niño en equipo B
+                        equiB.add(participantes.get(0));   //Añade niño al array correspondiente
+                        numB++;             //Aumentamos número de jugadores en equipo B
+                        participantes.remove(0); //Saca de la lista a niño introducido en equipo
+                    } 
+                }
+                elegirGanador.acquire();    //Monitor se bloquea hasta que termine competición para elegir ganador
+                ganador = (int)(2 *Math.random());  //Selecciona equipo ganador aleatoriamente
+                m.sumar(1); //Se suma las veces que s eha realizado actividad
+               
             }catch(Exception e){}
         }
+        esperaSoga.drainPermits();  //bloquea a los niños que entran mientras no haya monitor
+        log.escribir(" Monitor " + m.getMId() + " se va al descanso\n");    //Escribe estado del monitor en archivo
+        monEnSoga.sacar(m.getMId());    //Se saca monitor de la actividad
+        zonaComun(m,n); //Se envia monitor a la zona comun para que descanse 
     }
     
     //Método simula actividad tirolina para los monitores
     public void tirolina(Monitor m, int n)
-    {;
-        while(true)
+    {
+        esperaTir.release(10); //Libera permisos para que niños puede entrar en actividad
+        for(int i = 0; i < 10; i++) //Se hace bucle mientras monitor no haya realizado 10 veces la actividad
         {
             detener.comprobar();   //Ejecución se detendrá en este punto si se indica
             try
             {
-                esperaTir.release(10); //Libera permisos para que niños puede entrar en actividad
-                /*sleep(1500 + (int)(500 *Math.random())); //Espera entre 1,5 segundos y 2 segundos para dar la señal a niño de que se tire (no especificado en enunciado)
-                señal.countDown(); //Avisa a niño de que puede tirarse
-                señal = new CountDownLatch(1);*/
-                contadorTirolina.await();   //Espera a que actividad se realice 10 veces
-                m.sumar(10);    //Introduce las 10 veces que se ha realizado actividad en contador
-                esperaTir.drainPermits();   //Bloquea a niños hasta que vuelva monitor
-                contadorTirolina = new CountDownLatch(10);  //reinicializa countdownlatch
-                log.escribir(" Monitor " + m.getMId() + " se va al descanso\n");    //Escribe estado del monitor en archivo
-                monEnTirolina.sacar(m.getMId());    //Se saca monitor de la actividad
-                zonaComun(m,n); //Se envia monitor a la zona comun para que descanse 
+                subido.acquire(); //Monitor se bloquea hast aque haya niño en tirolina
+                sleep(1500 + (int)(500 *Math.random())); //Espera entre 1,5 segundos y 2 segundos para dar la señal a niño de que se tire (no especificado en enunciado)
+                señal.release(); //Avisa a niño de que puede tirarse
+                //contadorTirolina.await();   //Espera a que actividad se realice 10 veces
+                m.sumar(1);    //Introduce las 10 veces que se ha realizado actividad en contador
+                
+                //contadorTirolina = new CountDownLatch(10);  //reinicializa countdownlatch
+                
             }
             catch(Exception e){}
         }
+        esperaTir.drainPermits();   //Bloquea a niños hasta que vuelva monitor
+        log.escribir(" Monitor " + m.getMId() + " se va al descanso\n");    //Escribe estado del monitor en archivo
+        monEnTirolina.sacar(m.getMId());    //Se saca monitor de la actividad
+       zonaComun(m,n); //Se envia monitor a la zona comun para que descanse 
     }
     
     //Método simula funcionamiento de la zona comun para los monitores
@@ -307,10 +316,6 @@ public class Campamento {
         detener.comprobar();   //Ejecución se detendrá en este punto
         try 
         {
-            if(n == 3 || n == 4)    //Si monitores de merienda se libera al siguiente para que entre
-            {
-                descanso.release(); //Libera semáforo descanso
-            }
             monEnZonaComun.meter(m.getMId());   //Monitor entra en zona comun
             sleep(1000 + (int) (1000* Math.random()));  //Monitor descansa entre 1 y 2 segundos enona comun
             monEnZonaComun.sacar(m.getMId());   //Monitor sale de la zona comun
@@ -511,12 +516,13 @@ public class Campamento {
         try
         {
             esperaTir.acquire();    //Niño se bloquea si monitor esta en descanso
+            subido.release(); //Avisa a monitor que hay niño para tirarse por la tirolina
             log.escribir(" Niño " + c.getCId() + " se prepara para tirarse en la tirolina\n"); //Escribe estado del niño en archivo
             sleep(1000);    //Monitor prepara al niño para tirarse
             childEnTirPrep.sacar(c.getCId()); //Niño termina de prepararse
             log.escribir(" Niño " + c.getCId() + " se tira por la tirolina\n"); //Escribe estado del niño en archivo
             childEnTir.meter(c.getCId());    //Pasa a estado de tirarse
-            //señal.await();                            //Espera señal del monitor para tirarse
+            señal.release();   //Espera señal del monitor para tirarse
             sleep(3000);    //Tarda 3 segundos en llegar al final
             childEnTir.sacar(c.getCId());   //Sca a niño de estado de tirarse
             log.escribir(" Niño " + c.getCId() + " llega al final de la tirolina\n"); //Escribe estado del niño en archivo
@@ -528,7 +534,6 @@ public class Campamento {
         }catch (InterruptedException e){ }
         c.sumar(1);   //Aumenta en uno el contador de actividades del niño
         contTir++;      //Se incremente el numero de veces que se ha realizado esta actividad
-        contadorTirolina.countDown();   //Resta uno al contador 
         log.escribir(" Niño " + c.getCId() + " se va a la zona comun\n");   //Escribe estado del niño en archivo
         zonaComun(c, n);    //Accede a zona comun para descansar tras actividad
     }
@@ -550,29 +555,20 @@ public class Campamento {
         }
         else        //Introduce al niño ene quipo correspondiente
         {   
-                if(paridadId(numId(c)) && numA < 5 || numB == 5)    //si identificador del niño es par y equipo A no esta acompleto
-                {
-                    log.escribir(" Niño " + c.getCId() + " se mete en el quipo A\n"); //Escribe estado del niño en archivo
-                    equipoA.meter(c.getCId());  //Introducimos niño en equipo A
-                    equiA.add(c);   //Añade a niño al equipo
-                    numA++;         //Aumentamos número de jugadores en equipo
-                }
-                else    //Si identificador del niño es impar o equipo A esta completo
-                {
-                    log.escribir(" Niño " + c.getCId() + " se mete en el equipo B\n"); //Escribe estado del niño en archivo
-                    equipoB.meter(c.getCId());  //Introducimos niño en equipo B
-                    equiB.add(c);   //Añade niño al array correspondiente
-                    numB++;             //Aumentamos número de jugadores en equipo B
-                }
-                numJugadores++; //Aumenta le número de jugadores
+            participantes.add(c);   //Añade a niño a lista de participantes
+            numJugadores++; //Aumenta le número de jugadores
+            childEnSoga.meter(c.getCId());  //Introduce niño en actividad soga
                 try
                 {
                     barreraSoga.await();    //Espera a que lleguen 10 niños
+                    hacerEquipo.release(); //Monitor forma los equipos
                     finSoga = false;    //Indica que se esta realizando la actividad
                     log.escribir(" Niño " + c.getCId() + " empieza competición de soga\n"); //Escribe estado del niño en archivo
                     sleep(7000);    //Tardan 7 segundos en realizar actividad
                     log.escribir(" Niño " + c.getCId() + " termina competición soga\n"); //Escribe estado del niño en archivo
+                    elegirGanador.release(); //Avisa a monitor de que competición ha terminado
                     siguiente.acquire();    //Hacen que se vayan niños de la actividad de uno en uno
+                    childEnSoga.sacar(c.getCId());
                     if(equiA.contains(c))   //Si niño esta en el equipo A
                     {
                         log.escribir(" Niño " + c.getCId() + " ha ganado competición soga\n"); //Escribe estado del niño en archivo
@@ -583,7 +579,15 @@ public class Campamento {
                             finSoga = true; //Indica que ha terminado actividad
                         }
                         numA--;         //Disminuimos número de jugadores en equipo
-                        c.sumar(2); //Equipo a siempre gana porque juego esta amañado
+                        if(ganador == 0)    //Equipo A ha ganado
+                        {
+                          c.sumar(2); //Se suma dos a equipo ganador
+                        }
+                        else
+                        {
+                            c.sumar(1); //Equipo A no ha ganadp
+                        }
+                        
                         numJugadores--; //Disminuye numero de jugadores
                         contadorSoga.countDown();   //Decrementa cada vez que acaba actividad
                         log.escribir(" Niño " + c.getCId() + " se va a la zona comun\n");   //Escribe estado del niño en archivo
@@ -599,9 +603,15 @@ public class Campamento {
                             finSoga = true; //Indica que ha terminado la actividad
                         }
                         numB--;             //Disminuimos número de jugadores en equipo B
-                        c.sumar(1); //Suma uno al contador de actividades del niño
+                        if(ganador == 1)    //Equipo B ha ganado
+                        {
+                          c.sumar(2); //Se suma dos a equipo ganador
+                        }
+                        else
+                        {
+                            c.sumar(1); //Equipo B ha perdido
+                        }
                         numJugadores--; //Disminuye numero de jugadores
-                        contadorSoga.countDown();   //Decrementa cada vez que acaba actividad
                         log.escribir(" Niño " + c.getCId() + " se va a la zona comun\n"); //Escribe estado del niño en archivo
                         zonaComun(c,n); //Tras terminar actividad niños van a zona comun
                     }   
@@ -674,3 +684,4 @@ public class Campamento {
         return n % 3;       //Módulo 3 de parte numérica
     }
 }
+
