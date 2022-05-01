@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="-2" pref="364" max="-2" attributes="0"/>
+              <Component id="tituloCampamento" min="-2" pref="207" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="tituloColaEsperaTirolina" min="-2" pref="108" max="-2" attributes="0"/>
+                                  <Component id="tituloNumeroUsosTirol" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="colaEsperaTirolina" max="32767" attributes="0"/>
+                                  <Component id="numeroUsosTir" pref="79" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="tituloColaEsperaSoga" min="-2" pref="90" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="tituloSoga" min="-2" pref="80" max="-2" attributes="0"/>
+                                  <Component id="colaEsperaSoga" min="-2" pref="81" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="consultarColaEsperaTir" max="32767" attributes="0"/>
+                              <Component id="consultarNumeroUsosTir" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="consultarColaEsperaSoga" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="181" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="tituloNumActs" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="numActividades" min="-2" pref="103" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="tituloBandLimpias" max="32767" attributes="0"/>
+                                  <Component id="TituloMerendando" max="32767" attributes="0"/>
+                                  <Component id="tituloBandeSuc" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="bandejasSucias" max="32767" attributes="0"/>
+                                  <Component id="bandejasLimpias" max="32767" attributes="0"/>
+                                  <Component id="niñosMerendando" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="tituloIdNiño" min="-2" pref="56" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="tituloActividades" min="-2" pref="90" max="-2" attributes="0"/>
+                                  <Component id="idNiño" min="-2" pref="106" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="consultarNiñosMer" pref="92" max="32767" attributes="0"/>
+                          <Component id="consultarBandejasSuc" max="32767" attributes="0"/>
+                          <Component id="consultarBandeLimp" alignment="0" max="32767" attributes="0"/>
+                          <Component id="consultarId" max="32767" attributes="0"/>
+                          <Component id="errorId" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="120" max="-2" attributes="0"/>
+                      <Component id="tituloTirolina" min="-2" pref="141" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="TituloMerienda" min="-2" pref="84" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="173" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+              <Component id="tituloCampamento" min="-2" pref="41" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="tituloTirolina" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                  <Component id="TituloMerienda" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="tituloColaEsperaTirolina" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="colaEsperaTirolina" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="consultarColaEsperaTir" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="TituloMerendando" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="niñosMerendando" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="consultarNiñosMer" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="tituloNumeroUsosTirol" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                  <Component id="numeroUsosTir" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="consultarNumeroUsosTir" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tituloBandeSuc" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="bandejasSucias" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="consultarBandejasSuc" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="tituloBandLimpias" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="bandejasLimpias" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="consultarBandeLimp" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="tituloActividades" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tituloSoga" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="colaEsperaSoga" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tituloColaEsperaSoga" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="consultarColaEsperaSoga" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tituloIdNiño" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="idNiño" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="consultarId" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="tituloNumActs" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="numActividades" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="20" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
+                      <Component id="errorId" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="tituloCampamento">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Control del campamento"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="tituloTirolina">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Tirolina"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="tituloColaEsperaTirolina">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cola de espera"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="tituloNumeroUsosTirol">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="N&#xfa;mero de usos:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="colaEsperaTirolina">
+    </Component>
+    <Component class="javax.swing.JTextField" name="numeroUsosTir">
+    </Component>
+    <Component class="javax.swing.JButton" name="consultarColaEsperaTir">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Consultar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="consultarColaEsperaTirActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="consultarNumeroUsosTir">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Consultar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="consultarNumeroUsosTirActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="TituloMerienda">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Merienda"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="TituloMerendando">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ni&#xf1;os merendando:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="tituloBandeSuc">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Bandejas sucias:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="tituloBandLimpias">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Bandejas limpias:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="ni&#xf1;osMerendando">
+    </Component>
+    <Component class="javax.swing.JTextField" name="bandejasSucias">
+    </Component>
+    <Component class="javax.swing.JTextField" name="bandejasLimpias">
+    </Component>
+    <Component class="javax.swing.JButton" name="consultarNi&#xf1;osMer">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Consultar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="consultarNi&#xf1;osMerActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="consultarBandejasSuc">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Consultar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="consultarBandejasSucActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="consultarBandeLimp">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Consultar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="consultarBandeLimpActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="tituloSoga">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Soga"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="tituloColaEsperaSoga">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cola de espera:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="colaEsperaSoga">
+    </Component>
+    <Component class="javax.swing.JLabel" name="tituloActividades">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Actividades"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="consultarColaEsperaSoga">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Consultar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="consultarColaEsperaSogaActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="tituloIdNi&#xf1;o">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Id ni&#xf1;o : "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="idNi&#xf1;o">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="idNi&#xf1;oActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="consultarId">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Consultar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="consultarIdActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="tituloNumActs">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="N&#xfa;mero de actividades:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="numActividades">
+    </Component>
+    <Component class="javax.swing.JLabel" name="errorId">
+    </Component>
+  </SubComponents>
+</Form>

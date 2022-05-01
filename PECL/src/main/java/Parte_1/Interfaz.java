@@ -5,11 +5,8 @@
  */
 package Parte_1;
 
-import java.io.File;
-import java.io.IOException;
 import static java.lang.Thread.sleep;
-import java.util.concurrent.CyclicBarrier;
-import java.util.concurrent.atomic.AtomicInteger;
+
 
 /**
  *
